@@ -1,161 +1,92 @@
-<h3>Структура стартового папки проекта</h3>
-<ul>
-   <li><code><b>gulp/</b></code>
-      <ul>
-         <li><code>config/</code>
-           <ul>
-               <li><code>ftp.js настройка для фтп сервера</code></li>
-               <li><code>path.js</code></li>
-               <li><code>plugins.js</code></li>
-           </ul>
-         </li>
-         <li><code>tasks/</code>
-          <ul>
-               <li>
-                  <code>copy.js</code> отвечает за копирование из папки  </code>
-                  <code>fonts/</code>
-               </li>
-               <li><code>fonts.js</code> самый большой по коду файл, ищет по проекту шрифты  otf, ttf и др. otf, ttf - преобразует в woff и woff2 - не отслеживается</li>
-               <li><code>ftp.js</code> отправляет на фтп сервер в папку указаную в файле path в объекте path</li>
-               <li><code>html.js</code> здесь обработка и сборка .html или .pug файлов</li>
-               <li><code>images.js</code> обрабатываем картинк, при <code>mode: production</code> webp и обработает картки</li>
-               <li><code>js.js</code></li>
-               <li><code>reset.js</code></li>
-               <li><code>scss.js</code></li>
-               <li><code>server.js</code></li>
-               <li><code>svgSprive.js</code></li>
-               <li><code>zip.js</code></li>
-           </ul>
-         </li>
-      </ul>
-   </li>
-   <li><code><b>node_modules/</b></code></li>
-   <li><code><b>src/</b></code>
-      <ul>
-         <li><code>files/</code>  размещаются файлы которые нужно перенести в том виде в котором они сейчас находятся</li>
-         <li><code>fonts/</code></li>
-         <li><code>html/</code>  Размещаются шаблоны, компоненты, части, элементы от HTML или PUG
-         </li>
-         <li><code>img/</code></li>
-         <li><code>js/</code>  размещаются в корне app.js в нем импорты</li>
-            <ul>
-               <li><code>modules/</code> размещаются модули(по не обходимости можно добавлять другие директории</li>
-            </ul>
-         <li><code>scss/</code></li>
-         <li><code>svgicons/</code>   помещаются SVG файлы для создания sprites из SVG</li>
-      </ul>
-   </li>
-   <li><code><b>.gitattributes</b></code></li>
-   <li><code><b>.gitignore</b></code></li>
-   <li><code><b>gulpfile.js</b></code></li>
-   <li><code><b>package-lock.json</b></code></li>
-   <li><code><b>package.json</b></code></li>
-</ul>
-<h3>Стартовая настройка проекта</h3>
-   <p>
-   В корне проекта не должно быть файла package-lock.json, папки node_modules - если они есть удалите их.
-   </p>
-   <ol>
-     <li>Если не установлен node.js переходим 
-         <code>
-            <a href="https://nodejs.org/en/">
-               https://nodejs.org/en/
-            </a>
-         </code>
-         скачиваем и устанавливаем
-      </li>
-      <li>
-         <code>npm init</code>
-      </li>
-      <li>
-         <code>npm install --global gulp-cli</code>
-      </li>
-      <li>
-         <code>npm install --save-dev gulp</code>
-      </li>
-       <li>
-         <code>npm i</code>
-      </li>
-   </ol>
-<h3>Команды консоли для запуска gulp и отдельных task(задач)</h3>
-  <ul>
-      <li>
-         <code>npm run dev</code> сборка развернутая не минимизированная
-      </li>
-       <li>
-         <code>npm run build</code> - чистовая сборка
-      </li>
-       <li>
-         <code>npm run zip</code> создает zip архив в корень папки
-      </li>
-       <li>
-         <code>npm run deploy</code> - отправляет build сбоку на сервер указанный в config -> ftp
-      </li>
-      <li>
-         <code>npm run svgSprive</code> - создает svg sprite
-      </li>
-   </ul>
-<h3>Настройка путей</h3>
-   <h4>Если редактор VS Code:<h4>
-         <ol>
-            <li>Установить Path Autocomplete</li>
-            <li>Нажать F1</li>
-            <li>набираем Open Settings - выбираем где JSON</li>
-            <li>Вставляем после последней строки через запятую:
-<pre style="background: #fff; color: #000;">
-"path-autocomplete.pathMappings": {
-   "@img": "${folder}/src/img", // alias for images
-   "@scss": "${folder}/src/scss", // alias for scss
-   "@js": "${folder}/src/js", // alias for js
-   }   
-</pre>
-            </li>
-         </ol>
+# rehab.design2022
 
- <h3>Список плагинов - если каким либо образом не скачался package.json</h3>
-   <ul>
-      <li><code>"browser-sync": "latest"</code></li>
-      <li><code>"del": "latest"</code></li>
-      <li><code>"gulp": "latest"</code></li>
-      <li><code>"gulp-autoprefixer": "latest"</code></li>
-      <li><code>"gulp-clean-css": "latest"</code></li>
-      <li><code>"gulp-cli": "latest"</code></li>
-      <li><code>"gulp-file-include": "latest"</code></li>
-      <li><code>"gulp-fonter": "latest"</code></li>
-      <li><code>"gulp-group-css-media-queries": "latest"</code></li>
-      <li><code>"gulp-if": "latest"</code></li>
-      <li><code>"gulp-imagemin": "latest"</code></li>
-      <li><code>"gulp-newer": "latest"</code></li>
-      <li><code>"gulp-notify": "latest"</code></li>
-      <li><code>"gulp-plumber": "latest"</code></li>
-      <li><code>"gulp-pug": "latest"</code></li>
-      <li><code>"gulp-rename": "latest"</code></li>
-      <li><code>"gulp-replace": "latest"</code></li>
-      <li><code>"gulp-sass": "latest"</code></li>
-      <li><code>"gulp-svg-sprite": "latest"</code></li>
-      <li><code>"gulp-ttf2woff2": "latest"</code></li>
-      <li><code>"gulp-util": "latest"</code></li>
-      <li><code>"gulp-version-number": "latest"</code></li>
-      <li><code>"gulp-webp": "latest"</code></li>
-      <li><code>"gulp-webp-html-nosvg": "latest"</code></li>
-      <li><code>"gulp-webpcss": "latest"</code></li>
-      <li><code>"gulp-zip": "latest"</code></li>
-      <li><code>"sass": "latest"</code></li>
-      <li><code>"swiper": "latest"</code></li>
-      <li><code>"vinyl-ftp": "latest"</code></li>
-      <li><code>"webp-converter": "2.2.3"</code></li>
-      <li><code>"webpack": "latest"</code></li>
-      <li><code>"webpack-stream": "latest"</code></li>
-   </ul>
-  
- <h3>Настройка package.json</h3>
- <h3>Работа с импортами на проекте в файлах js</h3>
+Верстка нового макета Рехаба
 
- <h3>Настройка работа в HTML c импортами </h3>
- <h3>Настройка работа в PUG c импортами </h3>
- <h3>Рекомендации по структуре scss</h3>
- <h3>Рекомендации по структуре js</h3>
- <h3>Рекомендации по структуре html/pug</h3>
- <h3>FAQ - Ответы на вопросы:</h3>
- <h4>Как понять что часть task и его .pipe работает с разными режимами mode?</h4>
+## Getting started
 
+To make it easy for you to get started with GitLab, here's a list of recommended next steps.
+
+Already a pro? Just edit this README.md and make it your own. Want to make it easy? [Use the template at the bottom](#editing-this-readme)!
+
+## Add your files
+
+- [ ] [Create](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#create-a-file) or [upload](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#upload-a-file) files
+- [ ] [Add files using the command line](https://docs.gitlab.com/ee/gitlab-basics/add-file.html#add-a-file-using-the-command-line) or push an existing Git repository with the following command:
+
+```
+cd existing_repo
+git remote add origin https://git.bx24.org/fred/rehab.design2022.git
+git branch -M main
+git push -uf origin main
+```
+
+## Integrate with your tools
+
+- [ ] [Set up project integrations](https://git.bx24.org/fred/rehab.design2022/-/settings/integrations)
+
+## Collaborate with your team
+
+- [ ] [Invite team members and collaborators](https://docs.gitlab.com/ee/user/project/members/)
+- [ ] [Create a new merge request](https://docs.gitlab.com/ee/user/project/merge_requests/creating_merge_requests.html)
+- [ ] [Automatically close issues from merge requests](https://docs.gitlab.com/ee/user/project/issues/managing_issues.html#closing-issues-automatically)
+- [ ] [Enable merge request approvals](https://docs.gitlab.com/ee/user/project/merge_requests/approvals/)
+- [ ] [Automatically merge when pipeline succeeds](https://docs.gitlab.com/ee/user/project/merge_requests/merge_when_pipeline_succeeds.html)
+
+## Test and Deploy
+
+Use the built-in continuous integration in GitLab.
+
+- [ ] [Get started with GitLab CI/CD](https://docs.gitlab.com/ee/ci/quick_start/index.html)
+- [ ] [Analyze your code for known vulnerabilities with Static Application Security Testing(SAST)](https://docs.gitlab.com/ee/user/application_security/sast/)
+- [ ] [Deploy to Kubernetes, Amazon EC2, or Amazon ECS using Auto Deploy](https://docs.gitlab.com/ee/topics/autodevops/requirements.html)
+- [ ] [Use pull-based deployments for improved Kubernetes management](https://docs.gitlab.com/ee/user/clusters/agent/)
+- [ ] [Set up protected environments](https://docs.gitlab.com/ee/ci/environments/protected_environments.html)
+
+***
+
+# Editing this README
+
+When you're ready to make this README your own, just edit this file and use the handy template below (or feel free to structure it however you want - this is just a starting point!).  Thank you to [makeareadme.com](https://www.makeareadme.com/) for this template.
+
+## Suggestions for a good README
+Every project is different, so consider which of these sections apply to yours. The sections used in the template are suggestions for most open source projects. Also keep in mind that while a README can be too long and detailed, too long is better than too short. If you think your README is too long, consider utilizing another form of documentation rather than cutting out information.
+
+## Name
+Choose a self-explaining name for your project.
+
+## Description
+Let people know what your project can do specifically. Provide context and add a link to any reference visitors might be unfamiliar with. A list of Features or a Background subsection can also be added here. If there are alternatives to your project, this is a good place to list differentiating factors.
+
+## Badges
+On some READMEs, you may see small images that convey metadata, such as whether or not all the tests are passing for the project. You can use Shields to add some to your README. Many services also have instructions for adding a badge.
+
+## Visuals
+Depending on what you are making, it can be a good idea to include screenshots or even a video (you'll frequently see GIFs rather than actual videos). Tools like ttygif can help, but check out Asciinema for a more sophisticated method.
+
+## Installation
+Within a particular ecosystem, there may be a common way of installing things, such as using Yarn, NuGet, or Homebrew. However, consider the possibility that whoever is reading your README is a novice and would like more guidance. Listing specific steps helps remove ambiguity and gets people to using your project as quickly as possible. If it only runs in a specific context like a particular programming language version or operating system or has dependencies that have to be installed manually, also add a Requirements subsection.
+
+## Usage
+Use examples liberally, and show the expected output if you can. It's helpful to have inline the smallest example of usage that you can demonstrate, while providing links to more sophisticated examples if they are too long to reasonably include in the README.
+
+## Support
+Tell people where they can go to for help. It can be any combination of an issue tracker, a chat room, an email address, etc.
+
+## Roadmap
+If you have ideas for releases in the future, it is a good idea to list them in the README.
+
+## Contributing
+State if you are open to contributions and what your requirements are for accepting them.
+
+For people who want to make changes to your project, it's helpful to have some documentation on how to get started. Perhaps there is a script that they should run or some environment variables that they need to set. Make these steps explicit. These instructions could also be useful to your future self.
+
+You can also document commands to lint the code or run tests. These steps help to ensure high code quality and reduce the likelihood that the changes inadvertently break something. Having instructions for running tests is especially helpful if it requires external setup, such as starting a Selenium server for testing in a browser.
+
+## Authors and acknowledgment
+Show your appreciation to those who have contributed to the project.
+
+## License
+For open source projects, say how it is licensed.
+
+## Project status
+If you have run out of energy or time for your project, put a note at the top of the README saying that development has slowed down or stopped completely. Someone may choose to fork your project or volunteer to step in as a maintainer or owner, allowing your project to keep going. You can also make an explicit request for maintainers.
