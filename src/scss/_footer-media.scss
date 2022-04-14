@@ -1,0 +1,112 @@
+@media (max-width: 1344px) {
+    .footer {
+        &__wrapper {
+            padding-top: 30px;
+        }
+        &__contacts-data {
+            gap: 24px;
+        }
+        &__phone {
+            font-size: 22px;
+            line-height: 26px;
+        }
+        &__contacts-bottom {
+            margin-top: 42px;
+        }
+        &__copyright {
+            margin-top: 42px;
+        }
+    }
+}
+@media (max-width: 1024px) {
+    .footer {
+        &__top {
+            padding-bottom: 66px;
+        }
+        &__wrapper {
+            padding-left: 32px;
+            padding-right: 32px;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            height: auto;
+        }
+        &__logo {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 32px;
+        }
+        &__copyright {
+            margin-top: 32px;
+            text-align: center;
+        }
+        &__contacts-top {
+            align-items: center;
+            margin-top: 44px;
+        }
+        &__contacts-data {
+            flex-direction: column;
+            gap: 22px;
+            align-items: center;
+        }
+        &__point {
+            display: none;
+        }
+        &__contacts-bottom {
+            margin-top: 22px;
+            align-items: center;
+        }
+        &__bottom {
+            padding-top: 22px;
+            padding-bottom: 22px;
+        }
+        &__wrap {
+            height: auto;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }
+        &__bottom-right {
+            margin-top: 6px;
+        }
+    }
+}
+@media (max-width: 576px) {
+    .footer {
+        &__top {
+            padding-bottom: 44px;
+        }
+        &__wrapper {
+            padding-top: 16px;
+        }
+        &__img {
+            width: 128px;
+            height: 64px;
+        }
+        &__copyright {
+            margin-top: 20px;
+        }
+        &__contacts-top {
+            margin-top: 32px;
+        }
+        &__address {
+            text-align: center;
+            letter-spacing: 0.03em;
+        }
+        &__bottom {
+            padding-top: 32px;
+            padding-bottom: 32px;
+        }
+        &__wrap {
+            padding-left: 32px;
+            padding-right: 32px;
+        }
+        &__bottom-link {
+            display: flex;
+            align-items: center;
+            text-align: center;
+            letter-spacing: 0.1em;
+        }
+    }
+}

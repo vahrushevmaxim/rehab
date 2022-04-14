@@ -1,0 +1,13 @@
+@media (max-width: 1344px) {
+    .nav {
+        &__main-link {
+            padding-left: 16px;
+            padding-right: 16px;
+        }
+    }
+    @media (max-width: 1024px) {
+        .nav {
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,68 @@
+.heading {
+    background: #f7f2ee;
+    &__wrapper {
+        padding-top: 48px;
+        padding-bottom: 24px;
+    }
+    &__header {
+        font-family: "Palatino Linotype";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 42px;
+        line-height: 42px;
+        color: #211e1c;
+        padding-bottom: 50px;
+    }
+    &__bottom {
+        display: flex;
+        justify-content: space-between;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 18px;
+        color: #595450;
+    }
+    &__breadcrumb {
+        display: flex;
+    }
+    &__bread-main {
+        height: 20px;
+        display: flex;
+        align-items: center;
+        box-sizing: border-box;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 18px;
+        color: #595450;
+    }
+    &__bread-main:hover {
+        border-bottom: 1px solid rgba(89, 84, 80, 0.16);
+    }
+    &__arrow {
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+    &__info {
+        height: 20px;
+        display: flex;
+        align-items: center;
+        gap: 16px;
+    }
+    &__point {
+        width: 6px;
+        height: 6px;
+        background-color: #a1c74f;
+        border-radius: 50%;
+    }
+    &__views {
+        margin-left: 8px;
+    }
+    &__views::before {
+        content: url(/img/eye.svg);
+        margin-right: 8px;
+        width: 16px;
+        height: 11px;
+        object-fit: contain;
+    }
+}

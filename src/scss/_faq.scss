@@ -1,0 +1,102 @@
+.faq {
+    &__container {
+        max-width: 1088px;
+        margin: 0 auto;
+    }
+    &__wrapper {
+        padding-top: 96px;
+        padding-bottom: 96px;
+    }
+    &__header {
+        padding-top: 36px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__heading {
+        max-width: 640px;
+        font-family: "Palatino Linotype";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 42px;
+        line-height: 46px;
+        text-align: center;
+        letter-spacing: 0.02em;
+        color: #211e1c;
+    }
+    &__line {
+        width: 80px;
+        height: 4px;
+        background-color: #a1c74f;
+        margin-top: 36px;
+    }
+    &__box {
+        margin-top: 64px;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+    &__item-header {
+        padding: 32px 32px 32px 64px;
+        background: #f6f2ee;
+        border-radius: 8px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__item-heading {
+        max-width: 896px;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 30px;
+        letter-spacing: 0.02em;
+        color: #211e1c;
+    }
+    &__btn-wrap {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-shrink: 0;
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        background: #ffffff;
+        cursor: pointer;
+        transform: rotate(0);
+        transition: transform 300ms;
+        
+    }
+    &__btn {
+        width: 12px;
+        height: 8px;
+        object-fit: contain;
+    }
+    &__item-content {
+        display: none;
+        margin-top: -8px;
+        padding: 4px 64px 64px 64px;
+        background: linear-gradient(180deg, #f6f2ee 10.26%, rgba(246, 242, 238, 0) 100%);
+    }
+    &__item-line {
+        margin-top: 4px;
+        width: 64px;
+        height: 4px;
+        background: #DDCF49;
+        margin-bottom: 20px;
+    }
+    &__text {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 32px;
+        color: #211e1c;
+    }
+    &__active {
+        display: block;
+    }
+    &__btn-act {
+        transform: rotate(180deg);
+        transition: transform 300ms;
+    }
+}

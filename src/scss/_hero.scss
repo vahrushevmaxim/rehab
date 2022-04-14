@@ -1,0 +1,114 @@
+.hero {
+    padding-top: 64px;
+    padding-bottom: 64px;
+    &__wrapper {
+        display: flex;
+        gap: 64px;
+    }
+    &__image {
+        width: 768px;
+        height: 448px;
+    }
+    &__img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        border-radius: 4px;
+    }
+    &__menu {
+        width: 384px;
+        list-style-type: none;
+        margin: 0;
+        margin-top: 38px;
+        padding-left: 0;
+    }
+    &__item {
+        position: relative;
+    }
+    &__item:not(:last-child){
+        border-bottom: 1px solid #EEE5DC;
+    }
+    &__item ::after{
+        content: url(../img/arrow-li.svg);
+        position: absolute;
+        top: 12px;
+        right: -2px;
+        width: 8px;
+        height: 12px;
+        object-fit: contain;
+    }
+    &__item-link {
+        display: flex;
+        align-items: center;
+        padding-top: 16px;
+        padding-right: 16px;
+        padding-bottom: 16px;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 22px;
+        line-height: 22px;
+        color: #211e1c;
+    }
+    &__img-icon {
+        width: 36px;
+        height: 20px;
+        object-fit: cover;
+        padding-left: 8px;
+    }
+    &__butt {
+        margin-top: 40px;
+        width: 320px;
+        height: 64px;
+        background: linear-gradient(90deg, #b3d851 0%, #fdb942 100%);
+        box-shadow: inset 0px 6px 6px rgba(255, 255, 255, 0.32);
+        border-radius: 6px;
+    }
+    &__butt-link {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        gap: 22px;
+        align-items: center;
+        padding-left: 12px;
+    }
+    &__img-wrap {
+        position: relative;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: rgba(255, 255, 255, 0.12);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__img-wrap::before {
+        content: "";
+        position: absolute;
+        top: -12px;
+        left: -12px;
+        width: 64px;
+        height: 64px;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.12);
+    }
+    &__img-wrap::after {
+        content: "";
+        position: absolute;
+        top: -24px;
+        left: -24px;
+        width: 88px;
+        height: 88px;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.12);
+        overflow: hidden;
+    }
+    &__link-text {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 17px;
+        line-height: 20px;
+        letter-spacing: 0.02em;
+        color: #ffffff;
+        text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.12);
+    }
+}
