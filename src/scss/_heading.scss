@@ -1,17 +1,31 @@
 .heading {
     background: #f7f2ee;
     &__wrapper {
-        padding-top: 48px;
+        padding-top: 32px;
         padding-bottom: 24px;
+        display: flex;
+        gap: 48px;
+    }
+    &__wrapper-photo {
+        position: relative;
+        width: 224px;
+        border-radius: 4px;
+    }
+    &__photo {
+        position: absolute;
+        width: 224px;
+        height: 224px;
+        border-radius: 4px;
+        object-fit: cover;
     }
     &__header {
         font-family: "Palatino Linotype";
         font-style: normal;
         font-weight: 400;
-        font-size: 42px;
-        line-height: 42px;
+        font-size: 48px;
+        line-height: 48px;
         color: #211e1c;
-        padding-bottom: 50px;
+        padding-bottom: 32px;
     }
     &__bottom {
         display: flex;
@@ -24,6 +38,11 @@
     }
     &__breadcrumb {
         display: flex;
+        overflow-x: auto;
+        scrollbar-width: none;
+    }
+    &__breadcrumb::-webkit-scrollbar {
+        width: 0;
     }
     &__bread-main {
         height: 20px;
@@ -35,6 +54,7 @@
         font-size: 15px;
         line-height: 18px;
         color: #595450;
+        border-bottom: 1px solid #f7f2ee;
     }
     &__bread-main:hover {
         border-bottom: 1px solid rgba(89, 84, 80, 0.16);
@@ -42,6 +62,9 @@
     &__arrow {
         margin-left: 16px;
         margin-right: 16px;
+    }
+    &__bread-name {
+        white-space: nowrap;
     }
     &__info {
         height: 20px;
@@ -64,5 +87,12 @@
         width: 16px;
         height: 11px;
         object-fit: contain;
+    }
+    &__description {
+        padding-bottom: 38px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 32px;
+        color: #211e1c;
     }
 }

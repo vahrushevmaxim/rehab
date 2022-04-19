@@ -1,0 +1,31 @@
+.speclist {
+    background: linear-gradient(180deg, #F7F2EE 0%, #FFFFFF 30%, #FFFFFF 100%);
+    padding-top: 96px;
+    padding-bottom: 96px;
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 32px;
+    }
+    &__heading {
+        font-family: "Palatino Linotype";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 42px;
+        line-height: 46px;
+        letter-spacing: 0.02em;
+        color: #211e1c;
+    }
+    &__nav {
+        display: flex;
+        align-items: center;
+    }
+    &__nav_center {
+        margin-top: 0;
+    }
+    &__box {
+        display: flex;
+        //gap: 32px;
+    }
+}

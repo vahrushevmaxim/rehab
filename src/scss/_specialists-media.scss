@@ -1,0 +1,46 @@
+@media (max-width: 1344px) {
+    .specialists {
+    }
+}
+@media (max-width: 1024px) {
+    .specialists {
+        &__item {
+            width: 384px;
+        }
+        &__img {
+            height: 340px;
+        }
+    }
+}
+@media (max-width: 660px) {
+    .specialists {
+        padding-top: 48px;
+        padding-bottom: 80px;
+        &__box {
+            gap: 16px;
+        }
+        &__item {
+            width: 384px;
+        }
+    }
+}
+@media (max-width: 576px) {
+    .specialists {
+        padding-top: 32px;
+        padding-bottom: 48px;
+        &__box {
+            gap: 0;
+        }
+        &__item {
+            border-radius: 0;
+            background: linear-gradient(180deg, #ffffff 0%, #f6f2ee 100%);
+            max-width: 384px;
+        }
+        &__img {
+            height: 264px;
+        }
+        &__photo {
+            object-position: top;
+        }
+    }
+}
