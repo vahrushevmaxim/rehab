@@ -6,7 +6,7 @@
             gap: 32px;
         }
         &__main {
-            max-width: 543px;
+            max-width: 544px;
         }
         &__main img {
             width: 543px;
@@ -66,10 +66,16 @@
         &__ban2-link {
             margin-top: 8px;
         }
+        &__items-box {
+            gap: 24px;
+        }
     }
 }
 @media (max-width: 1024px) {
     .art {
+        &__main {
+            max-width: 100%;
+        }
         &__prog {
             display: none;
         }
@@ -223,6 +229,9 @@
         &__ban2-link1 {
             background: #F6F2EE;
         }
+        &__items-box {
+            gap: 16px;
+        }
     }
 }
 @media (max-width: 576px) {
@@ -332,7 +341,8 @@
         }
         &__galery-img_sertificate {
             width: 185px;
-            height: 141px;
+            height: 141
+            px;
         }
         &__count {
             top: 122px;
@@ -362,6 +372,22 @@
         }
         &__ban2-link {
             margin-top: 24px;
+        }
+        &__items-box {
+            gap: 0;
+        }
+        &__item {
+            width: 100%;
+        }
+        &__item-wrapper {
+            min-height: unset;
+            background: #ffffff;
+        }
+        &__item-photo {
+            height: 256px;
+        }
+        &__item-photo > .art__item-img {
+            object-fit: cover;
         }
     }
 }
