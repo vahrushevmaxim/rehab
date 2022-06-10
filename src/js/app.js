@@ -5,4 +5,5 @@ import "./modules/main-menu.js";
 import "./modules/faq.js";
 import "./modules/sliders.js";
 import "./modules/tabs.js";
+import "./modules/department-slider.js";
 

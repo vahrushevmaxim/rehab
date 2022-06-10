@@ -1,9 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
 let btns = document.querySelectorAll('.reviews__btn');
 let cards = document.querySelectorAll('.reviews__card');
-let wrp = document.querySelector('.reviews__card')
-let width;
-let count = 0;
 
 for (let i = 0; i < btns.length; i++) {
 

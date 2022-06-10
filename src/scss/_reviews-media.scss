@@ -44,8 +44,30 @@
         max-width: 256px;
     }
 
+    .reviews__card-item { 
+        padding: 24px 24px 32px 24px;
+    }
+
     .reviews__text {
         flex-direction: column;
+    }
+
+    .reviews__name {
+        margin-bottom: 14px;
+    }
+
+    .reviews__paragraph {
+        font-size: 13px;
+    }
+
+    .reviews__btn-wrapper {
+        justify-content: flex-start;
+    }
+
+    .reviews__btn-green {
+        padding: 15px 56px;
+        max-width: 100%;
+
     }
 
 }

@@ -1,0 +1,116 @@
+.department-slider {
+
+    &__wrapper {
+        padding-top: 96px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    &__item {
+        max-width: 831px;
+    }
+
+    &__item:not(:last-child) {
+        margin-bottom: 32px;
+    }
+
+    &__image img {
+        max-height: 328px;
+        border-radius: 8px 8px 0 0;
+        width: 100%;
+        object-fit: cover;
+        display: block;
+    }
+
+    &__arrows {
+        position: relative;
+    }
+
+    &__bg {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #FFFFFF;
+        cursor: pointer;
+        border-radius: 50%;
+        width: 72px;
+        height: 72px;
+        position: absolute;
+    }
+
+    &__bg--md-1 {
+        left: 60px;
+    }
+
+    &__bg--md-2 {
+        right: 60px;   
+    }
+
+    .department-slider__svg{
+        transform: rotate(-180deg);
+    }
+
+    &__wrapper-text {
+        padding: 42px 0 50px 63px;
+        background-color: #F6F2EE;
+        border-radius: 0 0 8px 8px;
+        display: flex;
+        align-items: flex-end;
+    }
+
+    &__text {
+        font-weight: 300;
+        font-size: 36px;
+        line-height: 28px;
+        color: #000000;
+        margin-right: 16px;
+    }
+
+    &__text-2 {
+        font-weight: 300;
+       font-size: 18px;
+       line-height: 18px;
+       color: #000000; 
+    }
+
+    &__wrapper .wrp-art--md {
+        max-width: 384px;
+    }
+
+    &__wrapper .art__curat--md {
+        max-width: 384px;
+        margin-bottom: 32px;
+    }
+
+    &__wrapper .art__other--md {
+        padding-top: 1px;
+        margin-top: 32px;
+    }
+
+}
+
+.swiper-button-prev, .swiper-button-next{
+    color: #595450;
+    top: -15px;
+}
+
+.swiper-button-prev:after, .swiper-button-next:after {
+    content: "";
+}
+
+.art__other-ul-2 {
+    display: none;
+    margin-top: 32px;
+    list-style-type: unset;
+    padding-left: 32px;
+}
+
+.swiper-pagination-fraction {
+    width: 32px;
+    height: 32px;
+    left: auto;
+    z-index: 10;
+}
+
+

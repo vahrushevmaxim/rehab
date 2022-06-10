@@ -375,7 +375,7 @@
     }
     &__count {
         position: absolute;
-        top: 163px;
+        top: 253px;
         right: 11px;
         width: 32px;
         height: 32px;
@@ -553,6 +553,7 @@
         margin-left: 4px;
     }
     &__curat {
+        overflow: hidden;
         width: 100%;
         background: #f6f2ee;
         border-radius: 4px;
@@ -573,13 +574,10 @@
     &__curat-box {
         margin-top: 16px;
         display: flex;
-        gap: 8px;
     }
     &__curat-item {
-        flex: 1;
         display: flex;
         flex-direction: column;
-        gap: 16px;
     }
     &__curat-photo {
         width: 100%;
