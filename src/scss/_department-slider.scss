@@ -77,26 +77,25 @@
     &__wrapper .wrp-art--md {
         max-width: 384px;
     }
-
-    &__wrapper .art__curat--md {
-        max-width: 384px;
-        margin-bottom: 32px;
-    }
-
-    &__wrapper .art__other--md {
-        padding-top: 1px;
-        margin-top: 32px;
-    }
-
 }
 
-.swiper-button-prev, .swiper-button-next{
+.art__curat--md {
+    max-width: 384px;
+    margin-bottom: 32px;
+}
+
+.swiper-button-prev, .swiper-button-next {
     color: #595450;
     top: -15px;
 }
 
 .swiper-button-prev:after, .swiper-button-next:after {
     content: "";
+}
+
+.art__other--md {
+    padding-top: 1px;
+    margin-top: 32px;
 }
 
 .art__other-ul-2 {

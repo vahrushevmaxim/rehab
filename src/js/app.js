@@ -6,4 +6,6 @@ import "./modules/faq.js";
 import "./modules/sliders.js";
 import "./modules/tabs.js";
 import "./modules/department-slider.js";
+import "./modules/department-cardTabs.js";
+import "./modules/department-cardHeading.js";
 

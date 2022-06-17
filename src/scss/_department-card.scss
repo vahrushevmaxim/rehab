@@ -1,0 +1,142 @@
+.department-card {
+
+    &__wrapper {
+        padding-top: 96px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__title {
+        max-width: 768px;
+        font-weight: 300;
+        font-size: 32px;
+        line-height: 42px;
+        color: #211E1C;
+        margin-bottom: 30px;
+    }
+
+    &__list-wrapper {
+        padding-left: 24px;
+        margin-bottom: 32px;
+    }
+
+    &__item {
+        position: relative;
+    }
+
+    &__item::before {
+        content: "";
+        display: inline-block;
+        background-color: #211E1C;
+        border-radius: 50%;
+        width: 3px;
+        height: 3px;
+        position: absolute;
+        top: 13px;
+        left: -14px;
+    }
+
+    &__link {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 30px;
+        color: #211E1C;
+    }
+
+    &__paragraph {
+        max-width: 832px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 32px;
+        color: #211E1C;
+        margin-bottom: 32px;
+    }
+
+    &__image {
+        max-width: 832px;
+        margin-bottom: 32px;
+    }
+
+    &__image img {
+        width: 100%;
+        object-fit: cover;
+        border-radius: 8px;
+    }
+
+    &__elements {
+        max-width: 832px;
+    }
+
+    &__element {
+        background-color: #F6F2EE;
+        border-radius: 8px;
+        padding: 32px 32px 32px 32px;
+        cursor: pointer;
+    }
+
+    &__element:not(:last-child) {
+        margin-bottom: 8px;
+    }
+
+    .shoy {
+        background: linear-gradient(180deg, #F6F2EE 10.26%, rgba(246, 242, 238, 0) 100%);
+        margin-bottom: 0;
+    }
+
+    .shoy svg {
+        transform: rotate(-90deg); 
+    }
+
+    &__flex {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__pointer {
+        background-color: #FFFFFF;
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+    }
+
+    &__pointer svg {
+        width: 12px;
+        height: 12px;
+        transform: rotate(90deg);
+        transition: all .2s linear;
+    }
+
+    &__text {
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 30px;
+        color: #211E1C;
+    }
+
+    &__description {
+        max-width: 768px;
+        margin: 0;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 24px;
+        color: #211E1C;
+        display: none; 
+    }
+
+    &__description::before {
+        content: "";
+        display: block;
+        width: 64px;
+        height: 4px;
+        background-color: #DDCF49;
+        margin: 16px 0 20px 0;
+    }
+
+    .active {
+        display: block;   
+    }
+}
