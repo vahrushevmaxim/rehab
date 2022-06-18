@@ -50,16 +50,6 @@
         box-shadow: inset 0px 5px 0px rgba(0, 0, 0, 0.08);
     }
 
-    .prev--md {
-        left: 0;
-        transform: rotate(180deg); 
-        background-color: #F8DFB6;
-    }
-
-    .next--md {
-        right: 0;   
-    }
-
     &__arrow img {
         width: 19px;
         height: 19px;
@@ -142,5 +132,14 @@
         font-size: 15px;
         color: #595450;
     }
+}
 
+.prev--md {
+    left: 0;
+    transform: rotate(180deg); 
+    background-color: #F8DFB6;
+}
+
+.next--md {
+    right: 0;   
 }

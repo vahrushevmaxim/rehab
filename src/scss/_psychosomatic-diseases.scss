@@ -1,0 +1,72 @@
+.psychosomatic-diseases {
+
+    &__wrapper {
+        display: flex;
+        padding-bottom: 96px;
+    }
+
+    .psychosomatic-diseases--md {
+        margin-bottom: 40px;
+    }
+
+    &__title-1 {
+        font-weight: 300;
+        font-size: 32px;
+        line-height: 36px;
+        color: #211E1C;
+        margin-bottom: 40px;
+    }
+
+    &__subtitle {
+        max-width: 832px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 32px;
+        color: #211E1C;
+        margin: 0 0 35px 0;
+    }
+
+    &__title-2 {
+        max-width: 800px;
+        font-weight: 300;
+        font-size: 32px;
+        line-height: 36px;
+        color: #211E1C;
+        margin-bottom: 32px;
+    }
+
+    &__list {
+        padding-left: 25px;
+        margin-bottom: 40px;
+    }
+
+    &__list-item {
+        max-width: 832px;
+        list-style-type: decimal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 28px;
+        color: #211E1C;
+    }
+
+    &__title-3 {
+        max-width: 832px;
+        font-weight: 300;
+        font-size: 32px;
+        line-height: 36px;
+        color: #211E1C;
+        margin-bottom: 28px;
+    }
+
+    .art__items-box {
+        justify-content: flex-start;
+    }
+
+    .art__left {
+        padding-top: 64px;
+    }
+
+    .art__curat--md {
+        margin-bottom: 0;
+    }
+}

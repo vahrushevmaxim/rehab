@@ -1,0 +1,88 @@
+.diagnosis-symptoms {
+
+    &__wrapper {
+        padding: 25px 0 80px 0;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__list-wrapper {
+        flex: 0 1 64%;
+    }
+
+    &__title-wrapper {
+        padding-left: 32px;
+        background: linear-gradient(180deg, #F6F2EE 0%, rgba(246, 242, 238, 0) 100%);
+        border-radius: 4px 4px 0px 0px;
+        background-position-y: 63px;
+        margin-bottom: 60px;  
+    }
+
+    &__title {
+        font-family: 'Palatino Linotype';
+        font-weight: 400;
+        font-size: 161px;
+        line-height: 112px;
+        color: #211E1C;
+    }
+
+    &__list:not(:last-child) {
+        margin-bottom: 25px;
+    }
+
+    &__item {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 27px;
+        color: #211E1C;  
+        display: flex;
+        align-items: center;
+    }
+
+    &__item::before {
+        content: "";
+        display: inline-block;
+        width: 4px;
+        height: 4px;
+        background-color: #211E1C;
+        border-radius: 50%; 
+        margin-right: 10px;
+    }
+
+    &__link {
+        text-decoration: underline;
+    }
+
+    &__right {
+        padding-top: 62px;  
+    }
+}
+
+.diagn__alph--md {
+    max-width: 412px;
+    width: 100%;
+    background-color: #F6F2EE;
+    padding: 32px 32px;
+    margin-bottom: 32px;
+}
+
+.diagn__alph-heading--md {
+    font-weight: 300;
+    font-size: 26px;
+    line-height: 24px;
+    color: #211E1C;
+}
+
+.diagn__letter-link--md {
+    background-color: #A1C74F;
+    color: #FFFFFF;
+}
+
+.art__curat--md {
+    max-width: 412px;
+}
+
+.wrp-art--md {
+    max-width: 412px;
+}

@@ -27,23 +27,5 @@ document.addEventListener('DOMContentLoaded', function () {
           type: 'fraction',
       },
       });
-  }
-
-  if (document.querySelector('.art__inner')) {
-    const swiper2 = new Swiper('.art__inner', {
-      loop:true,
-      watchOverflow: true, // Если слайдов меньше чем указано в slidesPerView, слайдер отключится
-      navigation: {
-        nextEl: '.art__next',
-        prevEl: '.art__prev',
-      },
-
-      pagination: {
-        el: '.art__count',
-        type: 'fraction',
-    },
-    });
-}
-
-    
+  }  
 });

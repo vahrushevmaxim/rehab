@@ -1344,7 +1344,7 @@ body a {
 }
 .art__count {
   position: absolute;
-  top: 164px;
+  top: 162px;
   right: 11px;
   width: 32px;
   height: 32px;
@@ -4462,13 +4462,14 @@ button.swiper-pagination-bullet {
   line-height: 18px;
   color: #000000;
 }
-.department-slider__wrapper .wrp-art--md {
-  max-width: 384px;
-}
 
 .art__curat--md {
   max-width: 384px;
   margin-bottom: 32px;
+}
+
+.wrp-art--md {
+  max-width: 384px;
 }
 
 .swiper-button-prev, .swiper-button-next {
@@ -4827,14 +4828,6 @@ button.swiper-pagination-bullet {
   background-color: #F1AC34;
   box-shadow: inset 0px 5px 0px rgba(0, 0, 0, 0.08);
 }
-.heading-card .prev--md {
-  left: 0;
-  transform: rotate(180deg);
-  background-color: #F8DFB6;
-}
-.heading-card .next--md {
-  right: 0;
-}
 .heading-card__arrow img {
   width: 19px;
   height: 19px;
@@ -4905,6 +4898,16 @@ button.swiper-pagination-bullet {
 .heading-card .heading__bread-name {
   font-size: 15px;
   color: #595450;
+}
+
+.prev--md {
+  left: 0;
+  transform: rotate(180deg);
+  background-color: #F8DFB6;
+}
+
+.next--md {
+  right: 0;
 }
 
 @media (max-width: 1344px) {
@@ -5019,5 +5022,276 @@ button.swiper-pagination-bullet {
 
   .heading-card .heading__bread-name {
     display: none;
+  }
+}
+.diagnosis-symptoms__wrapper {
+  padding: 25px 0 80px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.diagnosis-symptoms__list-wrapper {
+  flex: 0 1 64%;
+}
+.diagnosis-symptoms__title-wrapper {
+  padding-left: 32px;
+  background: linear-gradient(180deg, #F6F2EE 0%, rgba(246, 242, 238, 0) 100%);
+  border-radius: 4px 4px 0px 0px;
+  background-position-y: 63px;
+  margin-bottom: 60px;
+}
+.diagnosis-symptoms__title {
+  font-family: "Palatino Linotype";
+  font-weight: 400;
+  font-size: 161px;
+  line-height: 112px;
+  color: #211E1C;
+}
+.diagnosis-symptoms__list:not(:last-child) {
+  margin-bottom: 25px;
+}
+.diagnosis-symptoms__item {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27px;
+  color: #211E1C;
+  display: flex;
+  align-items: center;
+}
+.diagnosis-symptoms__item::before {
+  content: "";
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  background-color: #211E1C;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.diagnosis-symptoms__link {
+  text-decoration: underline;
+}
+.diagnosis-symptoms__right {
+  padding-top: 62px;
+}
+
+.diagn__alph--md {
+  max-width: 412px;
+  width: 100%;
+  background-color: #F6F2EE;
+  padding: 32px 32px;
+  margin-bottom: 32px;
+}
+
+.diagn__alph-heading--md {
+  font-weight: 300;
+  font-size: 26px;
+  line-height: 24px;
+  color: #211E1C;
+}
+
+.diagn__letter-link--md {
+  background-color: #A1C74F;
+  color: #FFFFFF;
+}
+
+.art__curat--md {
+  max-width: 412px;
+}
+
+.wrp-art--md {
+  max-width: 412px;
+}
+
+@media (max-width: 1344px) {
+  .diagnosis-symptoms__list-wrapper {
+    flex: 0 1 54%;
+  }
+}
+@media (max-width: 1024px) {
+  .diagnosis-symptoms__wrapper {
+    flex-direction: column;
+  }
+
+  .diagn__alph--md {
+    max-width: 100%;
+  }
+
+  .art__curat--md {
+    max-width: 100%;
+  }
+
+  .wrp-art--md {
+    max-width: 100%;
+  }
+}
+@media (max-width: 576px) {
+  .diagn__alph--md {
+    background-color: #fff;
+  }
+}
+.heading__wrapper--md {
+  display: block;
+  padding: 52px 0 23px 0;
+}
+
+.heading__header--md {
+  font-size: 42px;
+  padding-bottom: 56px;
+  line-height: 38px;
+}
+
+@media (max-width: 1024px) {
+  .heading__header--md {
+    font-size: 28px;
+  }
+
+  .heading__views--md {
+    display: block;
+  }
+}
+@media (max-width: 576px) {
+  .heading__header--md {
+    font-size: 22px;
+  }
+
+  .heading__views--md {
+    display: none;
+  }
+}
+.psychosomatic-diseases__wrapper {
+  display: flex;
+  padding-bottom: 96px;
+}
+.psychosomatic-diseases .psychosomatic-diseases--md {
+  margin-bottom: 40px;
+}
+.psychosomatic-diseases__title-1 {
+  font-weight: 300;
+  font-size: 32px;
+  line-height: 36px;
+  color: #211E1C;
+  margin-bottom: 40px;
+}
+.psychosomatic-diseases__subtitle {
+  max-width: 832px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: #211E1C;
+  margin: 0 0 35px 0;
+}
+.psychosomatic-diseases__title-2 {
+  max-width: 800px;
+  font-weight: 300;
+  font-size: 32px;
+  line-height: 36px;
+  color: #211E1C;
+  margin-bottom: 32px;
+}
+.psychosomatic-diseases__list {
+  padding-left: 25px;
+  margin-bottom: 40px;
+}
+.psychosomatic-diseases__list-item {
+  max-width: 832px;
+  list-style-type: decimal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #211E1C;
+}
+.psychosomatic-diseases__title-3 {
+  max-width: 832px;
+  font-weight: 300;
+  font-size: 32px;
+  line-height: 36px;
+  color: #211E1C;
+  margin-bottom: 28px;
+}
+.psychosomatic-diseases .art__items-box {
+  justify-content: flex-start;
+}
+.psychosomatic-diseases .art__left {
+  padding-top: 64px;
+}
+.psychosomatic-diseases .art__curat--md {
+  margin-bottom: 0;
+}
+
+@media (max-width: 1344px) {
+  .psychosomatic-diseases__wrapper-text {
+    max-width: 544px;
+  }
+}
+@media (max-width: 1024px) {
+  .psychosomatic-diseases__wrapper {
+    flex-direction: column;
+    padding-bottom: 50px;
+  }
+
+  .heading-card__arrow {
+    bottom: 16px;
+  }
+
+  .prev--md {
+    left: auto;
+    right: 74px;
+  }
+
+  .psychosomatic-diseases__wrapper-text {
+    max-width: 100%;
+  }
+
+  .art__other-ul {
+    display: block;
+  }
+}
+@media (max-width: 576px) {
+  .psychosomatic-diseases__wrapper {
+    padding-bottom: 0;
+  }
+
+  .psychosomatic-diseases .psychosomatic-diseases--md {
+    margin-bottom: 32px;
+  }
+
+  .psychosomatic-diseases__title-1 {
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 16px;
+  }
+
+  .psychosomatic-diseases__subtitle {
+    font-size: 15px;
+    line-height: 28px;
+    margin-bottom: 25px;
+  }
+
+  .psychosomatic-diseases__title-2 {
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 16px;
+  }
+
+  .psychosomatic-diseases__list {
+    margin-bottom: 24px;
+  }
+
+  .psychosomatic-diseases__list-item {
+    font-size: 15px;
+    line-height: 24px;
+  }
+
+  .psychosomatic-diseases__list-item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  .psychosomatic-diseases__title-3 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .psychosomatic-diseases .art__left {
+    padding-top: 0;
   }
 }
