@@ -5295,3 +5295,234 @@ button.swiper-pagination-bullet {
     padding-top: 0;
   }
 }
+.children__wrapper {
+  padding-top: 96px;
+  display: flex;
+  justify-content: space-between;
+}
+.children__contents {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 32px;
+}
+.children__title {
+  font-weight: 300;
+  font-size: 40px;
+  line-height: 46px;
+  color: #211E1C;
+  margin-bottom: 32px;
+  padding-top: 9px;
+}
+.children__list {
+  padding-left: 10px;
+}
+.children__list-item {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: #211E1C;
+  display: flex;
+  align-items: center;
+}
+.children__list-item:not(:last-child) {
+  margin-bottom: 10px;
+}
+.children__list-item::before {
+  content: "";
+  display: inline-block;
+  width: 3px;
+  height: 3px;
+  background-color: #211E1C;
+  border-radius: 50%;
+  margin-right: 9px;
+}
+.children__image {
+  width: 512px;
+  height: 320px;
+}
+.children__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.children__paragraph {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: #211E1C;
+  max-width: 832px;
+  margin: 0 0 32px 0;
+}
+.children__call-wrapper {
+  margin-bottom: 32px;
+  background: linear-gradient(180deg, #7f8070 0%, #9e958d 0.01%, #595450 100%);
+}
+.children .art__call {
+  background-image: url(../img/children-bg.svg);
+  background-repeat: no-repeat;
+  background-position: 350px;
+}
+.children__problems {
+  background: linear-gradient(180deg, #F6F2EE 0%, rgba(246, 242, 238, 0) 100%);
+  border-radius: 4px 4px 0px 0px;
+  padding: 40px 40px;
+  max-width: 832px;
+}
+.children__problems-title {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: #211E1C;
+  max-width: 717px;
+  margin-bottom: 16px;
+}
+.children__problems-wrapper {
+  display: flex;
+  margin-bottom: 24px;
+}
+.children__problems-list:not(:last-child) {
+  margin-right: 62px;
+}
+.children__problems-item {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 30px;
+  color: #211E1C;
+  display: flex;
+  align-items: center;
+  height: 32px;
+}
+.children__problems-item::before {
+  content: "";
+  background-image: url(../img/children-arrow.svg);
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 6px;
+  height: 12px;
+  margin-right: 12px;
+}
+.children__problems-link:hover {
+  border-bottom: 1px solid rgba(89, 84, 80, 0.16);
+}
+.children__problems-link:active {
+  border-bottom: 1px solid rgba(89, 84, 80, 0.32);
+}
+.children__problems-btn {
+  padding: 11px 24px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+  color: #211E1C;
+  border: 2px solid #A1C74F;
+  border-radius: 24px;
+  max-width: 227px;
+  height: 48px;
+  width: 100%;
+  cursor: pointer;
+  background-color: #FFFFFF;
+  text-align: center;
+  transition: 0.3s linear;
+}
+.children__problems-btn:hover {
+  background-color: #DFECC2;
+}
+.children__problems-btn:active {
+  background-color: #A1C74F;
+}
+
+@media (max-width: 1344px) {
+  .children__wrapper {
+    padding-top: 64px;
+  }
+
+  .children__contents {
+    flex-direction: column;
+  }
+
+  .children__title {
+    padding-top: 0;
+  }
+
+  .children__image {
+    order: -1;
+    width: 543px;
+    height: 320px;
+    margin-bottom: 40px;
+  }
+
+  .children__call-wrapper {
+    max-width: 544px;
+  }
+
+  .children .art__call {
+    background-position: 268px;
+  }
+
+  .children__problems-list--md-3 {
+    display: none;
+  }
+}
+@media (max-width: 1024px) {
+  .children__wrapper {
+    flex-direction: column;
+    padding-bottom: 76px;
+  }
+
+  .children__image {
+    width: 100%;
+    height: 288px;
+  }
+
+  .children__problems {
+    padding: 32px 32px;
+  }
+
+  .children__problems-list--md-2 {
+    display: none;
+  }
+
+  .children__problems-btn {
+    max-width: 100%;
+  }
+}
+@media (max-width: 576px) {
+  .children__wrapper {
+    padding-bottom: 0;
+    padding-top: 0;
+  }
+
+  .children__contents {
+    margin-bottom: 20px;
+  }
+
+  .children__title {
+    font-size: 32px;
+    line-height: 36px;
+    margin-bottom: 15px;
+  }
+
+  .children__list-item {
+    font-size: 15px;
+    line-height: 18px;
+  }
+
+  .children__image {
+    margin-bottom: 19px;
+  }
+
+  .children__paragraph {
+    font-size: 15px;
+    line-height: 26px;
+  }
+
+  .children__problems-title {
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .children__problems-item {
+    font-size: 15px;
+    line-height: 28px;
+  }
+}
