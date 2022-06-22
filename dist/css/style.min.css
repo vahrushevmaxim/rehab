@@ -5569,3 +5569,204 @@ button.swiper-pagination-bullet {
     line-height: 28px;
   }
 }
+.psychiatry__information-wrapper {
+  background-color: #F7F2EE;
+  border-top: 1px solid #eee5dc;
+}
+.psychiatry__information-tabs {
+  padding: 12px 0;
+}
+.psychiatry__tab {
+  border: none;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #211E1C;
+  background-color: transparent;
+  cursor: pointer;
+  max-width: 100%;
+  padding: 0;
+}
+.psychiatry__tab--md {
+  background-color: #ffff;
+  text-align: center;
+  padding: 0 12px;
+  margin-left: 43px;
+}
+.psychiatry__arrow {
+  display: none;
+  width: 24px;
+  height: 24px;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+}
+.psychiatry__arw {
+  width: 8px;
+  height: 5px;
+}
+.psychiatry__wrapper {
+  padding: 96px 0 70px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.psychiatry__top {
+  display: flex;
+  margin-bottom: 32px;
+  max-width: 832px;
+}
+.psychiatry__paragraph {
+  font-size: 16px;
+  line-height: 32px;
+  font-weight: 400;
+  color: #211E1C;
+  margin: 0 0 40px 0;
+}
+.psychiatry__paragraph--md {
+  max-width: 288px;
+  padding-top: 20px;
+  margin: 0 32px 0 0;
+}
+.psychiatry__image {
+  width: 512px;
+  height: 320px;
+}
+.psychiatry__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.psychiatry__paragraph-wrapper {
+  max-width: 832px;
+}
+.psychiatry__paragraph-bold {
+  font-weight: 700;
+}
+.psychiatry .diagn__alph {
+  width: 765px;
+}
+
+@media (max-width: 1344px) {
+  .psychiatry__wrapper-inner {
+    max-width: 544px;
+  }
+
+  .psychiatry__top {
+    flex-direction: column;
+  }
+
+  .psychiatry__paragraph--md {
+    max-width: 100%;
+    margin: 0;
+  }
+
+  .psychiatry__image {
+    order: -1;
+    width: 100%;
+    height: 352px;
+  }
+
+  .psychiatry__paragraph-wrapper {
+    max-width: 544px;
+  }
+
+  .children__problems-list:not(:last-child) {
+    margin-right: 47px;
+  }
+}
+@media (max-width: 1024px) {
+  .psychiatry__information-wrapper {
+    background-color: #FFFFFF;
+    border-top: none;
+    padding-top: 32px;
+    margin-bottom: 40px;
+  }
+
+  .psychiatry__information-tabs {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    max-width: 100%;
+    align-items: center;
+  }
+
+  .psychiatry__tab {
+    padding: 12px 20px;
+    background-color: #F6F2EE;
+    height: 48px;
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+    border-radius: 4px 4px 0px 0px;
+  }
+
+  .psychiatry__tab--md {
+    margin-left: 0;
+    border-top: 1px solid #eee5dc;
+    background: linear-gradient(180deg, #F7F2EE 0%, rgba(247, 242, 238, 0.56) 100%);
+  }
+
+  .psychiatry__arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .psychiatry__wrapper {
+    flex-direction: column;
+    padding: 0 0 70px 0;
+  }
+
+  .psychiatry__wrapper-inner {
+    max-width: 100%;
+  }
+
+  .psychiatry__paragraph-wrapper {
+    max-width: 100%;
+  }
+
+  .children__problems {
+    margin-bottom: 20px;
+  }
+
+  .psychiatry .diagn__alph {
+    margin-bottom: 35px;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .diagn__letter-link--md {
+    background-color: #a1c74f;
+  }
+}
+@media (max-width: 576px) {
+  .psychiatry__tab {
+    width: 100%;
+    max-width: 380px;
+  }
+
+  .psychiatry__wrapper {
+    padding: 0;
+  }
+
+  .psychiatry__top {
+    margin-bottom: 17px;
+  }
+
+  .psychiatry__image {
+    height: auto;
+  }
+
+  .psychiatry__paragraph {
+    font-size: 15px;
+    line-height: 26px;
+  }
+
+  .psychiatry__paragraph {
+    margin: 0 0 20px 0;
+  }
+
+  .art__left {
+    margin-top: 0;
+    gap: 32px;
+  }
+}
