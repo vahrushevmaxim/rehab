@@ -1,0 +1,29 @@
+@media (max-width: 1344px) {
+    .diagnosis-symptoms__list-wrapper {
+        flex: 0 1 54%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .diagnosis-symptoms__wrapper {
+        flex-direction: column;
+    }
+    
+    .diagn__alph--md {
+        max-width: 100%;
+    }
+
+    .art__curat--md {
+        max-width: 100%;
+    }
+
+    .wrp-art--md {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .diagn__alph--md {
+        background-color: #fff;
+    }
+}

@@ -1,0 +1,19 @@
+@media (max-width: 1024px) {
+    .heading__header--md {
+        font-size: 28px;
+    }
+
+    .heading__views--md {
+        display: block;
+    }
+}
+
+@media (max-width: 576px) {
+    .heading__header--md {
+        font-size: 22px;
+    }
+
+    .heading__views--md {
+        display: none;
+    }
+}
