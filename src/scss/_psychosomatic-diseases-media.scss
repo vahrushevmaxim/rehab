@@ -1,0 +1,80 @@
+@media (max-width: 1344px) {
+    .psychosomatic-diseases__wrapper-text {
+        max-width: 544px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .psychosomatic-diseases__wrapper {
+        flex-direction: column;
+        padding-bottom: 50px;
+    }
+
+    .heading-card__arrow {
+        bottom: 16px;
+    }
+
+    .prev--md {
+        left: auto;
+        right: 74px;
+    }
+
+    .psychosomatic-diseases__wrapper-text {
+        max-width: 100%;
+    }
+
+    .art__other-ul {
+        display: block;
+    }
+}
+
+@media (max-width: 576px) {
+    .psychosomatic-diseases__wrapper {
+        padding-bottom: 0;
+    }
+
+    .psychosomatic-diseases .psychosomatic-diseases--md  {
+        margin-bottom: 32px;
+    }
+
+    .psychosomatic-diseases__title-1 {
+        font-size: 24px;
+        line-height: 32px;
+        margin-bottom: 16px;
+    }
+
+    .psychosomatic-diseases__subtitle {
+        font-size: 15px;
+        line-height: 28px;
+        margin-bottom: 25px;
+    }
+
+    .psychosomatic-diseases__title-2 {
+        font-size: 24px;
+        line-height: 32px;
+        margin-bottom: 16px;
+    }
+
+    .psychosomatic-diseases__list {
+        margin-bottom: 24px;
+    }
+
+    .psychosomatic-diseases__list-item {
+        font-size: 15px;
+        line-height: 24px;
+    }
+
+    .psychosomatic-diseases__list-item:not(:last-child) {
+        margin-bottom: 10px;
+    }
+
+    .psychosomatic-diseases__title-3 {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .psychosomatic-diseases .art__left {
+        padding-top: 0;
+    }
+
+}
