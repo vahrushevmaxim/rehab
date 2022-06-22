@@ -1,0 +1,93 @@
+.psychiatry {
+
+    &__information-wrapper {
+        background-color: #F7F2EE;
+        border-top: 1px solid #eee5dc;
+    }
+
+    &__information-tabs {
+        padding: 12px 0;
+    }
+
+    &__tab {
+        border: none;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 24px;
+        color: #211E1C;
+        background-color: transparent;
+        cursor: pointer;
+        max-width: 100%;
+        padding: 0;
+    }
+
+    &__tab--md {
+        background-color: #ffff;
+        text-align: center;
+        padding: 0 12px;
+        margin-left: 43px;
+    }
+
+    &__arrow {
+        display: none;
+        width: 24px;
+        height: 24px;
+        background-color: #FFFFFF;
+        border-radius: 50%;
+    }
+
+    &__arw {
+        width: 8px;
+        height: 5px;
+    }
+
+    &__wrapper {
+        padding:  96px 0 70px 0;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__top {
+        display: flex;
+        margin-bottom: 32px;
+        max-width: 832px;
+    }
+
+    &__paragraph {
+        font-size: 16px;
+        line-height: 32px;
+        font-weight: 400;
+        color: #211E1C;
+        margin: 0 0 40px 0;
+    }
+
+    &__paragraph--md {
+        max-width: 288px;
+        padding-top: 20px;
+        margin: 0 32px 0 0;
+    }
+
+    &__image {
+        width: 512px;
+        height: 320px;
+    }
+
+    &__image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    &__paragraph-wrapper {
+        max-width: 832px;
+    }
+
+    &__paragraph-bold {
+        font-weight: 700;
+    }
+
+    .diagn__alph {
+        width: 765px;
+    }
+
+}
