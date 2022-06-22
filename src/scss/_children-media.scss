@@ -1,0 +1,98 @@
+@media (max-width: 1344px) {
+    .children__wrapper {
+        padding-top: 64px;
+    }
+
+    .children__contents {
+        flex-direction: column;
+    }
+
+    .children__title {
+        padding-top: 0;
+    }
+
+    .children__image {
+        order: -1;
+        width: 543px;
+        height: 320px;
+        margin-bottom: 40px;
+    }
+
+    .children__call-wrapper {
+        max-width: 544px;
+    }
+
+    .children .art__call {
+        background-position: 268px;
+    }
+
+    .children__problems-list--md-3 {
+        display: none;
+    }
+}
+
+@media (max-width: 1024px) {
+    .children__wrapper {
+        flex-direction: column;
+        padding-bottom: 76px;
+    }
+
+    .children__image {
+        width: 100%;
+        height: 288px;
+    }
+
+    .children__problems {
+        padding: 32px 32px;
+    }
+
+    .children__problems-list--md-2 {
+        display: none;
+    }
+
+    .children__problems-btn {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .children__wrapper {
+        padding-bottom: 0;
+        padding-top: 0;
+    }
+
+    .children__contents {
+        margin-bottom: 20px;
+    }
+
+    .children__title {
+        font-size: 32px;
+        line-height: 36px;
+        margin-bottom: 15px;
+    }
+
+    .children__list-item {
+        font-size: 15px;
+        line-height: 18px;
+    }
+
+    .children__image {
+        margin-bottom: 19px;
+    } 
+
+    .children__paragraph {
+        font-size: 15px;
+        line-height: 26px;
+    }
+
+    .children__problems-title {
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    .children__problems-item {
+        font-size: 15px;
+        line-height: 28px;
+    }
+
+}

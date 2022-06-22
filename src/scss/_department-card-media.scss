@@ -1,0 +1,75 @@
+@media (max-width: 1344px) {
+    .department-card__inner {
+        margin-right: 35px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .department-card__wrapper {
+        flex-direction: column;
+    }
+
+    .department-card__inner {
+        margin: 0 0 32px 0;  
+    }
+
+    .department-card__text {
+        font-weight: 500;
+    }
+
+    .art__curat--md {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .department-card__wrapper {
+        padding-top: 32px;
+    }
+
+    .department-card__title {
+        font-size: 24px;
+        line-height: 32px;;
+    }
+
+    .department-card__list-wrapper {
+        margin-bottom: 20px;
+    }
+
+    .department-card__item:not(:last-child) {
+        margin-bottom: 10px;
+    }
+
+    .department-card__item::before {
+        top: 7px;
+    }
+
+    .department-card__link {
+        font-size: 15px;
+       line-height: 18px;
+    }
+    
+    .department-card__paragraph {
+        font-size: 15px;
+        line-height: 28px;
+        margin-bottom: 25px;
+    }
+
+    .department-card__element:not(:last-child) {
+        margin-bottom: 2px;
+    }
+
+    .shoy {
+        background-color: #F6F2EE;
+    }
+
+    .department-card__text {
+        font-size: 15px;
+        line-height: 19px;
+    }
+
+    .department-card__description {
+        font-size: 13px;
+        line-height: 22px;
+    }  
+}

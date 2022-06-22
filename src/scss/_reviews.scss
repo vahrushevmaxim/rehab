@@ -1,0 +1,136 @@
+.main-wrapper {
+    padding-top: 90px;
+}
+
+.reviews {
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__buttons {
+        height: 64px;
+        display: flex;
+        align-items: flex-end;
+        gap: 4px;
+    }
+    
+    &__btn {
+        padding: 20px 62px;
+        background-color: #EEE5DC;
+        max-width: 275px;
+        text-align: center;
+        border-radius: 8px 8px 0px 0px;
+        color: #211E1C;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 18px;
+        border: none;
+        cursor: pointer;
+        height: 56px;
+        width: 100%;
+        transition: .3s linear;
+    }
+
+    & .active {
+        height: 64px;
+        background-color: #F6F2EE;
+        padding-top: 28px;
+    }
+
+    &__card {
+        border-radius: 0px 0px 8px 8px;
+        background-color: #F6F2EE;
+        padding: 33px 32px 40px 32px;
+        max-width: 832px;
+        display: none;
+    }
+
+    & .shoy {
+        display: block;
+    }
+
+    &__card-item {
+        background: linear-gradient(180deg, #FFFFFF 10.26%, rgba(255, 255, 255, 0) 100%);
+        border-radius: 8px;
+        padding: 32px 32px;
+    }
+
+    &__text {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__name {
+        position: relative;
+        padding-left: 20px;
+        display: flex;
+        align-items: center;
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 32px;
+        color: #211E1C;
+    }
+
+    &__name::before {
+        content: "";
+        display: inline-block;
+        height: 4px;
+        width: 32px;
+        background-color: #DDCF49;
+        transform: rotate(-90deg);
+        position: absolute;
+        left: -12px;
+        
+    }
+
+    &__date {
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 32px;    
+        color: #595450;    
+    }
+
+    &__paragraph {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 28px;
+        color: #211E1C;
+        max-width: 704px;
+    }
+
+    &__btn-wrapper {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__btn-green {
+        padding: 15px 45px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;    
+        letter-spacing: 0.02em;
+        color: #211E1C;
+        max-width: 232px;   
+        cursor: pointer;
+        border: 2px solid #A1C74F;
+        border-radius: 28px; 
+        text-align: center;
+        background-color: transparent;
+        height: 56px;
+    }
+
+    &__btn-green:hover {
+        background-color: #DFECC2;
+    }
+
+    &__btn-green:active {
+        background-color: #A1C74F;
+    }
+
+    & .other-v {
+        padding-top: 31px;
+    }
+
+}
