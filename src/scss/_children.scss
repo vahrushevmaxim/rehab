@@ -73,12 +73,6 @@
         background: linear-gradient(180deg, #7f8070 0%, #9e958d 0.01%, #595450 100%); 
     }
 
-    .art__call {
-        background-image: url(../img/children-bg.svg);
-        background-repeat: no-repeat;
-        background-position: 350px;
-    }
-
     &__problems {
         background: linear-gradient(180deg, #F6F2EE 0%, rgba(246, 242, 238, 0) 100%);
         border-radius: 4px 4px 0px 0px;
@@ -157,4 +151,10 @@
     &__problems-btn:active {
         background-color: #A1C74F;
     }
+}
+
+.art__call {
+    background-image: url(../img/children-bg.svg);
+    background-repeat: no-repeat;
+    background-position: 350px;
 }
