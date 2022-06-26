@@ -1,0 +1,29 @@
+@media (max-width: 1024px) {
+    .heading__header {
+        font-size: 28px;
+    }
+
+    .heading__bottom {
+        flex-direction: column;
+        padding-top: 20px;
+    }
+
+    .heading__info {
+        order: -1;
+        border-bottom: 2px solid #eee5dc;
+        padding-bottom: 20px;
+        justify-content: space-between;
+        margin-bottom: 16px;
+    }
+
+    .heading__date {
+        display: block;
+    }
+}
+
+@media (max-width: 576px) {
+    .heading__header {
+        font-size: 20px;
+    }
+
+}

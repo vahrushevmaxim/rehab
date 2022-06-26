@@ -9,4 +9,5 @@ import "./modules/department-slider.js";
 import "./modules/department-cardTabs.js";
 import "./modules/department-cardHeading.js";
 import "./modules/dependencies-tabs.js";
+import "./modules/news-card.js";
 

@@ -1,0 +1,308 @@
+.news-card {
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 96px;
+    }
+
+    &__image-1 {
+        max-width: 832px;
+        margin-bottom: 32px;
+    }
+
+    &__img-1 {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+        border-radius: 4px;
+    }
+
+    &__paragraph {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 32px;
+        color: #211E1C;
+        max-width: 832px;
+        margin-top: 0;
+    }
+
+    &__image-2 {
+        max-width: 832px;
+    }
+
+    &__img-2 {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+        border-radius: 4px;
+    }
+
+    &__column-right {
+        padding: 32px 34px;
+        max-width: 384px;
+        background-color: #F6F2EE;
+        border-radius: 4px;
+        margin-bottom: 32px;
+    }
+
+    &__column-title-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    &__column-title {
+        font-weight: 300;
+        font-size: 26px;
+        line-height: 24px;
+        color: #211E1C;
+    }
+
+    &__column-news {
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 13px;
+        letter-spacing: 0.04em;
+        color: #595450;
+    }
+
+    &__column-items {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__column-item:not(:last-child) {
+        margin-bottom: 20px;
+    }
+
+    &__column-item-wrapper {
+        max-width: 317px;
+        margin-bottom: 12px;
+    }
+
+    &__column-item-img {
+        max-width: 317px;
+        width: 100%;
+        height: 100%;
+        display: block;
+        object-fit: cover;
+    }
+
+    &__column-item-title {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+        color: #211E1C;
+        margin-bottom: 8px;
+    }
+
+    &__column-item-date {
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 15px;
+        color: #9EC650;
+    }
+
+    &__column-item-link-1 {
+        display: none;
+    }
+
+    &__column-item-link-2 {
+        display: none;
+    }
+
+    &__column-item-link-3 {
+        display: none;
+    }
+
+    &__slaider-mini-wrapper {
+        max-width: 384px;
+        padding: 32px 35px;
+        background-color: #F6F2EE;
+        border-radius: 4px;
+        position: relative;
+    }
+
+    &__slaider-mini-title-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 16px;
+    }
+
+    &__slaider-mini-title {
+        font-weight: 300;
+        font-size: 26px;
+        line-height: 24px;
+        color: #211E1C;
+    }
+
+    &__slaider-mini-nav {
+        display: flex;
+    }
+
+    &__slaider-mini-nav-wrapper {
+        width: 32px;
+        height: 32px;
+        background-color: #FDB942;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__slaider-mini-nav-wrapper:not(:last-child) {
+        margin-right: 5px;
+    }
+
+    &__slaider-mini-nav-arrow {
+        width: 11px;
+        height: 11px;
+    }
+
+    &__slaider-mini-items {
+        display: flex;
+    }
+
+    &__slaider-mini-item-wrapper {
+        max-width: 317px;
+        margin-bottom: 12px;
+    }
+
+    &__slaider-mini-item-img {
+        max-width: 317px;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+    }
+
+    &__slaider-mini-item-title {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+        color: #211E1C;
+        margin-bottom: 8px;
+    }
+
+    &__slaider-mini-item-date {
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 15px;
+        color: #9EC650;
+    }
+
+    &__slaider-mini-item-link-1 {
+        display: none;
+    }
+
+    &__slaider-mini-text {
+        position: absolute;
+        bottom: 69px;
+        right: -190px;
+    }
+
+    &__slaider-wrapper {
+        padding: 96px 0 104px 0;
+    }
+
+    &__slaider-wrapper-title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 32px;
+    }
+
+    &__slaider-title {
+        font-weight: 400;
+        font-size: 42px;
+        line-height: 46px;
+        letter-spacing: 0.02em;
+        color: #211E1C;
+    }
+
+    &__slaider-nav {
+        display: flex;
+    }
+
+    &__slaider-nav-wrapper {
+        width: 48px;
+        height: 48px;
+        background-color: #FDB942;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    &__slaider-nav-wrapper:not(:last-child) {
+        margin-right: 5px;
+    }
+
+    &__slaider-nav-wrapper:hover {
+        background-color: #F1AC34;
+    }
+
+    &__slaider-nav-wrapper:active {
+        box-shadow: inset 0px 4px 0px rgba(0, 0, 0, 0.08);
+    }
+
+    &__slaider-nav-arrow {
+        width: 15px;
+        height: 15px;
+    }
+
+    &__slaider-items {
+        display: flex;
+        justify-content: space-between;
+        gap: 32px;
+    }
+
+    &__slaider-item {
+        flex: 0 1 32%;
+    }
+
+    &__slaider-item-wrapper {
+        margin-bottom: 24px;
+    }
+
+    &__slaider-item-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+        border-radius: 4px;
+    }
+
+    &__slaider-item-title {
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 32px;
+        color: #211E1C;
+        margin-bottom: 16px;
+    }
+
+    &__slaider-item-footer {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__slaider-item-date {
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 15px;
+        color: #9EC650;
+    }
+
+    &__slaider-item-link {
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 15px;
+        color: rgba(89, 84, 80, 0.48);
+    }
+}
