@@ -19,6 +19,7 @@
 @media (max-width: 1024px) {
     .news-card__wrapper {
         flex-direction: column;
+        padding: 96px 0 30px 0;;
     }
 
     .news-card__left-main {
@@ -33,7 +34,7 @@
         margin: 0 auto;
     }
 
-    .news-card__slaider-wrapper {
+    .news-card__slaider-bg {
         display: none;
     }
 

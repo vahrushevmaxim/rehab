@@ -3,7 +3,7 @@
     &__wrapper {
         display: flex;
         justify-content: space-between;
-        padding-top: 96px;
+        padding: 96px 0 100px 0;
     }
 
     &__image-1 {
@@ -206,6 +206,11 @@
         right: -190px;
     }
 
+    &__slaider-bg {
+        background: linear-gradient(180deg, #F7F2EE 0%, rgba(247, 242, 238, 0) 100%);
+
+    }
+
     &__slaider-wrapper {
         padding: 96px 0 104px 0;
     }
@@ -240,6 +245,10 @@
         cursor: pointer;
     }
 
+    &__prev {
+        background-color: rgba(253, 185, 66, 0.32);;
+    }
+
     &__slaider-nav-wrapper:not(:last-child) {
         margin-right: 5px;
     }
@@ -260,11 +269,6 @@
     &__slaider-items {
         display: flex;
         justify-content: space-between;
-        gap: 32px;
-    }
-
-    &__slaider-item {
-        flex: 0 1 32%;
     }
 
     &__slaider-item-wrapper {

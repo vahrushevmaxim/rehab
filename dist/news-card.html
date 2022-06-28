@@ -99,7 +99,7 @@
                     <li class="nav__second-item"><a href="#" class="nav__second-link">Отзывы и истории пациентов</a></li>
                     <li class="nav__second-item"><a href="dependencies.html" class="nav__second-link">Лечение зависимостей</a></li>
                     <li class="nav__second-item"><a href="psychiatry.html" class="nav__second-link">Психиатрия</a></li>
-                    <li class="nav__second-item"><a href="children.html" class="nav__second-link">Отделение для подростков</a></li>
+                    <li class="nav__second-item"><a href="payment.html" class="nav__second-link">Оплата</a></li>
                     <li class="nav__second-item"><a href="news-card.html" class="nav__second-link">Новостная карточка</a></li>
                     <li class="nav__second-item"><a href="news.html" class="nav__second-link">Новости клиники</a></li>
                 </ul>
@@ -293,10 +293,10 @@
                     <div class="news-card__slaider-mini-title-wrapper">
                         <h2 class="news-card__slaider-mini-title">Смотрите также</h2>
                         <div class="news-card__slaider-mini-nav">
-                            <div class="news-card__slaider-mini-nav-wrapper">
+                            <div class="news-card__slaider-mini-nav-wrapper slaider-mini-prev">
                                 <img src="img/arrow-art-left.svg" alt="arrow" class="news-card__slaider-mini-nav-arrow">
                             </div>
-                            <div class="news-card__slaider-mini-nav-wrapper">
+                            <div class="news-card__slaider-mini-nav-wrapper slaider-mini-next">
                                 <img src="img/arrow-art-right.svg" alt="arrow"
                                     class="news-card__slaider-mini-nav-arrow">
                             </div>
@@ -324,74 +324,82 @@
                             </div>
                         </div>
                     </div>
-                    <img src="/img/news-card-3.svg" alt="надпись альтернативный вариант" class="news-card__slaider-mini-text">
+                    <img src="/img/news-card-3.svg" alt="надпись альтернативный вариант"
+                        class="news-card__slaider-mini-text">
                 </div>
             </div>
         </div>
-        <div class="news-card__slaider-wrapper">
-            <div class="news-card__slaider-wrapper-title">
-                <h2 class="news-card__slaider-title">Смотрите также</h2>
-                <div class="news-card__slaider-nav">
-                    <div class="news-card__slaider-nav-wrapper">
-                        <img src="img/arrow-art-left.svg" alt="arrow" class="news-card__slaider-nav-arrow">
-                    </div>
-                    <div class="news-card__slaider-nav-wrapper">
-                        <img src="img/arrow-art-right.svg" alt="arrow" class="news-card__slaider-nav-arrow">
-                    </div>
-                </div>
-            </div>
-            <div class="news-card__slaider-items">
-                <div class="news-card__slaider-item">
-                    <div class="news-card__slaider-item-wrapper">
-                        <img src="/img/news-4.png" alt="фото" class="news-card__slaider-item-img">
-                    </div>
-                    <h3 class="news-card__slaider-item-title">Восстановление и реабилитация организма после
-                        Covid-19
-                    </h3>
-                    <div class="news-card__slaider-item-footer">
-                        <span class="news-card__slaider-item-date">24 апреля, 2022</span>
-                        <a href="#" class="news-card__slaider-item-link news-card__slaider-item-link-1"><svg width="16"
-                                height="8" viewBox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M1.52 4C1.52 2.632 2.632 1.52 4 1.52H7.2V0H4C1.792 0 0 1.792 0 4C0 6.208 1.792 8 4 8H7.2V6.48H4C2.632 6.48 1.52 5.368 1.52 4ZM4.8 4.8H11.2V3.2H4.8V4.8ZM12 0H8.8V1.52H12C13.368 1.52 14.48 2.632 14.48 4C14.48 5.368 13.368 6.48 12 6.48H8.8V8H12C14.208 8 16 6.208 16 4C16 1.792 14.208 0 12 0Z"
-                                    fill="#595450" fill-opacity="0.48" />
-                            </svg>
-                            goodhouse.ru</a>
+    </div>
+    <div class="news-card__slaider-bg">
+        <div class="container">
+            <div class="news-card__slaider-wrapper swiper">
+                <div class="news-card__slaider-wrapper-title">
+                    <h2 class="news-card__slaider-title">Смотрите также</h2>
+                    <div class="news-card__slaider-nav">
+                        <div class="news-card__slaider-nav-wrapper news-card__prev">
+                            <img src="img/arrow-art-left.svg" alt="arrow" class="news-card__slaider-nav-arrow">
+                        </div>
+                        <div class="news-card__slaider-nav-wrapper news-card__next">
+                            <img src="img/arrow-art-right.svg" alt="arrow" class="news-card__slaider-nav-arrow">
+                        </div>
                     </div>
                 </div>
-                <div class="news-card__slaider-item">
-                    <div class="news-card__slaider-item-wrapper">
-                        <img src="/img/news-5.png" alt="фото" class="news-card__slaider-item-img">
+                <div class="news-card__slaider-items swiper-wrapper">
+                    <div class="news-card__slaider-item swiper-slide">
+                        <div class="news-card__slaider-item-wrapper">
+                            <img src="/img/news-4.png" alt="фото" class="news-card__slaider-item-img">
+                        </div>
+                        <h3 class="news-card__slaider-item-title">Восстановление и реабилитация организма после
+                            Covid-19
+                        </h3>
+                        <div class="news-card__slaider-item-footer">
+                            <span class="news-card__slaider-item-date">24 апреля, 2022</span>
+                            <a href="#" class="news-card__slaider-item-link news-card__slaider-item-link-1"><svg
+                                    width="16" height="8" viewBox="0 0 16 8" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M1.52 4C1.52 2.632 2.632 1.52 4 1.52H7.2V0H4C1.792 0 0 1.792 0 4C0 6.208 1.792 8 4 8H7.2V6.48H4C2.632 6.48 1.52 5.368 1.52 4ZM4.8 4.8H11.2V3.2H4.8V4.8ZM12 0H8.8V1.52H12C13.368 1.52 14.48 2.632 14.48 4C14.48 5.368 13.368 6.48 12 6.48H8.8V8H12C14.208 8 16 6.208 16 4C16 1.792 14.208 0 12 0Z"
+                                        fill="#595450" fill-opacity="0.48" />
+                                </svg>
+                                goodhouse.ru</a>
+                        </div>
                     </div>
-                    <h3 class="news-card__slaider-item-title">Как работает индустрия здоровья и красоты —
-                        взгляд
-                        изнутри</h3>
-                    <div class="news-card__slaider-item-footer">
-                        <span class="news-card__slaider-item-date">24 апреля, 2022</span>
-                        <a href="#" class="news-card__slaider-item-link news-card__slaider-item-link-2"><svg width="16"
-                                height="8" viewBox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M1.52 4C1.52 2.632 2.632 1.52 4 1.52H7.2V0H4C1.792 0 0 1.792 0 4C0 6.208 1.792 8 4 8H7.2V6.48H4C2.632 6.48 1.52 5.368 1.52 4ZM4.8 4.8H11.2V3.2H4.8V4.8ZM12 0H8.8V1.52H12C13.368 1.52 14.48 2.632 14.48 4C14.48 5.368 13.368 6.48 12 6.48H8.8V8H12C14.208 8 16 6.208 16 4C16 1.792 14.208 0 12 0Z"
-                                    fill="#595450" fill-opacity="0.48" />
-                            </svg>
-                            goodhouse.ru</a>
+                    <div class="news-card__slaider-item swiper-slide">
+                        <div class="news-card__slaider-item-wrapper">
+                            <img src="/img/news-5.png" alt="фото" class="news-card__slaider-item-img">
+                        </div>
+                        <h3 class="news-card__slaider-item-title">Как работает индустрия здоровья и красоты —
+                            взгляд
+                            изнутри</h3>
+                        <div class="news-card__slaider-item-footer">
+                            <span class="news-card__slaider-item-date">24 апреля, 2022</span>
+                            <a href="#" class="news-card__slaider-item-link news-card__slaider-item-link-2"><svg
+                                    width="16" height="8" viewBox="0 0 16 8" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M1.52 4C1.52 2.632 2.632 1.52 4 1.52H7.2V0H4C1.792 0 0 1.792 0 4C0 6.208 1.792 8 4 8H7.2V6.48H4C2.632 6.48 1.52 5.368 1.52 4ZM4.8 4.8H11.2V3.2H4.8V4.8ZM12 0H8.8V1.52H12C13.368 1.52 14.48 2.632 14.48 4C14.48 5.368 13.368 6.48 12 6.48H8.8V8H12C14.208 8 16 6.208 16 4C16 1.792 14.208 0 12 0Z"
+                                        fill="#595450" fill-opacity="0.48" />
+                                </svg>
+                                goodhouse.ru</a>
+                        </div>
                     </div>
-                </div>
-                <div class="news-card__slaider-item">
-                    <div class="news-card__slaider-item-wrapper">
-                        <img src="/img/news-6.png" alt="фото" class="news-card__slaider-item-img">
-                    </div>
-                    <h3 class="news-card__slaider-item-title">Психотерапия и трансактный анализ в наркологии
-                    </h3>
-                    <div class="news-card__slaider-item-footer">
-                        <span class="news-card__slaider-item-date">24 апреля, 2022</span>
-                        <a href="#" class="news-card__slaider-item-link news-card__slaider-item-link-3"><svg width="16"
-                                height="8" viewBox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M1.52 4C1.52 2.632 2.632 1.52 4 1.52H7.2V0H4C1.792 0 0 1.792 0 4C0 6.208 1.792 8 4 8H7.2V6.48H4C2.632 6.48 1.52 5.368 1.52 4ZM4.8 4.8H11.2V3.2H4.8V4.8ZM12 0H8.8V1.52H12C13.368 1.52 14.48 2.632 14.48 4C14.48 5.368 13.368 6.48 12 6.48H8.8V8H12C14.208 8 16 6.208 16 4C16 1.792 14.208 0 12 0Z"
-                                    fill="#595450" fill-opacity="0.48" />
-                            </svg>
-                            goodhouse.ru</a>
+                    <div class="news-card__slaider-item swiper-slide">
+                        <div class="news-card__slaider-item-wrapper">
+                            <img src="/img/news-6.png" alt="фото" class="news-card__slaider-item-img">
+                        </div>
+                        <h3 class="news-card__slaider-item-title">Психотерапия и трансактный анализ в наркологии
+                        </h3>
+                        <div class="news-card__slaider-item-footer">
+                            <span class="news-card__slaider-item-date">24 апреля, 2022</span>
+                            <a href="#" class="news-card__slaider-item-link news-card__slaider-item-link-3"><svg
+                                    width="16" height="8" viewBox="0 0 16 8" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M1.52 4C1.52 2.632 2.632 1.52 4 1.52H7.2V0H4C1.792 0 0 1.792 0 4C0 6.208 1.792 8 4 8H7.2V6.48H4C2.632 6.48 1.52 5.368 1.52 4ZM4.8 4.8H11.2V3.2H4.8V4.8ZM12 0H8.8V1.52H12C13.368 1.52 14.48 2.632 14.48 4C14.48 5.368 13.368 6.48 12 6.48H8.8V8H12C14.208 8 16 6.208 16 4C16 1.792 14.208 0 12 0Z"
+                                        fill="#595450" fill-opacity="0.48" />
+                                </svg>
+                                goodhouse.ru</a>
+                        </div>
                     </div>
                 </div>
             </div>

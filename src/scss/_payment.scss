@@ -1,0 +1,137 @@
+.payment {
+    &__flex {
+        display: flex;
+    }
+
+    &__list-nav {
+        padding: 52px 0 0 37px;
+        max-width: 264px;
+    }
+
+    &__list-chapter {
+        list-style-type: decimal;
+        padding: 10px 0;
+    }
+
+    .active-bg {
+        background: linear-gradient(90deg, #F6F2EE 0%, rgba(246, 242, 238, 0) 100%);
+        border-radius: 4px 0px 0px 4px;
+    }
+
+    &__list-link {
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 20px;
+        color: #211E1C;
+    }
+
+    &__right {
+        max-width: 800px;
+    }
+
+    &__title {
+        font-weight: 300;
+        font-size: 40px;
+        line-height: 46px;
+        color: #211E1C;
+        max-width: 614px;
+        margin-bottom: 32px;
+    }
+
+    &__section {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 32px;
+        color: #211E1C;
+        margin-bottom: 24px;
+        display: block;
+    }
+
+    &__cards {
+        display: flex;
+        margin-bottom: 32px;
+    }
+
+    &__cards-wrapper {
+        max-width: 128px;
+    }
+
+    &__cards-wrapper:not(:last-child) {
+        margin-right: 16px;
+    }
+
+    &__card {
+        border: 1px solid #EEE5DC;
+        border-radius: 4px;
+        width: 128px;
+        height: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__image {
+        max-width: 100%;
+    }
+
+    &__cards-text {
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 18px;
+        color: #211E1C;
+        padding-left: 15px;
+        display: block;
+    }
+
+    &__list-paragraph {
+        margin: 0 0 25px 0;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 32px;
+        color: #211E1C;
+    }
+
+    &__list-nested {
+        padding-left: 12px;
+        margin-bottom: 32px;
+    }
+
+    &__nested {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 30px;
+        color: #211E1C;
+        display: flex;
+        align-items: center;
+    }
+
+    &__nested::before {
+        content: "";
+        display: inline-block;
+        width: 3px;
+        height: 3px;
+        background-color: #211E1C;
+        border-radius: 50%;
+        margin-right: 9px;
+    }
+
+    &__form-label {
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 32px;
+        letter-spacing: 0.02em;
+        color: #211E1C;
+    }
+
+    &__form-label::after {
+        content: "*";
+        display: inline-block;
+        color: #FAA61A;
+    }
+
+    &__form-input {
+        display: block;
+        padding: 16px 0 16px 16px;
+        height: 44px;
+    }
+}
