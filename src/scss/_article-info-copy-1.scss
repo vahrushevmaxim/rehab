@@ -668,6 +668,11 @@
         background: linear-gradient(180deg, #EEE5DC 21.88%, #F6F2EE 100%);
         padding: 32px 32px 15px 32px;
         border-radius: 0px 0px 8px 8px;
+        display: none;
+    }
+
+    .active-content {
+        display: block;
     }
 
     &__tab-flex {
@@ -1150,12 +1155,6 @@
         width: 100%;
         height: 100%;
         object-fit: contain;
-    }
-
-    .news-card__slaider-mini-text {
-        position: absolute;
-        right: -203px;
-        top: 425px;
     }
 }
 

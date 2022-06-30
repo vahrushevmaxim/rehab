@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const swiper = new Swiper('.art__curat', {
             loop:true,
             slidesPerView: 2,
+            spaceBetween: 16,
             watchOverflow: true, // Если слайдов меньше чем указано в slidesPerView, слайдер отключится
             navigation: {
               nextEl: '.art__nav2',
