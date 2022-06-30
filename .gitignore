@@ -8,5 +8,6 @@ node_modules/
 /node_modules/
 **/node_modules
 .idea/ 
-.vscode/ 
+.vscode/
+gulp/version.json 
 
