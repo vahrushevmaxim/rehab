@@ -1,11 +1,19 @@
 .payment {
-    &__flex {
+
+    &__wrapper {
         display: flex;
+        padding-bottom: 28px;
+    }
+
+    &__flex {
+        max-width: 800px;
+        padding-top: 16px;
     }
 
     &__list-nav {
         padding: 52px 0 0 37px;
         max-width: 264px;
+        margin-right: 120px;
     }
 
     &__list-chapter {
@@ -23,10 +31,6 @@
         font-size: 15px;
         line-height: 20px;
         color: #211E1C;
-    }
-
-    &__right {
-        max-width: 800px;
     }
 
     &__title {
@@ -115,10 +119,28 @@
         margin-right: 9px;
     }
 
+    &__form-wrapper::before {
+        content: "";
+        display: inline-block;
+        background-color: #EEE5DC;
+        height: 2px;
+        width: 100%;
+        margin-bottom: 23px;
+    }
+
+    &__form-inner {
+        display: flex;
+    }
+
+    &__form-inputs {
+        flex: 0 1 82%;
+        margin-right: 32px;
+    }
+
     &__form-label {
         font-weight: 400;
         font-size: 13px;
-        line-height: 32px;
+        line-height: 26px;
         letter-spacing: 0.02em;
         color: #211E1C;
     }
@@ -133,5 +155,94 @@
         display: block;
         padding: 16px 0 16px 16px;
         height: 44px;
+        border: 1px solid #EEE5DC;
+        border-radius: 4px;
+        background-color: #FFFEFE;
+        width: 100%;
+    }
+
+    &__form-input:not(:last-child) {
+        margin-bottom: 18px;
+    }
+
+    &__form-input::placeholder {
+        font-weight: 300;
+        font-size: 13px;
+        line-height: 44px;
+        letter-spacing: 0.02em;
+        color: rgba(33, 30, 28, 0.72);
+    }
+
+    &__form-input:focus {
+        outline-color: #FDB942;
+    }
+
+    &__textarea-wrapper {
+        flex: 0 1 88%;
+    }
+
+    &__form-textarea {
+        display: block;
+        padding: 13px 16px 0 16px;
+        border: 1px solid #EEE5DC;
+        border-radius: 4px;
+        background-color: #FFFEFE;
+        width: 100%;
+        height: 220px;
+    }
+
+    &__form-textarea::placeholder {
+        font-weight: 300;
+        font-size: 13px;
+        line-height: 20px;
+        letter-spacing: 0.02em;
+        color: rgba(33, 30, 28, 0.72);
+    }
+
+    &__form-textarea:focus {
+        outline-color: #FDB942;
+    }
+
+    &__form-footer {
+        display: flex;
+        padding-top: 16px;
+        align-items: center;
+    }
+
+    &__form-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 44px;
+        background: linear-gradient(90deg, #C3D54E 0%, #A1C74F 100%);
+        box-shadow: inset 0px 6px 6px rgba(255, 255, 255, 0.32);
+        border-radius: 4px;
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 44px;
+        letter-spacing: 0.02em;
+        color: #FFFFFF;
+        border: 0;
+        cursor: pointer;
+        width: 170px;
+        margin-right: 16px;
+        transition: .3s linear; 
+    }
+
+    &__form-button:hover {
+        background: linear-gradient(90deg, #C3D54E 0%, #A1C74F 100%);
+    }
+
+    &__form-button:active {
+        background: linear-gradient(90deg, #C3D54E 0%, #A1C74F 100%);
+        box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.12);
+    }
+
+    &__form-text {
+        max-width: 415px;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 16px;
+        color: #211E1C;
     }
 }

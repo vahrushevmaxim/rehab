@@ -1,0 +1,83 @@
+@media (max-width: 1344px) {
+    .payment__list-nav {
+        margin-right: 48px;
+        max-width: 240px;
+    }
+
+    .payment__flex {
+        max-width: 672px;
+    }
+
+    .payment__title {
+        max-width: 576px;
+    }
+
+    .payment__form-inner {
+        flex-direction: column;
+    }
+
+
+    .payment__form-input {
+        margin-bottom: 8px;
+    }
+
+    .payment__form-inputs {
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 1024px) {
+    .payment__list-nav {
+        display: none;
+    }
+
+    .payment__flex {
+        padding-top: 45px;
+    }
+
+    .payment__title {
+        max-width: 100%;
+    }
+
+    .payment__cards {
+        flex-wrap: wrap;
+    }
+
+    .payment__form-footer {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+@media (max-width: 576px) {
+    .payment__title {
+        font-size: 24px;
+        line-height: 28px;
+        margin-bottom: 15px;
+    }
+
+    .payment__section {
+        font-size: 15px;
+        line-height: 23px;
+        margin-bottom: 14px;
+    }
+
+    .payment__list-paragraph {
+        font-size: 15px;
+        line-height: 23px;
+        margin: 0 0 17px 0;
+    }
+
+    .payment__list-nested {
+        margin-bottom: 18px;
+    }
+
+    .payment__form-button {
+        width: 100%;
+    }
+
+    .payment__form-text {
+        text-align: center;
+    }
+
+}

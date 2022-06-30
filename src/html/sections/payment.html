@@ -1,247 +1,252 @@
 <section class="payment">
     <div class="container">
         <div class="payment__wrapper">
+            <ul class="payment__list-nav">
+                <li class="payment__list-chapter active-bg">
+                    <a href="#" class="payment__list-link">Перечень карт</a>
+                </li>
+                <li class="payment__list-chapter">
+                    <a href="#" class="payment__list-link">Проведение операции оплаты товаров/услуг по банковской
+                        карте
+                        в сети Интернет</a>
+                </li>
+                <li class="payment__list-chapter">
+                    <a href="#" class="payment__list-link">Отмена операции оплаты товаров/услуг в сети Интернет</a>
+                </li>
+                <li class="payment__list-chapter">
+                    <a href="#" class="payment__list-link">Операция возврата товара (отказа от услуг), оплаченных
+                        картой
+                        в сети Интернет</a>
+                </li>
+            </ul>
             <div class="payment__flex">
-                <ul class="payment__list-nav">
-                    <li class="payment__list-chapter active-bg">
-                        <a href="#" class="payment__list-link">Перечень карт</a>
+                <h2 class="payment__title">Порядок проведения операций с использованием карт в интернет магазинах
+                </h2>
+                <a href="#" class="payment__section">1. Перечень карт, которые торгово-сервисная точка принимает в
+                    оплату
+                    товаров (услуг):</a>
+                <div class="payment__cards">
+                    <div class="payment__cards-wrapper">
+                        <div class="payment__card">
+                            <img src="/img/payment-card-1.svg" alt="фото карты оплаты" class="payment__image">
+                        </div>
+                        <span class="payment__cards-text">MasterCard</span>
+                    </div>
+                    <div class="payment__cards-wrapper">
+                        <div class="payment__card">
+                            <img src="/img/payment-card-2.svg" alt="фото карты оплаты" class="payment__image">
+                        </div>
+                        <span class="payment__cards-text">MasterCard Electronic</span>
+                    </div>
+                    <div class="payment__cards-wrapper">
+                        <div class="payment__card">
+                            <img src="/img/payment-card-3.svg" alt="фото карты оплаты" class="payment__image">
+                        </div>
+                        <span class="payment__cards-text">Visa</span>
+                    </div>
+                    <div class="payment__cards-wrapper">
+                        <div class="payment__card">
+                            <img src="/img/payment-card-4.svg" alt="фото карты оплаты" class="payment__image">
+                        </div>
+                        <span class="payment__cards-text">Visa Electron</span>
+                    </div>
+                </div>
+                <a href="#" class="payment__section">2. Проведение операции оплаты товаров/услуг по банковской карте
+                    в
+                    сети
+                    Интернет.</a>
+                <ul class="payment__list-points">
+                    <li class="payment__list-point">
+                        <p class="payment__list-paragraph">
+                            2.1. Держатель карты обращается на сайт Интернет-магазина и формирует заказ на оплату
+                            товара/услуг, подтверждает условия оформления заказа (наименование товаров, способ
+                            доставки,
+                            выбор средства оплаты, сумма платежа) и выбирает в качестве средства оплаты банковскую
+                            карту.
+                        </p>
                     </li>
-                    <li class="payment__list-chapter">
-                        <a href="#" class="payment__list-link">Проведение операции оплаты товаров/услуг по банковской
-                            карте
-                            в сети Интернет</a>
+                    <li class="payment__list-point">
+                        <p class="payment__list-paragraph">
+                            2.2. Проведение операций оплаты товаров/услуг с использованием банковских карт в сети
+                            Интернет
+                            осуществляется с применением 3DSecure технологий.
+                        </p>
                     </li>
-                    <li class="payment__list-chapter">
-                        <a href="#" class="payment__list-link">Отмена операции оплаты товаров/услуг в сети Интернет</a>
+                    <li class="payment__list-point">
+                        <p class="payment__list-paragraph">
+                            2.3. Интернет-магазин обрабатывает заказ и создает запрос в СПЭП на регистрацию заказа
+                            Держателя
+                            карты. В запросе Интернет-магазина передается набор данных о заказе — описание заказа,
+                            сумма,
+                            обратные адреса, на которые необходимо возвращать Держателя карты в случае успешного
+                            и в случае
+                            неуспешного платежа, и др. В случае успешной регистрации заказа СПЭП возвращает
+                            уникальный
+                            номер
+                            заказа в Интернет-магазин.
+                        </p>
                     </li>
-                    <li class="payment__list-chapter">
-                        <a href="#" class="payment__list-link">Операция возврата товара (отказа от услуг), оплаченных
-                            картой
-                            в сети Интернет</a>
+                    <li class="payment__list-point">
+                        <p class="payment__list-paragraph">
+                            2.4. Интернет-магазин осуществляет переадресацию Держателя карты на платежную страницу
+                            СПЭП,
+                            на которой отображаются параметры платежа, также предлагается ввести реквизиты карты.
+                            Держатель
+                            карты выбирает тип карты, которой он будет расплачиваться и вводит информацию
+                            о параметрах
+                            своей
+                            карты:
+                        </p>
+                    </li>
+                    <ul class="payment__list-nested">
+                        <li class="payment__nested">Тип карты.</li>
+                        <li class="payment__nested">Номер карты.
+                        </li>
+                        <li class="payment__nested">Дату окончания срока действия карты.
+                        </li>
+                        <li class="payment__nested">Имя и фамилию, как указано на карте.
+                        </li>
+                        <li class="payment__nested">Значения CVC2 или CVV2.
+                        </li>
+                        <li class="payment__nested">Подтверждает свое согласие оплатить заказ вводом специального
+                            пароля.
+                        </li>
+                    </ul>
+                    <li class="payment__list-point">
+                        <p class="payment__list-paragraph">
+                            Специальный пароль представляет собой цифровую/буквенно-цифровую последовательность,
+                            однозначно
+                            идентифицирующую клиента как Держателя карты. Проверка специального пароля
+                            обеспечивается
+                            банком-эмитентом.
+                        </p>
+                    </li>
+                    <li class="payment__list-point">
+                        <p class="payment__list-paragraph">
+                            3.5. Провайдер услуг проверяет корректность формата вводимых параметров карты
+                            и осуществляет
+                            дополнительные процедуры аутентификации Держателя карты в соответствии с международными
+                            стандартами (3DSecure) и передает запрос на авторизацию операции в Банк.
+                        </p>
+                    </li>
+                    <li class="payment__list-point">
+                        <p class="payment__list-paragraph">
+                            3.6. Банк проверяет право Интернет-магазина провести операцию в соответствии
+                            с регистрацией
+                            и проводит авторизацию операций в установленном соответствующими международными
+                            платежными
+                            системами порядке.
+                        </p>
+                    </li>
+                    <li class="payment__list-point">
+                        <p class="payment__list-paragraph">
+                            3.7. При получении отрицательного результата авторизации Банк отправляет уведомление
+                            об отказе
+                            в СПЭП, который, в свою очередь, передает данную информацию Интернет-магазину
+                            и Держателю
+                            карты,
+                            с указанием причин отказа.
+                        </p>
+                    </li>
+                    <li class="payment__list-point">
+                        <p class="payment__list-paragraph">
+                            3.8. При получении положительного результата авторизации Банк передает в СПЭП
+                            подтверждение
+                            положительного результата авторизации операции. СПЭП одновременно передает подтверждения
+                            положительного результата проводимой авторизации операции в Интернет-магазин и Держателю
+                            карты.
+                        </p>
+                    </li>
+                    <li class="payment__list-point">
+                        <p class="payment__list-paragraph">
+                            3.9. После получения подтверждения о положительном результате авторизации
+                            Интернет-магазин
+                            оказывает услугу (осуществляет работу, отпускает товар) Держателю карты.
+                        </p>
+                    </li>
+                    <li class="payment__list-point">
+                        <p class="payment__list-paragraph">
+                            3.10. Обработка успешно авторизованных операций осуществляется автоматически не позднее
+                            следующего рабочего дня за днем совершения операции.
+                        </p>
                     </li>
                 </ul>
-                <div class="payment__right">
-                    <h2 class="payment__title">Порядок проведения операций с использованием карт в интернет магазинах
-                    </h2>
-                    <a href="#" class="payment__section">1. Перечень карт, которые торгово-сервисная точка принимает в
-                        оплату
-                        товаров (услуг):</a>
-                    <div class="payment__cards">
-                        <div class="payment__cards-wrapper">
-                            <div class="payment__card">
-                                <img src="/img/payment-card-1.svg" alt="фото карты оплаты" class="payment__image">
+                <a href="#" class="payment__section">3. Отмена операции оплаты товаров/услуг в сети Интернет.</a>
+                <ul class="payment__list-points">
+                    <li class="payment__list-point">
+                        <p class="payment__list-paragraph">
+                            3.1. В случае если после проведения операции оплаты товара/услуг с использованием карты
+                            в сети
+                            Интернет возникла необходимость ее отмены (Держатель карты отказался от заказа и т. п.),
+                            Интернет-магазин может провести отмену операции. Отмена операции осуществляется
+                            до проведения
+                            Банком процедуры закрытия дня (до 23:59 часов Московского времени дня совершения
+                            операции)
+                            в соответствии с «Руководством по использованию аппаратно-программного комплекса
+                            электронной
+                            коммерции».
+                        </p>
+                    </li>
+                    <li class="payment__list-point">
+                        <p class="payment__list-paragraph">
+                            3.2. Для отмены операции после проведения Банком процедуры закрытия дня необходимо
+                            заполнить
+                            «Заявку на отмену операции» по форме Приложения № 5 к настоящему Договору и предоставить
+                            ее в Банк.
+                        </p>
+                    </li>
+                </ul>
+                <a href="#" class="payment__section">4. Операция возврата товара (отказа от услуг), оплаченных
+                    картой в
+                    сети
+                    Интернет.</a>
+                <ul class="payment__list-points">
+                    <li class="payment__list-point">
+                        <p class="payment__list-paragraph">
+                            5.1. В случае если Держатель карты возвращает товар, Предприятие проверяет наличие
+                            данного
+                            заказа по своей базе данных и оформляет Заявление на возврат средств (Приложения
+                            № 4 к настоящему Договору) и предоставляет его в Банк. Заявление должно быть подписано
+                            лицами,
+                            имеющими право подписи в соответствии с карточкой с образцами подписей и оттиска печати,
+                            и скреплено оттиском печати Предприятия. Банк осуществляет возврат средств по операциям
+                            «возврат
+                            покупки» на карту, с использованием которой была произведена оплата товара/услуги.
+                        </p>
+                    </li>
+                </ul>
+                <div class="payment__form-wrapper">
+                    <form action="" class="payment__form" method="post">
+                        <div class="payment__form-inner">
+                            <div class="payment__form-inputs">
+                                <label for="number" class="payment__form-label">Номер вашего счёта</label>
+                                <input id="number" type="number" placeholder="1234 5678 1234 5678" name="account-number"
+                                    class="payment__form-input">
+
+                                <label for="payment" class="payment__form-label">Сумма для оплаты</label>
+                                <input id="payment" type="number" placeholder="150 000" name="payment-amount"
+                                    class="payment__form-input">
+
+                                <label for="name" class="payment__form-label">ФИО</label>
+                                <input id="name" type="text" placeholder="Александров Иван Васильевич" name="full-name"
+                                    class="payment__form-input">
+
                             </div>
-                            <span class="payment__cards-text">MasterCard</span>
-                        </div>
-                        <div class="payment__cards-wrapper">
-                            <div class="payment__card">
-                                <img src="/img/payment-card-2.svg" alt="фото карты оплаты" class="payment__image">
+                            <div class="payment__textarea-wrapper">
+                                <label for="description" class="payment__form-label">Описание платежа</label>
+                                <textarea id="description" name="payment-description" placeholder="Введите описание"
+                                    class="payment__form-textarea"></textarea>
                             </div>
-                            <span class="payment__cards-text">MasterCard Electronic</span>
                         </div>
-                        <div class="payment__cards-wrapper">
-                            <div class="payment__card">
-                                <img src="/img/payment-card-3.svg" alt="фото карты оплаты" class="payment__image">
-                            </div>
-                            <span class="payment__cards-text">Visa</span>
+                        <div class="payment__form-footer">
+                            <button type="submit" class="payment__form-button">Отправить</button>
+                            <span class="payment__form-text">После заполнения и отправки формы вы будете перенаправлены
+                                на
+                                сайт
+                                платёжной системы Сбербанк.</span>
                         </div>
-                        <div class="payment__cards-wrapper">
-                            <div class="payment__card">
-                                <img src="/img/payment-card-4.svg" alt="фото карты оплаты" class="payment__image">
-                            </div>
-                            <span class="payment__cards-text">Visa Electron</span>
-                        </div>
-                    </div>
-                    <a href="#" class="payment__section">2. Проведение операции оплаты товаров/услуг по банковской карте
-                        в
-                        сети
-                        Интернет.</a>
-                    <ul class="payment__list-points">
-                        <li class="payment__list-point">
-                            <p class="payment__list-paragraph">
-                                2.1. Держатель карты обращается на сайт Интернет-магазина и формирует заказ на оплату
-                                товара/услуг, подтверждает условия оформления заказа (наименование товаров, способ
-                                доставки,
-                                выбор средства оплаты, сумма платежа) и выбирает в качестве средства оплаты банковскую
-                                карту.
-                            </p>
-                        </li>
-                        <li class="payment__list-point">
-                            <p class="payment__list-paragraph">
-                                2.2. Проведение операций оплаты товаров/услуг с использованием банковских карт в сети
-                                Интернет
-                                осуществляется с применением 3DSecure технологий.
-                            </p>
-                        </li>
-                        <li class="payment__list-point">
-                            <p class="payment__list-paragraph">
-                                2.3. Интернет-магазин обрабатывает заказ и создает запрос в СПЭП на регистрацию заказа
-                                Держателя
-                                карты. В запросе Интернет-магазина передается набор данных о заказе — описание заказа,
-                                сумма,
-                                обратные адреса, на которые необходимо возвращать Держателя карты в случае успешного
-                                и в случае
-                                неуспешного платежа, и др. В случае успешной регистрации заказа СПЭП возвращает
-                                уникальный
-                                номер
-                                заказа в Интернет-магазин.
-                            </p>
-                        </li>
-                        <li class="payment__list-point">
-                            <p class="payment__list-paragraph">
-                                2.4. Интернет-магазин осуществляет переадресацию Держателя карты на платежную страницу
-                                СПЭП,
-                                на которой отображаются параметры платежа, также предлагается ввести реквизиты карты.
-                                Держатель
-                                карты выбирает тип карты, которой он будет расплачиваться и вводит информацию
-                                о параметрах
-                                своей
-                                карты:
-                            </p>
-                        </li>
-                        <ul class="payment__list-nested">
-                            <li class="payment__nested">Тип карты.</li>
-                            <li class="payment__nested">Номер карты.
-                            </li>
-                            <li class="payment__nested">Дату окончания срока действия карты.
-                            </li>
-                            <li class="payment__nested">Имя и фамилию, как указано на карте.
-                            </li>
-                            <li class="payment__nested">Значения CVC2 или CVV2.
-                            </li>
-                            <li class="payment__nested">Подтверждает свое согласие оплатить заказ вводом специального
-                                пароля.
-                            </li>
-                        </ul>
-                        <li class="payment__list-point">
-                            <p class="payment__list-paragraph">
-                                Специальный пароль представляет собой цифровую/буквенно-цифровую последовательность,
-                                однозначно
-                                идентифицирующую клиента как Держателя карты. Проверка специального пароля
-                                обеспечивается
-                                банком-эмитентом.
-                            </p>
-                        </li>
-                        <li class="payment__list-point">
-                            <p class="payment__list-paragraph">
-                                3.5. Провайдер услуг проверяет корректность формата вводимых параметров карты
-                                и осуществляет
-                                дополнительные процедуры аутентификации Держателя карты в соответствии с международными
-                                стандартами (3DSecure) и передает запрос на авторизацию операции в Банк.
-                            </p>
-                        </li>
-                        <li class="payment__list-point">
-                            <p class="payment__list-paragraph">
-                                3.6. Банк проверяет право Интернет-магазина провести операцию в соответствии
-                                с регистрацией
-                                и проводит авторизацию операций в установленном соответствующими международными
-                                платежными
-                                системами порядке.
-                            </p>
-                        </li>
-                        <li class="payment__list-point">
-                            <p class="payment__list-paragraph">
-                                3.7. При получении отрицательного результата авторизации Банк отправляет уведомление
-                                об отказе
-                                в СПЭП, который, в свою очередь, передает данную информацию Интернет-магазину
-                                и Держателю
-                                карты,
-                                с указанием причин отказа.
-                            </p>
-                        </li>
-                        <li class="payment__list-point">
-                            <p class="payment__list-paragraph">
-                                3.8. При получении положительного результата авторизации Банк передает в СПЭП
-                                подтверждение
-                                положительного результата авторизации операции. СПЭП одновременно передает подтверждения
-                                положительного результата проводимой авторизации операции в Интернет-магазин и Держателю
-                                карты.
-                            </p>
-                        </li>
-                        <li class="payment__list-point">
-                            <p class="payment__list-paragraph">
-                                3.9. После получения подтверждения о положительном результате авторизации
-                                Интернет-магазин
-                                оказывает услугу (осуществляет работу, отпускает товар) Держателю карты.
-                            </p>
-                        </li>
-                        <li class="payment__list-point">
-                            <p class="payment__list-paragraph">
-                                3.10. Обработка успешно авторизованных операций осуществляется автоматически не позднее
-                                следующего рабочего дня за днем совершения операции.
-                            </p>
-                        </li>
-                    </ul>
-                    <a href="#" class="payment__section">3. Отмена операции оплаты товаров/услуг в сети Интернет.</a>
-                    <ul class="payment__list-points">
-                        <li class="payment__list-point">
-                            <p class="payment__list-paragraph">
-                                3.1. В случае если после проведения операции оплаты товара/услуг с использованием карты
-                                в сети
-                                Интернет возникла необходимость ее отмены (Держатель карты отказался от заказа и т. п.),
-                                Интернет-магазин может провести отмену операции. Отмена операции осуществляется
-                                до проведения
-                                Банком процедуры закрытия дня (до 23:59 часов Московского времени дня совершения
-                                операции)
-                                в соответствии с «Руководством по использованию аппаратно-программного комплекса
-                                электронной
-                                коммерции».
-                            </p>
-                        </li>
-                        <li class="payment__list-point">
-                            <p class="payment__list-paragraph">
-                                3.2. Для отмены операции после проведения Банком процедуры закрытия дня необходимо
-                                заполнить
-                                «Заявку на отмену операции» по форме Приложения № 5 к настоящему Договору и предоставить
-                                ее в Банк.
-                            </p>
-                        </li>
-                    </ul>
-                    <a href="#" class="payment__section">4. Операция возврата товара (отказа от услуг), оплаченных
-                        картой в
-                        сети
-                        Интернет.</a>
-                    <ul class="payment__list-points">
-                        <li class="payment__list-point">
-                            <p class="payment__list-paragraph">
-                                5.1. В случае если Держатель карты возвращает товар, Предприятие проверяет наличие
-                                данного
-                                заказа по своей базе данных и оформляет Заявление на возврат средств (Приложения
-                                № 4 к настоящему Договору) и предоставляет его в Банк. Заявление должно быть подписано
-                                лицами,
-                                имеющими право подписи в соответствии с карточкой с образцами подписей и оттиска печати,
-                                и скреплено оттиском печати Предприятия. Банк осуществляет возврат средств по операциям
-                                «возврат
-                                покупки» на карту, с использованием которой была произведена оплата товара/услуги.
-                            </p>
-                        </li>
-                    </ul>
+                    </form>
                 </div>
-            </div>
-            <div class="payment__form-wrapper">
-                <form action="" class="payment__form" method="post">
-                    <div class="payment__form-inner">
-                        <div class="payment__form-inputs">
-                            <label for="number" class="payment__form-label">Номер вашего счёта</label>
-                            <input id="number" type="number" name="account-number" class="payment__form-input">
-
-                            <label for="payment" class="payment__form-label">Сумма для оплаты</label>
-                            <input id="payment" type="number" name="payment-amount" class="payment__form-input">
-
-                            <label for="name" class="payment__form-label">ФИО</label>
-                            <input id="name" type="text" name="full-name" class="payment__form-input">
-
-                        </div>
-                        <label for="description" class="payment__form-label">Описание платежа</label>
-                        <textarea id="description" name="payment-description" class="payment__form-input"></textarea>
-                    </div>
-                    <div class="payment__form-footer">
-                        <button type="submit" class="payment__form-button">Отправить</button>
-                        <span class="payment__form-text">После заполнения и отправки формы вы будете перенаправлены на
-                            сайт
-                            платёжной системы Сбербанк.</span>
-                    </div>
-                </form>
             </div>
         </div>
     </div>

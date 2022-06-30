@@ -8201,12 +8201,18 @@ button.swiper-pagination-bullet {
     font-size: 22px;
   }
 }
-.payment__flex {
+.payment__wrapper {
   display: flex;
+  padding-bottom: 28px;
+}
+.payment__flex {
+  max-width: 800px;
+  padding-top: 16px;
 }
 .payment__list-nav {
   padding: 52px 0 0 37px;
   max-width: 264px;
+  margin-right: 120px;
 }
 .payment__list-chapter {
   list-style-type: decimal;
@@ -8221,9 +8227,6 @@ button.swiper-pagination-bullet {
   font-size: 15px;
   line-height: 20px;
   color: #211E1C;
-}
-.payment__right {
-  max-width: 800px;
 }
 .payment__title {
   font-weight: 300;
@@ -8299,10 +8302,25 @@ button.swiper-pagination-bullet {
   border-radius: 50%;
   margin-right: 9px;
 }
+.payment__form-wrapper::before {
+  content: "";
+  display: inline-block;
+  background-color: #EEE5DC;
+  height: 2px;
+  width: 100%;
+  margin-bottom: 23px;
+}
+.payment__form-inner {
+  display: flex;
+}
+.payment__form-inputs {
+  flex: 0 1 82%;
+  margin-right: 32px;
+}
 .payment__form-label {
   font-weight: 400;
   font-size: 13px;
-  line-height: 32px;
+  line-height: 26px;
   letter-spacing: 0.02em;
   color: #211E1C;
 }
@@ -8315,4 +8333,161 @@ button.swiper-pagination-bullet {
   display: block;
   padding: 16px 0 16px 16px;
   height: 44px;
+  border: 1px solid #EEE5DC;
+  border-radius: 4px;
+  background-color: #FFFEFE;
+  width: 100%;
+}
+.payment__form-input:not(:last-child) {
+  margin-bottom: 18px;
+}
+.payment__form-input::placeholder {
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 44px;
+  letter-spacing: 0.02em;
+  color: rgba(33, 30, 28, 0.72);
+}
+.payment__form-input:focus {
+  outline-color: #FDB942;
+}
+.payment__textarea-wrapper {
+  flex: 0 1 88%;
+}
+.payment__form-textarea {
+  display: block;
+  padding: 13px 16px 0 16px;
+  border: 1px solid #EEE5DC;
+  border-radius: 4px;
+  background-color: #FFFEFE;
+  width: 100%;
+  height: 220px;
+}
+.payment__form-textarea::placeholder {
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 20px;
+  letter-spacing: 0.02em;
+  color: rgba(33, 30, 28, 0.72);
+}
+.payment__form-textarea:focus {
+  outline-color: #FDB942;
+}
+.payment__form-footer {
+  display: flex;
+  padding-top: 16px;
+  align-items: center;
+}
+.payment__form-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 44px;
+  background: linear-gradient(90deg, #C3D54E 0%, #A1C74F 100%);
+  box-shadow: inset 0px 6px 6px rgba(255, 255, 255, 0.32);
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 44px;
+  letter-spacing: 0.02em;
+  color: #FFFFFF;
+  border: 0;
+  cursor: pointer;
+  width: 170px;
+  margin-right: 16px;
+  transition: 0.3s linear;
+}
+.payment__form-button:hover {
+  background: linear-gradient(90deg, #C3D54E 0%, #A1C74F 100%);
+}
+.payment__form-button:active {
+  background: linear-gradient(90deg, #C3D54E 0%, #A1C74F 100%);
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.12);
+}
+.payment__form-text {
+  max-width: 415px;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  color: #211E1C;
+}
+
+@media (max-width: 1344px) {
+  .payment__list-nav {
+    margin-right: 48px;
+    max-width: 240px;
+  }
+
+  .payment__flex {
+    max-width: 672px;
+  }
+
+  .payment__title {
+    max-width: 576px;
+  }
+
+  .payment__form-inner {
+    flex-direction: column;
+  }
+
+  .payment__form-input {
+    margin-bottom: 8px;
+  }
+
+  .payment__form-inputs {
+    margin-right: 0;
+  }
+}
+@media (max-width: 1024px) {
+  .payment__list-nav {
+    display: none;
+  }
+
+  .payment__flex {
+    padding-top: 45px;
+  }
+
+  .payment__title {
+    max-width: 100%;
+  }
+
+  .payment__cards {
+    flex-wrap: wrap;
+  }
+
+  .payment__form-footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+@media (max-width: 576px) {
+  .payment__title {
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 15px;
+  }
+
+  .payment__section {
+    font-size: 15px;
+    line-height: 23px;
+    margin-bottom: 14px;
+  }
+
+  .payment__list-paragraph {
+    font-size: 15px;
+    line-height: 23px;
+    margin: 0 0 17px 0;
+  }
+
+  .payment__list-nested {
+    margin-bottom: 18px;
+  }
+
+  .payment__form-button {
+    width: 100%;
+  }
+
+  .payment__form-text {
+    text-align: center;
+  }
 }
