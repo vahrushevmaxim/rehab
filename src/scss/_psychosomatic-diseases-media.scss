@@ -23,6 +23,15 @@
         max-width: 100%;
     }
 
+    .psychosomatic-diseases .art__widget {
+        display: none;
+    }
+
+    .art__widget--md {
+        display: block;
+        margin-bottom: 30px;
+    }
+
     .art__other-ul {
         display: block;
     }
