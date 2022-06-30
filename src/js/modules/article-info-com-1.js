@@ -1,7 +1,7 @@
 import Swiper from 'swiper/bundle';
 document.addEventListener('DOMContentLoaded', function () {
-    if (document.querySelector('.art__curat')) {
-        const swiper = new Swiper('.art__curat', {
+    if (document.querySelector('.art__curat-swiper')) {
+        const swiper = new Swiper('.art__curat-swiper', {
             loop:true,
             slidesPerView: 2,
             spaceBetween: 16,
