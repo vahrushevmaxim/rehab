@@ -1,0 +1,41 @@
+@media (max-width: 1344px) {
+    .site-search__form {
+        width: 79%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .site-search__form {
+        width: 70%;
+    }
+}
+
+@media (max-width: 576px) {
+    .site-search__top-wrapper {
+        flex-direction: column;
+    }
+
+    .site-search__form {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .site-search__button {
+        width: 100%;
+    }
+
+    .site-search__wrapper {
+        padding: 32px 0 22px 0;
+    }
+
+    .site-search__title {
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+    .site-search__description {
+        font-size: 15px;
+        line-height: 28px;
+        margin: 0 0 10px 0;
+    }
+}

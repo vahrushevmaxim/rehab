@@ -1,0 +1,93 @@
+.site-search {
+
+    &__top {
+        background-color: #F6F2EE;
+        border-top: 1px solid #EEE5DC;
+    }
+
+    &__top-wrapper {
+        padding: 26px 0;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__form {
+        width: 84%;
+    }
+
+    &__input {
+        padding: 14px 0 14px 16px;
+        width: 100%;
+        background-color: #FFFEFE;
+        border: 1px solid #EEE5DC;
+        border-radius: 4px;
+        height: 44px;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 17px;
+        letter-spacing: 0.02em;
+        color: #211E1C;
+    }
+
+    &__input:focus {
+        outline-color: #FDB942;
+    }
+
+    &__button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 44px;
+        background: linear-gradient(90deg, #C3D54E 0%, #A1C74F 100%);
+        box-shadow: inset 0px 6px 6px rgba(255, 255, 255, 0.32);
+        border-radius: 4px;
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 44px;
+        letter-spacing: 0.02em;
+        color: #FFFFFF;
+        border: 0;
+        cursor: pointer;
+        width: 170px;
+        margin-right: 16px;
+        transition: .3s linear;
+    }
+
+    &__button:hover {
+        background: linear-gradient(90deg, #C3D54E 0%, #A1C74F 100%);
+    }
+
+    &__button:active {
+        background: linear-gradient(90deg, #C3D54E 0%, #A1C74F 100%);
+        box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.12);
+    }
+
+    &__wrapper {
+        padding: 64px 0 90px 0;
+    }
+
+    &__results:not(:last-child) {
+        margin-bottom: 24px;
+        border-bottom: 1px solid #EEE5DC;
+    }
+
+    &__title {
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 32px;
+        color: #211E1C;
+        margin-bottom: 12px;
+    }
+
+    &__description {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        color: #211E1C;
+        margin: 0 0 24px 0;
+    }
+
+    &__selected {
+        font-weight: 600;
+    }
+}

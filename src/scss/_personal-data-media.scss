@@ -1,0 +1,29 @@
+@media (max-width: 1344px) {
+    .payment__list-nav--margin--right {
+        margin-right: 120px;
+    }
+
+    .personal-data__information {
+        max-width: 580px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .personal-data__information {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .personal-data__title {
+        font-size: 22px;
+        line-height: 28px;
+        margin-bottom: 14px;
+    }
+
+    .personal-data__paragraph {
+        font-size: 15px;
+        line-height: 23px;
+        margin: 0 0 23px 0;
+    }
+}
