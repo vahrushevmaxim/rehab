@@ -1,0 +1,27 @@
+.personal-data {
+
+    &__wrapper {
+        display: flex;
+        padding-top: 34px;
+    }
+
+    &__information {
+        max-width: 800px;
+    }
+
+    &__title {
+        font-weight: 300;
+        font-size: 32px;
+        line-height: 36px;
+        color: #211E1C;
+        margin-bottom: 32px;
+    }
+
+    &__paragraph {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 32px;
+        color: #211E1C;
+        margin: 0 0 32px 0;
+    }
+}

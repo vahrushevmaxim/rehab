@@ -1,0 +1,56 @@
+@media (max-width: 1344px) {
+    .error__number-text {
+        margin-right: 15px;
+    }
+
+    .error__right {
+        max-width: 546px;
+    }
+
+    .diagn__alph-box {
+        width: 101%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .error__wrapper {
+        flex-direction: column;
+        padding: 40px 0 51px 0;
+    }
+
+    .error__number-text {
+        text-align: center;
+        margin-bottom: 32px;
+    }
+
+    .error__number-text::after {
+        display: none;
+    }
+
+    .error__number {
+        background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+        border-radius: 4px;
+    }
+
+    .error__right {
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 576px) {
+    .error__number {
+        font-size: 96px;
+        line-height: 96px;
+    }
+
+    .error__text {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .error__text-2 {
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+}

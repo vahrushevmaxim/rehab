@@ -1,0 +1,61 @@
+.error {
+    background-color: #F6F2EE;
+
+    &__wrapper {
+        display: flex;
+        padding: 64px 0 144px 0;
+    }
+
+    &__number-text {
+        flex: 0 1 30%;
+        margin-right: 64px;
+        padding-top: 25px;
+    }
+
+    &__number-text::after {
+        content: url(/img/arrow-error.svg);
+        display: inline-block;
+        margin-left: 286px;
+    }
+
+    &__number {
+        font-weight: 400;
+        font-size: 192px;
+        line-height: 192px;
+        color: #211E1C;
+    }
+
+    &__text {
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 32px;
+        color: #211E1C;
+        margin: 20px 0;
+    }
+
+    &__text-2 {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        color: #211E1C;
+        margin: 0;
+    }
+
+    &__right {
+        max-width: 767px;
+        background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+        border-radius: 4px 4px 0px 0px;
+        padding: 40px 40px;
+    }
+
+    .children__problems {
+        padding: 0;
+        background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+        margin-bottom: 40px;
+    }
+
+    .diagn__alph {
+        width: 100%;
+    }
+
+}

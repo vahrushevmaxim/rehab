@@ -1,0 +1,26 @@
+@media (max-width: 1344px) {
+    .clinic-tests__item {
+        max-width: 464px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .clinic-tests__item {
+        max-width: 100%;
+    }
+
+}
+
+@media (max-width: 576px) {
+    .clinic-tests__wrapper {
+        padding: 0;
+    }
+
+    .clinic-tests__items {
+        gap: 0;
+    }
+    
+    .clinic-tests__item {
+        background: linear-gradient(180deg, rgba(246, 242, 238, 0) 0%, #F6F2EE 100%);
+    }
+}

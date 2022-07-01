@@ -8,7 +8,7 @@ import "./modules/tabs.js";
 import "./modules/department-slider.js";
 import "./modules/department-cardTabs.js";
 import "./modules/department-cardHeading.js";
-import "./modules/dependencies-tabs.js";
 import "./modules/news-card.js";
 import "./modules/article-info-com-1.js";
+import "./modules/payment.js";
 

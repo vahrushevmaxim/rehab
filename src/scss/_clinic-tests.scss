@@ -1,0 +1,97 @@
+.clinic-tests {
+
+    &__wrapper {
+        padding: 96px 0;
+    }
+
+    &__items {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 32px;
+    }
+
+    &__item {
+        background-color: #F6F2EE;
+        border-radius: 8px;
+        max-width: 624px;
+        padding: 40px 45px 48px 40px;
+    }
+
+    &__title {
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 28px;
+        color: #211E1C;
+        margin-bottom: 42px;
+    }
+
+    &__item p {
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 22px;
+        color: #211E1C;
+        margin: 0 0 24px 0;
+    }
+
+    &__inner {
+        margin-bottom: 16px;
+    }
+
+    &__inner::after {
+        content: "";
+        display: block;
+        width: 64px;
+        height: 4px;
+        background-color: #DDCF49;
+        margin-top: 16px;
+    }
+
+    &__text {
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 18px;
+        color: #595450;
+        display: inline-flex;
+        align-items: baseline;
+    }
+
+    &__text--img-1 {
+        margin-right: 16px;
+    }
+
+    &__text--img-1::before {
+        content: url(/img/clinic-tests-1.svg);
+        display: inline-block;
+        width: 12px;
+        height: 12px;
+        margin-right: 5px;
+    }
+
+    &__text--img-2::before {
+        content: url(/img/clinic-tests-2.svg);
+        display: inline-block;
+        width: 12px;
+        height: 12px;
+        margin-right: 5px;
+    }
+
+    &__link {
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 14px;
+        color: #595450;
+        background-color: #FFFFFF;
+        border-radius: 24px;
+        display: flex;
+        align-items: center;
+        height: 32px;
+        width: max-content;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    &__link img {
+        transform: rotate(-90deg);
+        margin-left: 7px;
+    }
+}
