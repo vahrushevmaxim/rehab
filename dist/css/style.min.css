@@ -1567,6 +1567,9 @@ body a {
   color: #ffffff;
   border-bottom: 1px solid rgba(255, 255, 255, 0.16);
 }
+.art__ban2-wrapper {
+  border-radius: 8px;
+}
 .art__ban2 {
   margin-top: 16px;
   width: 100%;
@@ -1574,8 +1577,11 @@ body a {
   background-image: url(/img/banner2-1.png);
   background-position: right center;
   background-repeat: no-repeat;
-  border-radius: 8px;
+  border-radius: 8px 8px 8px 8px;
   background-color: #f6f2ee;
+}
+.art__ban2-radius {
+  border-radius: 8px 8px 0 0;
 }
 .art__ban2-wrap {
   width: 100%;
@@ -1615,11 +1621,18 @@ body a {
   line-height: 13px;
   color: #595450;
   margin-top: 16px;
+  margin-right: 8px;
+  cursor: pointer;
 }
 .art__ban2-link .art__ban2-icon {
   width: 10px;
   height: 6px;
   margin-left: 4px;
+  transition: 0.3s;
+}
+.art__ban2-icon_close {
+  transform: rotate(180deg);
+  transition: 0.3s;
 }
 .art__curat {
   overflow: hidden;
@@ -1851,9 +1864,6 @@ body a {
   display: flex;
   align-items: flex-end;
 }
-.art__ban2-link {
-  margin-right: 8px;
-}
 .art__ban2-link-2 {
   display: flex;
   align-items: center;
@@ -1875,13 +1885,21 @@ body a {
   margin-left: 7px;
 }
 .art__tab {
-  background: linear-gradient(180deg, #EEE5DC 21.88%, #F6F2EE 100%);
+  height: auto;
+  opacity: 1;
+  visibility: visible;
+  transition: 0.3s;
+}
+.art__tab-wrapper {
+  background: linear-gradient(180deg, #eee5dc 21.88%, #f6f2ee 100%);
   padding: 32px 32px 15px 32px;
   border-radius: 0px 0px 8px 8px;
-  display: none;
 }
-.art .active-content {
-  display: block;
+.art__tab-hidden {
+  height: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
 }
 .art__tab-flex {
   display: flex;
@@ -1891,7 +1909,7 @@ body a {
 .art__tab-flex-el {
   background-color: rgba(255, 255, 255, 0.48);
   padding: 20px 0 20px 20px;
-  border-top: 4px solid #FECE7A;
+  border-top: 4px solid #fece7a;
   border-radius: 4px;
   width: 100%;
   max-width: 376px;
@@ -1901,7 +1919,7 @@ body a {
   font-size: 15px;
   line-height: 22px;
   letter-spacing: 0.02em;
-  color: #211E1C;
+  color: #211e1c;
   display: block;
   margin-bottom: 8px;
 }
@@ -1914,7 +1932,7 @@ body a {
   font-size: 15px;
   line-height: 22px;
   letter-spacing: 0.02em;
-  color: #211E1C;
+  color: #211e1c;
   list-style-type: none;
   display: flex;
   align-items: center;
@@ -1925,7 +1943,7 @@ body a {
   width: 3px;
   height: 3px;
   border-radius: 50%;
-  background-color: #211E1C;
+  background-color: #211e1c;
   margin-right: 7px;
 }
 .art__tab-text-2 {
@@ -1933,7 +1951,7 @@ body a {
   font-size: 15px;
   line-height: 22px;
   letter-spacing: 0.02em;
-  color: #211E1C;
+  color: #211e1c;
   display: block;
   margin-bottom: 8px;
 }
@@ -1953,7 +1971,7 @@ body a {
   font-size: 15px;
   line-height: 22px;
   letter-spacing: 0.02em;
-  color: #211E1C;
+  color: #211e1c;
 }
 .art__tab-buttons {
   display: flex;
@@ -1966,13 +1984,12 @@ body a {
   max-width: 100%;
   padding: 6px 16px;
   background: transparent;
-  border: 1px solid #E2DAD1;
+  border: 1px solid #e2dad1;
   border-radius: 24px;
   font-weight: 400;
   font-size: 13px;
   line-height: 13px;
   color: #595450;
-  cursor: pointer;
 }
 .art__tab-btn:not(:last-child) {
   margin-right: 8px;
@@ -1986,43 +2003,56 @@ body a {
   font-size: 15px;
   line-height: 22px;
   letter-spacing: 0.02em;
-  color: #211E1C;
+  color: #211e1c;
   margin-bottom: 5px;
 }
 .art__tab-scale {
   height: 4px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   border-radius: 0px 2px 2px 0px;
   cursor: pointer;
 }
 .art__tab-progress {
   height: 4px;
-  background: linear-gradient(90deg, #A1C74F 0%, #A1C74F 100.41%, #FDB942 177.85%, #FF5E5E 250.34%);
+  background: linear-gradient(90deg, #a1c74f 0%, #a1c74f 100.41%, #fdb942 177.85%, #ff5e5e 250.34%);
   border-radius: 0px 2px 2px 0px;
   width: 294px;
   position: relative;
-  cursor: pointer;
+  transition: 1s;
 }
-.art .art__tab-gr-1 {
+.art__tab-gr-null {
+  width: 0 !important;
+}
+.art__tab-gr {
+  width: 323px;
+  background: linear-gradient(90deg, #a1c74f 0%, #a1c74f 91.39%, #fdb942 161.89%, #ff5e5e 227.86%);
+  border-radius: 0px 2px 2px 0px;
+  transition: 1s;
+}
+.art__tab-gr-1 {
   width: 441px;
-  background: linear-gradient(90deg, #A1C74F 0%, #A1C74F 66.94%, #FDB942 118.57%, #FF5E5E 166.89%);
+  background: linear-gradient(90deg, #a1c74f 0%, #a1c74f 66.94%, #fdb942 118.57%, #ff5e5e 166.89%);
+  transition: 1s;
 }
-.art .art__tab-gr-2 {
+.art__tab-gr-2 {
   width: 625px;
-  background: linear-gradient(90deg, #A1C74F 0%, #A1C74F 62.81%, #FDB942 111.25%, #FF5E5E 156.6%);
+  background: linear-gradient(90deg, #a1c74f 0%, #a1c74f 62.81%, #fdb942 111.25%, #ff5e5e 156.6%);
+  transition: 1s;
 }
-.art .art__tab-gr-3 {
-  background: linear-gradient(90deg, #A1C74F 0%, #A1C74F 56.88%, #FDB942 100.75%, #FF5E5E 141.81%);
+.art__tab-gr-3 {
+  background: linear-gradient(90deg, #a1c74f 0%, #a1c74f 56.88%, #fdb942 100.75%, #ff5e5e 141.81%);
   width: 519px;
+  transition: 1s;
 }
-.art .art__tab-gr-4 {
-  background: linear-gradient(90deg, #A1C74F 0%, #A1C74F 40.11%, #FDB942 71.04%, #FF5E5E 100%);
+.art__tab-gr-4 {
+  background: linear-gradient(90deg, #a1c74f 0%, #a1c74f 40.11%, #fdb942 71.04%, #ff5e5e 100%);
   width: 736px;
+  transition: 1s;
 }
 .art__tab-number {
   width: 41px;
   height: 20px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   border-radius: 2px;
   font-weight: 500;
   font-size: 12px;
@@ -2037,16 +2067,16 @@ body a {
   top: 0;
   right: 426px;
 }
-.art .art__tab-number-gr-1 {
+.art__tab-number-gr-1 {
   right: 279px;
 }
-.art .art__tab-number-gr-2 {
+.art__tab-number-gr-2 {
   right: 94px;
 }
-.art .art__tab-number-gr-3 {
+.art__tab-number-gr-3 {
   right: 200px;
 }
-.art .art__tab-number-gr-4 {
+.art__tab-number-gr-4 {
   right: -18px;
 }
 .art__tab-number::after {
@@ -2065,7 +2095,7 @@ body a {
 }
 .art__tab-line {
   display: flex;
-  border-bottom: 2px solid #E2DAD1;
+  border-bottom: 2px solid #e2dad1;
   justify-content: space-between;
   padding-bottom: 6px;
   margin-bottom: 7px;
@@ -2075,7 +2105,7 @@ body a {
   font-size: 15px;
   line-height: 22px;
   letter-spacing: 0.02em;
-  color: #211E1C;
+  color: #211e1c;
 }
 .art__tab-nomination {
   display: flex;
@@ -2087,9 +2117,9 @@ body a {
   font-size: 15px;
   line-height: 22px;
   letter-spacing: 0.02em;
-  color: #211E1C;
+  color: #211e1c;
 }
-.art .art__tab-positions--bg--white {
+.art__tab-positions--bg--white {
   background-color: rgba(255, 255, 255, 0.48);
 }
 .art__tab-text-3 {
@@ -2097,12 +2127,16 @@ body a {
   font-size: 13px;
   line-height: 16px;
   letter-spacing: 0.02em;
-  color: #211E1C;
+  color: #211e1c;
 }
 
 .active-art {
   background-color: #ffffff;
   border: none;
+}
+
+.active-content {
+  display: block;
 }
 
 @media (max-width: 1344px) {
