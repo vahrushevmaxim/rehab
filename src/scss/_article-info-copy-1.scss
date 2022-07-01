@@ -157,6 +157,8 @@
 
     &__tab-buttons {
         display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
     }
 
     &__tab-btn {
@@ -173,10 +175,6 @@
         font-size: 13px;
         line-height: 13px;
         color: #595450;
-    }
-
-    &__tab-btn:not(:last-child) {
-        margin-right: 8px;
     }
 
     &__tab-services-wrapper {
