@@ -1,6 +1,9 @@
 @media (max-width: 1344px) {
     .art {
         margin-bottom: 54px;
+        &__hid {
+            display: none;
+        }
         &__wrapper {
             padding-top: 64px;
             gap: 32px;
@@ -230,11 +233,27 @@
         &__items-box {
             gap: 16px;
         }
+        &__left-link {
+            width: 55%;
+        }
+        &__left-link--hidden {
+            display: none;
+        }
+        &__widget {
+            display: block;
+        }
     }
 }
 @media (max-width: 576px) {
+    .m-576 {
+        display: flex;
+        padding: 0;
+    }
     .art {
         margin-bottom: 0;
+        &__left-link {
+            width: 100%;
+        }
         &__prog-butt {
             width: 255px;
         }
@@ -339,11 +358,10 @@
         }
         &__galery-img_sertificate {
             width: 185px;
-            height: 141
-            px;
+            height: 141px;
         }
         &__count {
-            top: 122px;
+            top: 204px;
         }
         &__other {
             border-radius: 0;
@@ -386,6 +404,46 @@
         }
         &__item-photo > .art__item-img {
             object-fit: cover;
+        }
+        &__parag {
+            display: none;
+        }
+        &__tab-wrapper {
+            padding: 16px;
+        }
+        &__tab-table {
+            padding: 8px;
+        }
+        &__tab-appellation {
+            font-size: 12px;
+            line-height: 14px;
+            width: max-content;
+        }
+        &__tab-number {
+            left: 56%;
+        }
+        &__tab-number-gr-2 {
+            left: 76%;
+        }
+        &__tab-number-gr-3 {
+            left: 61%;
+        }
+        &__tab-number-gr-4 {
+            left: 88%;
+        }
+        &__tab-positions {
+            font-size: 12px;
+            font-weight: 14px;
+        }
+        &__tab-appellation:first-child {
+            width: 34%;
+            flex-shrink: 0;
+        }
+        &__tab-appellation:not(:first-child) {
+            width: 20%;
+        }
+        &__tab-appellation:last-child {
+            text-align: right;
         }
     }
 }
