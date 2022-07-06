@@ -8416,9 +8416,19 @@ button.swiper-pagination-bullet {
   line-height: 32px;
   color: #211E1C;
 }
+.gallery__btn-bg {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 62.5%);
+  margin-top: -14px;
+  position: relative;
+  z-index: 5;
+  margin-top: -246px;
+  height: 256px;
+}
 .gallery__btn-wrapper {
   display: flex;
   justify-content: center;
+  height: 100%;
+  align-items: flex-end;
 }
 .gallery__btn {
   font-weight: 400;
@@ -8454,6 +8464,10 @@ button.swiper-pagination-bullet {
   }
 }
 @media (max-width: 1024px) {
+  .gallery__wrapper {
+    padding: 66px 0;
+  }
+
   .gallery__section {
     max-width: 100%;
     width: 100%;
@@ -8461,6 +8475,254 @@ button.swiper-pagination-bullet {
 
   .gallery__image-wrapper {
     width: 100%;
+  }
+}
+@media (max-width: 576px) {
+  .gallery__wrapper {
+    padding: 32px 0;
+  }
+
+  .gallery__sections {
+    gap: 13px;
+  }
+
+  .gallery__image-wrapper {
+    margin-bottom: 15px;
+  }
+
+  .gallery__text {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .gallery__btn-bg {
+    height: 231px;
+  }
+}
+.gallery-album__wrapper {
+  padding-top: 64px;
+}
+.gallery-album .gallery__sections {
+  margin-bottom: 70px;
+}
+.gallery-album .gallery__image-wrapper {
+  margin: 0;
+}
+.gallery-album .news-card__slaider-wrapper {
+  padding: 96px 0 78px 0;
+}
+.gallery-album .art__galery {
+  display: none;
+}
+
+@media (max-width: 1344px) {
+  .gallery-album .news-card__slaider-wrapper {
+    padding: 96px 0 57px 0;
+  }
+}
+@media (max-width: 1024px) {
+  .gallery-album__wrapper {
+    padding-bottom: 64px;
+  }
+
+  .gallery-album .gallery__sections {
+    margin-bottom: 56px;
+  }
+
+  .gallery-album .art__galery {
+    display: block;
+  }
+
+  .gallery-album .art__galery-photo {
+    height: 208px;
+  }
+}
+@media (max-width: 576px) {
+  .gallery-album__wrapper {
+    padding-top: 0;
+    padding-bottom: 37px;
+  }
+
+  .gallery-album .gallery__sections {
+    gap: 0;
+    margin-bottom: 15px;
+  }
+
+  .gallery-album .art__count {
+    top: 239px;
+  }
+}
+.therapy__wrapper {
+  padding: 85px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.therapy__inner {
+  max-width: 832px;
+}
+.therapy__inner p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: #211E1C;
+  margin: 0 0 32px 0;
+}
+.therapy__top {
+  display: flex;
+  margin-bottom: 32px;
+}
+.therapy__top p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: #211E1C;
+  margin: 0 32px 0 0;
+}
+.therapy__italics {
+  font-weight: 600;
+}
+.therapy__image {
+  width: 512px;
+  height: 320px;
+}
+.therapy__img {
+  object-fit: cover;
+  display: block;
+}
+.therapy__list {
+  padding-left: 29px;
+  margin-bottom: 32px;
+}
+.therapy__item {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #211E1C;
+  position: relative;
+}
+.therapy__item:not(:last-child) {
+  margin-bottom: 10px;
+}
+.therapy__item::before {
+  content: "";
+  display: inline-block;
+  width: 3px;
+  height: 3px;
+  background-color: #211E1C;
+  border-radius: 50%;
+  position: absolute;
+  left: -14px;
+  top: 10px;
+}
+.therapy .art__galery--therapy {
+  display: none;
+}
+.therapy .art__count {
+  top: 260px;
+}
+.therapy .art__autor {
+  padding-top: 33px;
+}
+
+@media (max-width: 1344px) {
+  .therapy__inner {
+    max-width: 543px;
+  }
+
+  .therapy__top {
+    flex-direction: column;
+  }
+
+  .therapy__image {
+    order: -1;
+    width: 543px;
+    margin-bottom: 32px;
+  }
+
+  .therapy__img {
+    width: 100%;
+    max-height: 100%;
+  }
+}
+@media (max-width: 1024px) {
+  .therapy__wrapper {
+    flex-direction: column;
+    padding: 65px 0;
+  }
+
+  .therapy__inner {
+    max-width: 100%;
+  }
+
+  .therapy__image {
+    width: 100%;
+  }
+
+  .therapy .art__galery--therapy {
+    display: block;
     height: 100%;
+  }
+
+  .therapy .art__galery-photo {
+    max-height: 509px;
+  }
+
+  .art__galery-photo--height {
+    height: 226px;
+  }
+}
+@media (max-width: 576px) {
+  .therapy__wrapper {
+    padding: 0;
+  }
+
+  .therapy__inner {
+    margin-bottom: 32px;
+  }
+
+  .therapy__top {
+    margin-bottom: 15px;
+  }
+
+  .therapy__image {
+    height: 100%;
+  }
+
+  .therapy__top p {
+    margin: 0;
+    font-size: 15px;
+    line-height: 26px;
+  }
+
+  .therapy__inner p {
+    font-size: 15px;
+    line-height: 26px;
+    margin: 0 0 15px 0;
+  }
+
+  .therapy__list {
+    margin-bottom: 24px;
+  }
+
+  .therapy .art__galery {
+    background-color: #F6F2EE;
+    height: 327px;
+  }
+
+  .therapy .art__galery--therapy {
+    background-color: #F6F2EE;
+    height: 100%;
+  }
+
+  .therapy .art__galery--therapy {
+    padding-bottom: 0;
+  }
+
+  .therapy .art__video {
+    background-color: #FFFF;
+  }
+
+  .therapy .art__other {
+    background-color: #FFF;
   }
 }

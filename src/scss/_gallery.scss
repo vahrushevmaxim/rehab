@@ -36,9 +36,20 @@
         color: #211E1C;
     }
 
+    &__btn-bg {
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 62.5%);
+        margin-top: -14px;
+        position: relative;
+        z-index: 5;
+        margin-top: -246px;
+        height: 256px;
+    }
+
     &__btn-wrapper {
         display: flex;
         justify-content: center;
+        height: 100%;
+        align-items: flex-end;
     }
 
     &__btn {
