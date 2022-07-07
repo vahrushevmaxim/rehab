@@ -8375,3 +8375,304 @@ button.swiper-pagination-bullet {
     background-color: #FFF;
   }
 }
+.contacts__wrapper {
+  padding: 64px 0 72px 0;
+}
+.contacts__connection {
+  display: flex;
+  justify-content: space-between;
+}
+.contacts__messengers {
+  background: linear-gradient(180deg, #F6F2EE 0%, rgba(246, 242, 238, 0) 100%);
+  border-radius: 4px;
+  padding: 41px 32px;
+  display: none;
+}
+.contacts__text-resize-1024 {
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 24px;
+  color: #211E1C;
+  margin-bottom: 24px;
+  display: block;
+}
+.contacts__items {
+  display: flex;
+  gap: 8px;
+}
+.contacts__item {
+  display: block;
+  width: 101px;
+  height: 52px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contacts__item--bg--1 {
+  background: linear-gradient(90deg, #C3D54E 0%, #A1C74F 100%);
+  box-shadow: inset 0px 6px 6px rgba(255, 255, 255, 0.32);
+  border-radius: 4px;
+}
+.contacts__item--bg--2 {
+  background: linear-gradient(90deg, #25D366 0%, #0F9F45 100%);
+  box-shadow: inset 0px 6px 6px rgba(255, 255, 255, 0.32);
+  border-radius: 4px;
+}
+.contacts__item--bg--3 {
+  background: linear-gradient(90deg, #36AEE2 0%, #1E96C8 100%);
+  box-shadow: inset 0px 6px 6px rgba(255, 255, 255, 0.32);
+  border-radius: 4px;
+}
+.contacts__phone {
+  max-width: 624px;
+  padding: 56px 64px 60px 64px;
+  background: linear-gradient(180deg, #F6F2EE 0%, rgba(246, 242, 238, 0) 100%);
+  border-radius: 4px;
+}
+.contacts__mail {
+  max-width: 624px;
+  padding: 56px 64px 60px 64px;
+  background: linear-gradient(180deg, #F6F2EE 0%, rgba(246, 242, 238, 0) 100%);
+  border-radius: 4px;
+}
+.contacts__text {
+  font-weight: 300;
+  font-size: 26px;
+  line-height: 24px;
+  color: #211E1C;
+  display: block;
+  margin-bottom: 12px;
+}
+.contacts__numlink {
+  font-weight: 300;
+  font-size: 48px;
+  line-height: 80px;
+  color: #211E1C;
+}
+.contacts__numlink-big {
+  font-size: 64px;
+}
+.contacts__text-link {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 18px;
+  color: #211E1C;
+}
+.contacts__mail-link {
+  font-weight: 300;
+  font-size: 48px;
+  line-height: 65px;
+  color: #211E1C;
+  display: block;
+  border-bottom: 1px solid rgba(89, 84, 80, 0.16);
+  margin-bottom: 10px;
+}
+.contacts__section-1 {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 32px;
+}
+.contacts__left {
+  max-width: 592px;
+  padding-top: 20px;
+}
+.contacts__title {
+  font-weight: 400;
+  font-size: 42px;
+  line-height: 46px;
+  letter-spacing: 0.02em;
+  color: #211E1C;
+  margin-bottom: 24px;
+}
+.contacts__description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #211E1C;
+  margin: 0 0 32px 0;
+}
+.contacts__btn {
+  border: none;
+  background-color: transparent;
+  text-decoration-line: underline;
+  cursor: pointer;
+}
+.contacts__main {
+  display: flex;
+  justify-content: space-between;
+}
+.contacts__main:not(:last-child) {
+  border-bottom: 1px solid #F6F2EE;
+  margin-bottom: 16px;
+  padding-bottom: 16px;
+}
+.contacts__information-text {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 17px;
+  color: #211E1C;
+}
+.contacts__information-text-2 {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 17px;
+  color: #211E1C;
+}
+.contacts__section-2 {
+  display: flex;
+  justify-content: space-between;
+}
+.contacts__right-2 {
+  max-width: 592px;
+  padding-top: 20px;
+}
+.contacts__modal-window {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(33, 30, 28, 0.88);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  z-index: 6;
+  padding-top: 6%;
+  display: none;
+}
+.contacts__modal-body {
+  position: relative;
+}
+.contacts__modal-content {
+  display: flex;
+  justify-content: space-between;
+  background-color: #FFFF;
+  width: 1024px;
+  height: 512px;
+  padding: 64px 80px 64px 64px;
+}
+.contacts__modal-map {
+  width: 512px;
+  background-color: #0F9F45;
+}
+.contacts__modal-text {
+  max-width: 320px;
+  padding-top: 50px;
+}
+.contacts__modal-title {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 42px;
+  letter-spacing: 0.02em;
+  color: #211E1C;
+}
+.contacts__modal-description {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+  color: #211E1C;
+}
+.contacts__modal-description:not(:last-child) {
+  margin-bottom: 10px;
+}
+.contacts__modal-close {
+  position: absolute;
+  top: 24px;
+  right: 26px;
+  cursor: pointer;
+}
+
+.licenses {
+  background: linear-gradient(to bottom, #ffffff 266px, #f6f2ee 160px);
+}
+.licenses__wrapper {
+  padding: 0 0 90px 0;
+}
+.licenses__slaider {
+  padding: 0;
+  margin-bottom: 40px;
+}
+.licenses__wrapper-title {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 41px;
+}
+.licenses__title {
+  font-weight: 400;
+  font-size: 42px;
+  line-height: 46px;
+  letter-spacing: 0.02em;
+  color: #211E1C;
+}
+.licenses__slaider-nav {
+  display: flex;
+}
+.licenses__slaider-nav-wrapper {
+  width: 48px;
+  height: 48px;
+  background-color: #FDB942;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.licenses__slaider-nav-wrapper:not(:last-child) {
+  margin-right: 5px;
+}
+.licenses__slaider-nav-wrapper:hover {
+  background-color: #F1AC34;
+}
+.licenses__slaider-nav-wrapper:active {
+  box-shadow: inset 0px 4px 0px rgba(0, 0, 0, 0.08);
+}
+.licenses__slaider-nav-arrow {
+  width: 15px;
+  height: 15px;
+}
+.licenses__slaider-items {
+  display: flex;
+  justify-content: space-between;
+}
+.licenses__img {
+  border-radius: 4px;
+  object-fit: cover;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.licenses__count {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: rgba(89, 84, 80, 0.52);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 32px;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: 7px;
+  bottom: 8px;
+  z-index: 10;
+  display: none;
+}
+.licenses__title-2 {
+  font-weight: 400;
+  font-size: 42px;
+  line-height: 46px;
+  letter-spacing: 0.02em;
+  color: #211E1C;
+  margin-bottom: 24px;
+}
+.licenses__information {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  color: #211E1C;
+}
+.licenses__italics {
+  font-weight: 600;
+}
