@@ -1,0 +1,104 @@
+@media (max-width: 1344px) {
+    .therapy__inner {
+        max-width: 543px;
+    }
+
+    .therapy__top {
+        flex-direction: column;
+    }
+
+    .therapy__image {
+        order: -1;
+        width: 543px;
+        margin-bottom: 32px;
+    }
+
+    .therapy__img {
+        width: 100%;
+        max-height: 100%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .therapy__wrapper {
+        flex-direction: column;
+        padding: 65px 0;
+    }
+
+    .therapy__inner {
+        max-width: 100%;
+    }
+
+    .therapy__image {
+        width: 100%;
+    }
+
+    .therapy .art__galery--therapy {
+        display: block;
+        height: 100%;
+    }
+
+    .therapy .art__galery-photo {
+        max-height: 509px;
+    }
+
+    .art__galery-photo--height {
+        height: 226px;
+    }
+}
+
+@media (max-width: 576px) {
+    .therapy__wrapper {
+        padding: 0;
+    }
+
+    .therapy__inner {
+        margin-bottom: 32px;
+    }
+
+    .therapy__top {
+        margin-bottom: 15px;
+    }
+
+    .therapy__image {
+        height: 100%;
+    }
+
+    .therapy__top p {
+        margin: 0;
+        font-size: 15px;
+        line-height: 26px;
+    }
+
+    .therapy__inner p {
+        font-size: 15px;
+        line-height: 26px;
+        margin: 0 0 15px 0;
+    }
+
+    .therapy__list {
+        margin-bottom: 24px;
+    }
+
+    .therapy .art__galery {
+        background-color: #F6F2EE;
+        height: 327px;
+    }
+
+    .therapy .art__galery--therapy {
+        background-color: #F6F2EE;
+        height: 100%;
+    }
+
+    .therapy .art__galery--therapy {
+        padding-bottom: 0; 
+    }
+
+    .therapy .art__video {
+        background-color: #FFFF;
+    }
+
+    .therapy .art__other {
+        background-color: #FFF;
+    }    
+}

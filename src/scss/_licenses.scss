@@ -1,0 +1,111 @@
+.licenses {
+    background: linear-gradient(to bottom, #ffffff 266px, #f6f2ee 160px);
+
+    &__wrapper {
+        padding: 0 0 90px 0;
+    }
+
+    &__slaider {
+        padding: 0;
+        margin-bottom: 40px;
+    }
+
+    &__wrapper-title {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 41px;
+    }
+
+    &__title {
+        font-weight: 400;
+        font-size: 42px;
+        line-height: 46px;
+        letter-spacing: 0.02em;
+        color: #211E1C;
+    }
+
+    &__slaider-nav {
+        display: flex;
+    }
+
+    &__slaider-nav-wrapper {
+        width: 48px;
+        height: 48px;
+        background-color: #FDB942;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    &__slaider-nav-wrapper:not(:last-child) {
+        margin-right: 5px;
+    }
+
+    &__slaider-nav-wrapper:hover {
+        background-color: #F1AC34;
+    }
+
+    &__slaider-nav-wrapper:active {
+        box-shadow: inset 0px 4px 0px rgba(0, 0, 0, 0.08);
+    }
+
+    &__slaider-nav-arrow {
+        width: 15px;
+        height: 15px;
+    }
+
+    &__slaider-items {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__img {
+        border-radius: 4px;
+        object-fit: cover;
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
+    &__count {
+        position: absolute;
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        background: rgba(89, 84, 80, 0.52);
+        font-style: normal;
+        font-weight: 600;
+        font-size: 10px;
+        line-height: 32px;
+        color: #ffffff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        right: 7px;
+        bottom: 8px;
+        z-index: 10;
+        display: none;
+    }
+
+    &__title-2 {
+        font-weight: 400;
+        font-size: 42px;
+        line-height: 46px;
+        letter-spacing: 0.02em;
+        color: #211E1C;
+        margin-bottom: 24px;
+    }
+
+    &__information {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 32px;
+        color: #211E1C;
+    }
+
+    &__italics {
+        font-weight: 600;
+    }
+}

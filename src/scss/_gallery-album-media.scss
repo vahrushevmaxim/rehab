@@ -1,0 +1,39 @@
+@media (max-width: 1344px) {
+    .gallery-album .news-card__slaider-wrapper {
+        padding: 96px 0 57px 0;
+    }
+}
+
+@media (max-width: 1024px) {
+    .gallery-album__wrapper {
+        padding-bottom: 64px;
+    }
+
+    .gallery-album .gallery__sections {
+        margin-bottom: 56px;
+    }
+
+    .gallery-album .art__galery {
+        display: block;
+    }
+
+    .gallery-album .art__galery-photo {
+        height: 208px;
+    }
+}
+
+@media (max-width: 576px) {
+    .gallery-album__wrapper {
+        padding-top: 0;
+        padding-bottom: 37px;
+    }
+
+    .gallery-album .gallery__sections {
+        gap: 0;
+        margin-bottom: 15px;
+    }
+
+    .gallery-album .art__count {
+        top: 239px;
+    }
+}
