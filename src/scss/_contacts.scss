@@ -168,9 +168,19 @@
         color: #211E1C;
     }
 
+    &__righ {
+        width: 624px;
+        height: 384px;
+    }
+
     &__section-2 {
         display: flex;
         justify-content: space-between;
+    }
+
+    &__left-2 {
+        width: 624px;
+        height: 384px;
     }
 
     &__right-2 {
@@ -192,6 +202,10 @@
         display: none;
     }
 
+    .active {
+        display: flex;
+    }
+
     &__modal-body {
         position: relative;
     }
@@ -208,7 +222,7 @@
 
     &__modal-map {
         width: 512px;
-        background-color: #0F9F45;
+        
     }
 
     &__modal-text {
