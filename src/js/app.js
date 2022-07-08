@@ -13,6 +13,7 @@ import "./modules/news-card.js";
 import "./modules/article-info-com-1.js";
 import "./modules/payment.js";
 import "./modules/map.js";
-import "./modules/licenses.js";
 import "./modules/contacts-modal.js";
+import "./modules/licenses.js";
+
 

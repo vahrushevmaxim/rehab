@@ -1,0 +1,127 @@
+.rooms {
+
+    &__wrapper {
+        padding: 96px 0;
+    }
+
+    &__department-1 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 32px;
+    }
+
+    &__text-wrapper {
+        max-width: 592px;
+    }
+
+    &__text-wrapper p {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #211E1C;
+    }
+
+    &__title-1 {
+        font-weight: 400;
+        font-size: 42px;
+        line-height: 46px;
+        color: #211E1C;
+    }
+
+    &__list {
+        padding-left: 12px;
+        display: block;
+    }
+
+    &__item {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 28px;
+        color: #211E1C;
+        list-style-type: none;
+        display: flex;
+        align-items: center;
+    }
+
+    &__item::before {
+        content: "";
+        display: inline-block;
+        width: 4px;
+        height: 4px;
+        background-color: #211E1C;
+        border-radius: 50%;
+        margin-right: 10px;
+    }
+
+    &__image-wrapper {
+        width: 624px;
+        height: 416px;
+    }
+
+    &__img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+    }
+
+    &__department-2 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__title-2 {
+        font-weight: 400;
+        font-size: 42px;
+        line-height: 46px;
+        color: #211E1C;
+        text-align: center;
+    }
+
+    &__title-2::after {
+        content: "";
+        display: block;
+        width: 80px;
+        height: 4px;
+        background-color: #A1C74F;
+        margin: 0 auto;
+        margin-top: 28px;
+    }
+
+    &__room {
+        max-width: 624px;
+    }
+
+    &__categories-foto {
+        width: 624px;
+        height: 320px;
+    }
+
+    &__categories-img {
+        width: 100%;
+        height: 100%;
+        display: block;
+        object-fit: cover;
+    }
+
+    &__text-center {
+        max-width: 512px;
+        margin: 0 auto;
+    }
+
+    &__categories-text {
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 36px;
+        color: #211E1C;
+    }
+
+    &__room p {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #211E1C;
+    }
+}

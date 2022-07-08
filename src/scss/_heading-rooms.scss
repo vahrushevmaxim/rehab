@@ -1,6 +1,10 @@
 .heading-rooms {
     background-color: #F7F2EE;
 
+    &__wrapper {
+        padding: 64px 0 19px 0;
+    }
+
     &__inner {
         display: flex;
     }
@@ -8,9 +12,10 @@
     &__image {
         width: 768px;
         height: 448px;
+        margin: 0 64px 55px 0;
     }
 
-    &__image {
+    &__img {
         width: 100%;
         display: block;
         object-fit: cover;
@@ -22,6 +27,11 @@
         font-size: 46px;
         line-height: 52px;
         color: #211E1C;
+    }
+
+    &__title-wrapper {
+        max-width: 448px;
+        padding-top: 50px;
     }
 
     &__title-wrapper p {
@@ -45,6 +55,7 @@
         line-height: 22px;
         letter-spacing: 0.02em;
         color: #211E1C;
+        border: none;
     }
 
 
