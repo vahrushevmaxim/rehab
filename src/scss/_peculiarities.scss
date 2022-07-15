@@ -22,6 +22,7 @@
         letter-spacing: 0.02em;
         color: #211E1C;
         margin-bottom: 8px;
+        z-index: 100;
     }
 
     &__title-wrapper p {
@@ -50,6 +51,11 @@
     &__content {
         display: flex;
         align-items: center;
+        justify-content: center;
+    }
+
+    &__content:first-child {
+        margin-bottom: 32px;
     }
 
     &__image-wrapper {

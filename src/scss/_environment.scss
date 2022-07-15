@@ -1,0 +1,20 @@
+.environment {
+    background: linear-gradient(to top, #ffffff 174px, #f6f2ee 160px);
+
+    &__wrapper {
+        position: relative;
+        padding: 152px 0 78px 0;
+    }
+
+    &__content:first-child {
+        margin-bottom: 32px;
+    }
+
+    &__content p:not(:last-child) {
+        margin-bottom: 10px;
+    }
+
+    &__bg {
+        background-color: #F6F2EE;
+    }
+}

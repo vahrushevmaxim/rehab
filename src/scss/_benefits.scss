@@ -1,0 +1,12 @@
+.benefits {
+    background-color: #F6F2EE;
+
+    &__wrapper {
+        position: relative;
+        padding: 152px 0 78px 0;
+    }
+
+    &__bg {
+        background: linear-gradient(180deg, rgba(246, 242, 238, 0) 0%, #F6F2EE 62.5%);
+    }
+}

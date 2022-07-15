@@ -1,0 +1,28 @@
+.treatments {
+    background-color: #F6F2EE;
+
+    &__wrapper {
+        position: relative;
+        padding: 152px 0 78px 0;
+    }
+
+    &__image {
+        width: 1024px;
+        height: 576px;
+        margin: 0 auto;
+        margin-bottom: 32px;
+    }
+
+    &__text {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 28px;
+        letter-spacing: 0.02em;
+        color: #211E1C;
+        text-align: center;
+    }
+
+    &__link {
+        text-decoration-line: underline;
+    }
+}
