@@ -8,11 +8,11 @@
 
 @media (max-width: 1024px) {
     .patient-status__wrapper {
-        padding: 130px 0 50px 0;
+        padding: 90px 0 50px 0;
     }
 
-    .patient-status__counter {
-        top: 66px;
+    .counter-main {
+        top: 32px;
     }
 
     .patient-status__image-status {
@@ -23,22 +23,9 @@
 }
 
 @media (max-width: 576px) {
-    .patient-status__wrapper {
-        padding: 110px 0 24px 0;
-    } 
-
-    .peculiarities__title {
-        font-size: 38px;
-        line-height: 46px;
-    }
-
     .peculiarities__title-wrapper p {
         font-size: 18px;
         line-height: 28px;
-    }
-
-    .patient-status__counter {
-        top: 50px;
     }
 
     .patient-status__image-status {

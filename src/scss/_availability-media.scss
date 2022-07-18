@@ -1,0 +1,27 @@
+@media (max-width: 1344px) {
+    .availability__wrapper {
+        padding: 152px 0 0 0;
+    }
+}
+
+@media (max-width: 1024px) {
+    .availability__p {
+        padding-bottom: 48px;
+    }
+
+    .availability__wrapper {
+        padding: 90px 0 0 0;
+    }
+
+    .availability__bg {
+        background: #FFFF;
+    }
+
+    .availability__items {
+        flex-direction: column;
+    }
+
+    .availability__item:not(:last-child) {
+        margin-bottom: 24px;
+    }
+}

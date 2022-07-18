@@ -1,0 +1,43 @@
+@media (max-width: 1344px) {
+    .team__team-image {
+        width: 960px;
+        height: 540px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .team {
+        background: #F6F2EE;
+    }
+
+    .team__wrapper {
+        padding: 90px 0 44px 0;
+    }
+
+    .team__team-image {
+        width: 512px;
+        height: 288px;
+    }
+
+    .team__brands {
+        flex-direction: column;
+    }
+
+    .team__brand {
+        flex: auto;
+    }
+}
+
+@media (max-width: 576px) {
+    .team__team-image {
+        width: 68%;
+        height: 180px;
+    }
+}
+
+@media (max-width: 384px) {
+    .team__team-image {
+        width: 100%;
+        height: 180px;
+    }
+}
