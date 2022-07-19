@@ -1,26 +1,27 @@
 document.addEventListener('DOMContentLoaded', function () {
     if (document.querySelector('.heading-about__points-wrapper')) {
-        let points = document.querySelectorAll('.heading-about__point');
+        let points = document.querySelectorAll('.heading-about__point-link');
         let text = document.querySelectorAll('.heading-about__pointer-wrapper');
-        function activeText() {
-            text.forEach(function (content) {
-                content[3].classList.add('shoy');
+
+        function activeText(index) {
+            text.forEach(function (el) {
+                el.classList.remove('show');
             });
+            text[index].classList.add('show');
         }
-        activeText();
-        
-        points.forEach(function (point) {
+        activeText(0);
+
+        points.forEach(function (point, index) {
             point.addEventListener("click", function (e) {
-                e.preventDefault();
-
-                // console.log()
-
-
+                if (e.target.classList.contains('heading-about__point-link')) {
+                    
+                    points.forEach(function (item) {
+                        item.classList.remove('active');
+                    });
+                    point.classList.add('active');
+                    activeText(index);
+                }
             });
-
         });
-
-
-
     };
 });

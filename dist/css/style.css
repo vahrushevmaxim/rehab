@@ -9613,7 +9613,7 @@ button.swiper-pagination-bullet {
   background-color: #FDB942;
   outline: 2px solid #FDB942;
 }
-.heading-about .shoy {
+.heading-about .show {
   display: block;
 }
 .heading-about__point-link::before {
@@ -9631,30 +9631,29 @@ button.swiper-pagination-bullet {
 }
 .heading-about__pointer-wrapper {
   position: absolute;
-  left: -212px;
   background-color: #FFFF;
   top: -14px;
-  width: 172px;
-  height: 36px;
   border-radius: 1px 0 0 1px;
+  right: 0px;
+  margin-right: 50px;
+  width: max-content;
   display: none;
 }
 .heading-about__pointer-b {
   position: relative;
-  height: 36px;
 }
 .heading-about__pointer-b::before {
   content: "";
   display: inline-block;
   background-color: #FFFF;
-  height: 28px;
-  width: 28px;
+  height: 26px;
+  width: 26px;
   position: absolute;
   right: -14px;
   top: 4px;
   transform: rotate(45deg);
   z-index: -10;
-  border-radius: 18%;
+  border-radius: 14%;
 }
 .heading-about__pointer {
   padding: 8px 12px;
@@ -9669,6 +9668,10 @@ button.swiper-pagination-bullet {
 @media (max-width: 1024px) {
   .heading-about__points-wrapper {
     top: 146px;
+  }
+
+  .heading-about .show {
+    display: none;
   }
 }
 @media (max-width: 576px) {

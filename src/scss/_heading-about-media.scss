@@ -2,6 +2,10 @@
     .heading-about__points-wrapper {
         top: 146px;
     }
+
+    .heading-about .show {
+        display: none;
+    }
 }
 
 @media (max-width: 576px) {
