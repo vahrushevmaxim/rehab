@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function () {
         points.forEach(function (point, index) {
             point.addEventListener("click", function (e) {
                 if (e.target.classList.contains('heading-about__point-link')) {
-                    
+
                     points.forEach(function (item) {
                         item.classList.remove('active');
                     });
@@ -23,5 +23,28 @@ document.addEventListener('DOMContentLoaded', function () {
                 }
             });
         });
+
+        let heading = document.querySelectorAll('[data-anchor]');
+        heading.forEach(function (el, index) {
+
+            function isVisible() {
+
+                let coords = el.getBoundingClientRect();
+
+                let windowHeight = el.clientHeight;
+
+             
+            }
+
+            function activeContent(index) {
+                text.forEach(function (el) {
+                    el.classList.remove('show');
+                });
+                text[index].classList.add('show');
+            }
+
+        });
+
+
     };
 });
