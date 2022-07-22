@@ -25,26 +25,27 @@ document.addEventListener('DOMContentLoaded', function () {
         });
 
         let heading = document.querySelectorAll('[data-anchor]');
+
         heading.forEach(function (el, index) {
+            let id = el.id;
+            let headingItem = el.clientHeight;
+            let coords = el.getBoundingClientRect();
+            let top = coords.top + window.pageYOffset;
 
-            function isVisible() {
 
-                let coords = el.getBoundingClientRect();
+            window.addEventListener('scroll', function (e) {
 
-                let windowHeight = el.clientHeight;
+                // console.log();
 
-             
-            }
-
+            });
             function activeContent(index) {
                 text.forEach(function (el) {
                     el.classList.remove('show');
                 });
                 text[index].classList.add('show');
             }
+            activeContent(0);
 
         });
-
-
     };
 });
