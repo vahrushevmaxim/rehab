@@ -31,7 +31,7 @@
             <div class="contacts__section-1">
                 <div class="contacts__left">
                     <h3 class="contacts__title">Реабилитационный центр</h3>
-                    <p class="contacts__description">Реабилитационный центр находится в живописном районе Подмосковья,
+                    <p>Реабилитационный центр находится в живописном районе Подмосковья,
                         около Икшинского водохранилища. Изолированность от городской среды, покой и развитая
                         инфраструктура всячески способствуют процессу преодоления любого недуга.<button
                             class="contacts__btn">Как добраться?</button></p>
@@ -55,10 +55,12 @@
                 </div>
             </div>
             <div class="contacts__section-2">
-                <div id="map-2" class="contacts__left-2"></div>
+                <div id="container" class="contacts__left-wrapper">
+                    <div id="map-2" class="contacts__left-2"></div>
+                </div>
                 <div class="contacts__right-2">
                     <h3 class="contacts__title">Амбулаторный центр</h3>
-                    <p class="contacts__description">Проведение психологических консультаций, семейных сессий, программ
+                    <p>Проведение психологических консультаций, семейных сессий, программ
                         постлечебной поддержки пациентов и их родственников.</p>
                     <div class="contacts__main">
                         <div class="contacts__information-text">Адрес</div>
@@ -77,21 +79,23 @@
             <div class="contacts__modal-window">
                 <div class="contacts__modal-body">
                     <div class="contacts__modal-content">
-                        <div id="map-3" class="contacts__modal-map">
-
+                        <div id="container" class="contacts__modal-wrapper">
+                            <div id="map-3" class="contacts__modal-map"></div>
                         </div>
                         <div class="contacts__modal-text">
                             <h3 class="contacts__modal-title">Как добраться?</h3>
-                            <p class="contacts__modal-description">Едем по Дмитровскому шоссе, на 54 км поворачиваем
+                            <p>Едем по Дмитровскому шоссе, на 54 км поворачиваем
                                 направо
                                 ориентир — указатель Софрино, Ногинск. Проезжаем 1.5 км до поворота направо на указатель
                                 Славино, Игнатово, Рождественно. Едем 10 км прямо по главной дороге до перекрестка
                                 Большое
                                 Ивановское и Голенищево, через 200 метров после перекрестка сворачиваем налево.</p>
-                            <p class="contacts__modal-description">GPS: ш. 56.136 711, д. 37.571 728.</p>
+                            <p>GPS: ш. 56.136 711, д. 37.571 728.</p>
                         </div>
                     </div>
-                    <img src="/img/contacts-modal.svg" alt="кнопка закрыть" class="contacts__modal-close">
+                    <div class="contacts__modal-bg">
+                        <img src="/img/contacts-modal.svg" alt="кнопка закрыть" class="contacts__modal-close">
+                    </div>
                 </div>
             </div>
         </div>

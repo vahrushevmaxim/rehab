@@ -1,7 +1,7 @@
 .rooms {
 
     &__wrapper {
-        padding: 96px 0;
+        padding: 96px 0 0 0;
     }
 
     &__department-1 {
@@ -62,14 +62,15 @@
     &__img {
         width: 100%;
         height: 100%;
-        object-fit: cover;
         display: block;
+        border-radius: 4px;
     }
 
     &__department-2 {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        margin-bottom: 64px;
     }
 
     &__title-2 {
@@ -78,6 +79,7 @@
         line-height: 46px;
         color: #211E1C;
         text-align: center;
+        margin-bottom: 64px;
     }
 
     &__title-2::after {
@@ -90,20 +92,28 @@
         margin-top: 28px;
     }
 
+    &__categories {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 32px;
+    }
+
     &__room {
         max-width: 624px;
+        padding-bottom: 68px;
     }
 
     &__categories-foto {
         width: 624px;
         height: 320px;
+        margin-bottom: 40px;
     }
 
     &__categories-img {
         width: 100%;
         height: 100%;
         display: block;
-        object-fit: cover;
+        border-radius: 4px 4px 0px 0px;
     }
 
     &__text-center {
@@ -116,6 +126,7 @@
         font-size: 36px;
         line-height: 36px;
         color: #211E1C;
+        margin-bottom: 20px;
     }
 
     &__room p {
@@ -123,5 +134,31 @@
         font-size: 16px;
         line-height: 24px;
         color: #211E1C;
+        margin: 0 0 20px 0;
+    }
+
+    &__options {
+        display: flex;
+        justify-content: space-between;
+        gap: 4px;
+    }
+
+    &__flex-el {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    &__nomination {
+        display: flex;
+        justify-content: space-between;
+        background-color: #F6F2EE;
+        border-radius: 4px;
+        padding: 12px 12px;
+    }
+
+    &__option {
+        display: block;
     }
 }

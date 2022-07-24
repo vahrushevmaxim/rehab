@@ -1,0 +1,25 @@
+@media (max-width: 1024px) {
+    .heading-about__points-wrapper {
+        top: 146px;
+    }
+
+    .heading-about .show {
+        display: none;
+    }
+}
+
+@media (max-width: 576px) {
+    .heading-about__title {
+        font-size: 34px;
+        line-height: 46px;
+    }
+
+    .heading-about__wrapper p {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .heading-about__text {
+        text-align: center;
+    }
+}

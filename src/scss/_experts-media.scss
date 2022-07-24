@@ -1,0 +1,42 @@
+@media (max-width: 1024px) {
+    .experts__p {
+        padding-bottom: 48px;
+    }
+
+    .experts__bg {
+        background: #ffff;
+    }
+
+    .experts__inner {
+        padding: 32px 32px;
+        background-color: #F6F2EE;
+        border-radius: 4px;
+    }
+
+    .experts__item {
+        background-color: #F6F2EE;
+        border: none;
+    }
+
+    .experts__h {
+        display: none;
+    }
+}
+
+@media (max-width: 576px) {
+    .experts__p {
+        padding: 0;
+    }
+
+    .experts__title {
+        font-size: 22px;
+    }
+
+    .experts__inner {
+        background: linear-gradient(180deg, #F6F2EE 0%, rgba(246, 242, 238, 0) 100%);
+    }
+
+    .experts__item {
+        background: inherit  
+    }
+}

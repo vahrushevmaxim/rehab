@@ -34,18 +34,30 @@ document.addEventListener('DOMContentLoaded', function () {
             properties: {
                 iconContent: 'Амбулаторный центр',
             }
-        })
-    }
-    ymaps.ready(init2)
 
-    let myMap3;
-    function init3() {
-        myMap3 = new ymaps.Map('map-3', {
-            center: [55.777288050559015,37.613395189609115],
-            zoom: 11
-        })
+            myMap2.container.fitToViewport();
+        }
     }
-    ymaps.ready(init3)
+    if (document.querySelector('.contacts__modal-window')) {
+        let myMap3;
+        function init3() {
+            myMap3 = new ymaps.Map('map-3', {
+                center: [55.777288050559015, 37.613395189609115],
+                zoom: 11
+            }, {
+                searchControlProvider: 'yandex#search'
 
+            });
+        }
+        ymaps.ready(init3);
+
+        let elMap3 = document.querySelector('.contacts__modal-map');
+        function toggle() {
+            bigMap = !bigMap;
+            myMap3.container.fitToViewport();
+        }
+
+        ymaps.ready(toggle);
+    }
 })
 

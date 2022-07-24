@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-    if (typeof button !== 'undefined') {
+    if (document.querySelector('.contacts__btn')) {
         let close = document.querySelector(".contacts__modal-close");
         let modalWindow = document.querySelector(".contacts__modal-window");
         let button = document.querySelector(".contacts__btn");
@@ -14,5 +14,6 @@ document.addEventListener('DOMContentLoaded', function () {
             modalWindow.classList.remove("active");
             body.style.overflowY = 'visible';
         });
-    }
+    
+    };
 });

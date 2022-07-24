@@ -1,0 +1,42 @@
+.availability {
+
+    &__wrapper {
+        position: relative;
+        padding: 152px 0 24px 0;
+    }
+
+    &__bg {
+        background: linear-gradient(to bottom, #ffffff 80px, #f6f2ee 78px);
+    }
+
+    &__items {
+        display: flex;
+        max-width: 1020px;
+        margin: 0 auto;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex: 0 1 25%;
+    }
+
+    &__element {
+        background-color: #FFFFFF;
+        border: 1px solid #EEE5DC;
+        border-radius: 50%;
+        width: 160px;
+        height: 160px;
+        margin-bottom: 24px;
+    }
+
+    &__text {
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 24px;
+        color: #000000;
+        max-width: 216px;
+        text-align: center;
+    }
+}

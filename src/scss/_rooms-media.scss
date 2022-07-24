@@ -1,0 +1,141 @@
+@media (max-width: 1344px) {
+    .rooms__text-wrapper {
+        max-width: 448px;
+    }
+
+    .rooms__image-wrapper {
+        width: 472px;
+        height: 384px;
+    }
+
+    .rooms__room {
+        max-width: 464px;
+    }
+
+    .rooms__categories-foto {
+        width: 464px;
+        height: 286px;
+    }
+
+    .rooms__text-center {
+        max-width: 368px;
+    }
+
+    .rooms__options {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 1024px) {
+    .rooms__wrapper {
+        padding: 64px 0 28px 0;
+    }
+
+    .rooms__department-1 {
+        flex-direction: column;
+    }
+
+    .rooms__text-wrapper {
+        max-width: 100%;
+    }
+
+    .rooms__image-wrapper {
+        order: -1;
+        width: 86%;
+        height: 416px;
+        margin-bottom: 24px;
+    }
+
+    .rooms__department-2 {
+        flex-direction: column;
+    }
+
+    .rooms__title-2 {
+        margin-bottom: 48px;
+    }
+
+    .rooms__categories {
+        justify-content: center;
+    }
+
+    .rooms__room {
+        max-width: 100%;
+        padding-bottom: 12px;
+    }
+
+    .rooms__categories-foto {
+        width: 100%;
+        height: 320px;
+    }
+
+    .rooms__text-center {
+        max-width: 506px;
+    }
+}
+
+@media (max-width: 576px) {
+    .rooms__wrapper {
+        padding: 0 0 28px 0;
+    }
+
+    .rooms__department-1 {
+        margin-bottom: 20px;
+    }
+
+    .rooms__text-wrapper {
+        max-width: 86%;
+    }
+
+    .rooms__title-1 {
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    .rooms__text-wrapper p {
+        font-size: 15px;
+        line-height: 22px;
+    }
+
+    .rooms__image-wrapper {
+        height: 296px;
+        width: 100%;
+    }
+
+    .rooms__img {
+        object-fit: cover;
+    }
+
+    .rooms__department-2 {
+        margin-bottom: 40px;
+    }
+
+    .rooms__title-2 {
+        font-size: 28px;
+        line-height: 32px;
+        margin-bottom: 34px
+    }
+
+    .rooms__categories-foto {
+        margin-bottom: 22px;
+        height: 192px;
+    }
+
+    .rooms__categories-img {
+        object-fit: cover;
+    }
+
+    .rooms__text-center {
+        max-width: 414px;
+    }
+
+    .rooms__categories-text {
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    .rooms__room p {
+        font-size: 15px;
+        line-height: 22px;
+    }
+
+}
