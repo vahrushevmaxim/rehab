@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
-    let myMap;
+    let myMap,
+    bigMap = false;
     function init() {
         myMap = new ymaps.Map('map-1', {
             center: [56.136649716098695, 37.57158493767343],
@@ -13,12 +14,12 @@ document.addEventListener('DOMContentLoaded', function () {
             properties: {
                 iconContent: 'Реабилитационный центр',
             }
-        })
+        })  
+        myMap.container.fitToViewport();  
     }
     ymaps.ready(init)
     
     
-
     let myMap2;
     function init2() {
         myMap2 = new ymaps.Map('map-2', {
