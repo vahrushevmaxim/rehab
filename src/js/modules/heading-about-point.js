@@ -25,27 +25,36 @@ document.addEventListener('DOMContentLoaded', function () {
         });
 
         let heading = document.querySelectorAll('[data-anchor]');
-
-        heading.forEach(function (el, index) {
-            let id = el.id;
-            let headingItem = el.clientHeight;
-            let coords = el.getBoundingClientRect();
-            let top = coords.top + window.pageYOffset;
-
-
-            window.addEventListener('scroll', function (e) {
-
-                // console.log();
-
+        let start = 4;
+        window.addEventListener('scroll', name);
+        function activeTe(index) {
+            text.forEach(function (el) {
+                el.classList.remove('show');
             });
-            function activeContent(index) {
-                text.forEach(function (el) {
-                    el.classList.remove('show');
-                });
-                text[index].classList.add('show');
-            }
-            activeContent(0);
-
-        });
+            text[index].classList.add('show');
+        }
+        activeTe(0);
+        function name(params) {
+            heading.forEach(function (el, i) {
+                let id = el.id;
+                let headingItem = el.offsetHeight;
+                let coords = el.getBoundingClientRect();
+                let position = window.pageYOffset;
+                let top = coords.top + position;
+                let point = window.innerHeight - headingItem / start;
+                console.log();
+                if ((position > top - point) && position < (top + headingItem)) {
+                    points.forEach(function (point, index) {
+                        points.forEach(function (item) {
+                            item.classList.remove('active');
+                        });
+                        point.classList.add('active');
+                        activeTe(index)
+                        
+                    });
+                    activeTe(0);
+                }
+            });
+        }
     };
 });
