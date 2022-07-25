@@ -24,37 +24,36 @@ document.addEventListener('DOMContentLoaded', function () {
             });
         });
 
-        let heading = document.querySelectorAll('[data-anchor]');
+        let sections = document.querySelectorAll('[data-anchor]');
         let start = 4;
-        window.addEventListener('scroll', name);
-        function activeTe(index) {
-            text.forEach(function (el) {
-                el.classList.remove('show');
-            });
-            text[index].classList.add('show');
-        }
-        activeTe(0);
-        function name(params) {
-            heading.forEach(function (el, i) {
-                let id = el.id;
-                let headingItem = el.offsetHeight;
+
+        window.addEventListener('scroll', scrollSections);
+        function scrollSections() {
+            sections.forEach(function (el, i) {
+                let item = el.offsetHeight;
                 let coords = el.getBoundingClientRect();
                 let position = window.pageYOffset;
                 let top = coords.top + position;
-                let point = window.innerHeight - headingItem / start;
-                console.log();
-                if ((position > top - point) && position < (top + headingItem)) {
-                    points.forEach(function (point, index) {
-                        points.forEach(function (item) {
-                            item.classList.remove('active');
-                        });
-                        point.classList.add('active');
-                        activeTe(index)
-                        
-                    });
-                    activeTe(0);
+                let point = window.innerHeight - item / start;
+                if ((position > top - point) && position < (top + item)) {
+                    txt(i);
+                    pointsActive(i)
                 }
             });
+            function txt(i) {
+                text.forEach(function (el) {
+                    el.classList.remove('show');
+                });
+                text[i].classList.add('show');
+            }
+            function pointsActive(i) {
+                points.forEach(function (el) {
+                    points.forEach(function (item) {
+                        item.classList.remove('active');
+                    });
+                    points[i].classList.add('active');
+                });
+            }
         }
     };
 });
