@@ -17,10 +17,14 @@
     .gallery__section {
         max-width: 100%;
         width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .gallery__image-wrapper {
-        width: 100%;
+        width: 448px;
+        height: 324px;
     }
 }
 
@@ -33,8 +37,14 @@
         gap: 13px;
     }
 
+    .gallery__section {
+        align-items: flex-start;
+    }
+
     .gallery__image-wrapper {
+        width: 100%;
         margin-bottom: 15px;
+        height: 278px;
     }
 
     .gallery__text {
@@ -46,3 +56,4 @@
         height: 231px;
     }
 }
+

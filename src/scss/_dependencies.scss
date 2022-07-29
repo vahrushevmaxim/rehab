@@ -12,9 +12,10 @@
     .active {
         background-color: #ffff;
         padding: 0 12px;
+        border-radius: 4px;
     }
 
-    .dependencies__arw-2 {
+    &__arw-2 {
         margin-left: 10px;
         transform: rotate(180deg);
         transition: .3s linear;
@@ -121,3 +122,4 @@
         padding-top: 112px;
     }
 }
+

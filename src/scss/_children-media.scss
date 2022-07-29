@@ -22,7 +22,7 @@
         max-width: 544px;
     }
 
-    .children .art__call--bg--r {
+    .art__call--bg--r {
         background-position: 268px;
     }
 
@@ -42,6 +42,14 @@
         height: 288px;
     }
 
+    .children__hidden {
+        display: block;
+    }
+
+    .children__call-wrapper {
+        max-width: 100%;
+    }
+
     .children__problems {
         padding: 32px 32px;
     }
@@ -52,6 +60,10 @@
 
     .children__problems-btn {
         max-width: 100%;
+    }
+
+    .children__show {
+        display: none;
     }
 }
 

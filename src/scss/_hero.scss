@@ -110,5 +110,14 @@
         letter-spacing: 0.02em;
         color: #ffffff;
         text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.12);
+        display: flex;
+        align-items: center;
+    }
+
+    &__link-text::after {
+        content: url(../img/index-r.svg);
+        width: 42px;
+        height: 56px;
+        margin-left: 14px;
     }
 }

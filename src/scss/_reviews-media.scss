@@ -9,9 +9,15 @@
         height: auto;
     }
 
+    .reviews .active {
+        height: 52px;
+        padding-top: 20px;
+    }
+
     .reviews__btn {
         max-width: 100%;
         border-radius: 8px;
+        height: 52px;
     }
 
     .reviews__card {

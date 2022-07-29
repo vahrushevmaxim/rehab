@@ -54,10 +54,13 @@
             margin-top: 20px;
         }
         &__box {
-            gap: 1px;
+            gap: 0;
             margin-top: 28px;
             margin-left: 0;
             margin-right: 0;
+        }
+        &__item {
+            border-top: 1px solid #EEE5DC;
         }
         &__item-header {
             padding: 32px 16px 32px 32px;

@@ -1,16 +1,20 @@
 .heading {
     background: #f7f2ee;
+
     &__wrapper {
         padding-top: 32px;
         padding-bottom: 24px;
         display: flex;
         gap: 48px;
     }
+
     &__wrapper-photo {
         position: relative;
         width: 224px;
         border-radius: 4px;
+        margin-right: 48px;
     }
+
     &__photo {
         position: absolute;
         width: 224px;
@@ -18,6 +22,7 @@
         border-radius: 4px;
         object-fit: cover;
     }
+
     &__header {
         font-family: "Palatino Linotype";
         font-style: normal;
@@ -27,6 +32,7 @@
         color: #211e1c;
         margin-bottom: 32px;
     }
+
     &__bottom {
         display: flex;
         justify-content: space-between;
@@ -36,14 +42,17 @@
         line-height: 18px;
         color: #595450;
     }
+
     &__breadcrumb {
         display: flex;
         overflow-x: auto;
         scrollbar-width: none;
     }
+
     &__breadcrumb::-webkit-scrollbar {
         width: 0;
     }
+
     &__bread-main {
         height: 20px;
         display: flex;
@@ -54,33 +63,45 @@
         font-size: 15px;
         line-height: 18px;
         color: #595450;
-        border-bottom: 1px solid #f7f2ee;
+        border-bottom: 1px solid rgba(89, 84, 80, 0.16);
+        white-space: nowrap;
     }
-    &__bread-main:hover {
+
+    &__dec {
         border-bottom: 1px solid rgba(89, 84, 80, 0.16);
     }
+
     &__arrow {
         margin-left: 16px;
         margin-right: 16px;
     }
+
     &__bread-name {
         white-space: nowrap;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 18px;
+        color: #595450;
     }
+
     &__info {
         height: 20px;
         display: flex;
         align-items: center;
         gap: 16px;
     }
+
     &__point {
         width: 6px;
         height: 6px;
         background-color: #a1c74f;
         border-radius: 50%;
     }
+
     &__views {
         margin-left: 8px;
     }
+
     &__views::before {
         content: url(/img/eye.svg);
         margin-right: 8px;
@@ -88,6 +109,7 @@
         height: 11px;
         object-fit: contain;
     }
+
     &__description {
         padding-bottom: 38px;
         font-weight: 400;

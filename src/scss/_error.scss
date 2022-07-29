@@ -48,6 +48,10 @@
         padding: 40px 40px;
     }
 
+    &__btn {
+        background-color: transparent;
+    }
+
     .children__problems {
         padding: 0;
         background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);

@@ -48,6 +48,10 @@
         &__butt-link {
             gap: 54px;
         }
+
+        &__link-text::after {
+            margin-left: 34px;
+        }
     }
 }
 @media (max-width: 576px) {
@@ -71,6 +75,10 @@
         }
         &__butt-link {
             gap: 0;
+        }
+
+        &__link-text::after {
+            display: none;
         }
     }
 }

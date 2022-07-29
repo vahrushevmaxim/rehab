@@ -11,6 +11,7 @@
         padding: 32px 32px;
         background-color: #F6F2EE;
         border-radius: 4px;
+        position: relative;
     }
 
     .experts__item {
@@ -20,6 +21,10 @@
 
     .experts__h {
         display: none;
+    }
+
+    .experts__descr {
+        padding: 30px 16px 16px 0;
     }
 }
 
@@ -37,6 +42,6 @@
     }
 
     .experts__item {
-        background: inherit  
+        background: inherit
     }
 }

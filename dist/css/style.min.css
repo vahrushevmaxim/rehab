@@ -1258,16 +1258,16 @@ button.swiper-pagination-bullet {
   border: 1px solid #eee5dc;
   box-sizing: border-box;
   border-radius: 4px;
-  padding-left: 16px;
+  padding-left: 40px;
   padding-right: 16px;
   font-style: normal;
   font-weight: 300;
   font-size: 13px;
   line-height: 1.3;
   appearance: none;
-  background-image: url("/img/arrow-input.svg");
-  background-repeat: no-repeat;
-  background-position: 118px center;
+  background-image: url("/img/arrow-input.svg"), url("/img/icon-planet.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: 118px center, 14px center;
   cursor: pointer;
 }
 .header__lang:focus {
@@ -1336,6 +1336,9 @@ button.swiper-pagination-bullet {
   }
 }
 @media (max-width: 1024px) {
+  .header {
+    background-color: #FFFFFF;
+  }
   .header__wrapper {
     height: 96px;
   }
@@ -1400,6 +1403,7 @@ button.swiper-pagination-bullet {
   position: relative;
   width: 224px;
   border-radius: 4px;
+  margin-right: 48px;
 }
 .heading__photo {
   position: absolute;
@@ -1444,9 +1448,10 @@ button.swiper-pagination-bullet {
   font-size: 15px;
   line-height: 18px;
   color: #595450;
-  border-bottom: 1px solid #f7f2ee;
+  border-bottom: 1px solid rgba(89, 84, 80, 0.16);
+  white-space: nowrap;
 }
-.heading__bread-main:hover {
+.heading__dec {
   border-bottom: 1px solid rgba(89, 84, 80, 0.16);
 }
 .heading__arrow {
@@ -1455,6 +1460,10 @@ button.swiper-pagination-bullet {
 }
 .heading__bread-name {
   white-space: nowrap;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  color: #595450;
 }
 .heading__info {
   height: 20px;
@@ -1546,7 +1555,6 @@ button.swiper-pagination-bullet {
   font-size: 15px;
   line-height: 18px;
   color: #595450;
-  border-bottom: 1px solid #f7f2ee;
 }
 .heading__bread-main:hover {
   border-bottom: 1px solid rgba(89, 84, 80, 0.16);
@@ -1611,6 +1619,7 @@ button.swiper-pagination-bullet {
   .heading__wrapper-photo {
     flex-shrink: 0;
     width: 180px;
+    margin-right: 18px;
   }
   .heading__photo {
     width: 180px;
@@ -1704,6 +1713,18 @@ button.swiper-pagination-bullet {
     font-size: 13px;
     line-height: 20px;
     padding-bottom: 20px;
+  }
+  .heading__breadcrumb {
+    position: relative;
+  }
+  .heading__breadcrumb--grad::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(270deg, #F6F2EE 0%, rgba(246, 242, 238, 0) 100%);
+    right: 0;
   }
 }
 .specialists {
@@ -1968,6 +1989,7 @@ button.swiper-pagination-bullet {
   object-fit: cover;
   border-radius: 50%;
   margin-left: unset;
+  filter: grayscale(100%);
 }
 .art__text-block {
   max-width: 384px;
@@ -2142,6 +2164,14 @@ button.swiper-pagination-bullet {
   align-items: center;
   cursor: pointer;
 }
+.art__methods-btn {
+  width: 32px;
+  height: 32px;
+}
+.art__methods-btn .art__arrow {
+  width: 10px;
+  height: 10px;
+}
 .art__nav:hover {
   background: #fdb942;
 }
@@ -2189,8 +2219,8 @@ button.swiper-pagination-bullet {
 }
 .art__count {
   position: absolute;
-  top: 244px;
-  right: 11px;
+  top: 158px;
+  right: 18px;
   width: 32px;
   height: 32px;
   border-radius: 50%;
@@ -2383,6 +2413,9 @@ button.swiper-pagination-bullet {
   background: #f6f2ee;
   border-radius: 4px;
   padding: 0 32px 32px 32px;
+}
+.art__curat--1024--active {
+  display: none;
 }
 .art__curat-header {
   display: flex;
@@ -2865,6 +2898,9 @@ button.swiper-pagination-bullet {
   letter-spacing: 0.02em;
   color: #211e1c;
 }
+.art__count--position {
+  top: 248px;
+}
 
 .m-576 {
   display: none;
@@ -3069,11 +3105,17 @@ button.swiper-pagination-bullet {
   .art__video {
     width: 100%;
   }
+  .art__curat--1024--active {
+    display: block;
+  }
   .art__galery {
     width: 100%;
   }
   .art__other {
     width: 100%;
+  }
+  .art__other--1024--hidden {
+    display: none;
   }
   .art__call {
     position: relative;
@@ -3197,6 +3239,9 @@ button.swiper-pagination-bullet {
     top: -16px;
     left: 36px;
   }
+  .art__autor {
+    margin-bottom: 62px;
+  }
   .art__autor-block {
     flex-direction: column;
     margin-bottom: 28px;
@@ -3250,7 +3295,7 @@ button.swiper-pagination-bullet {
     height: 141px;
   }
   .art__count {
-    top: 204px;
+    top: 120px;
   }
   .art__other {
     border-radius: 0;
@@ -3319,6 +3364,9 @@ button.swiper-pagination-bullet {
   .art__table-data {
     font-size: 10px;
     padding: 2px 0;
+  }
+  .art__count--position {
+    top: 196px;
   }
 }
 .speclist {
@@ -3523,6 +3571,7 @@ button.swiper-pagination-bullet {
 .nav__main {
   display: flex;
   height: 100%;
+  justify-content: space-between;
 }
 .nav__item {
   height: 100%;
@@ -3717,6 +3766,14 @@ button.swiper-pagination-bullet {
   letter-spacing: 0.02em;
   color: #ffffff;
   text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.12);
+  display: flex;
+  align-items: center;
+}
+.hero__link-text::after {
+  content: url(../img/index-r.svg);
+  width: 42px;
+  height: 56px;
+  margin-left: 14px;
 }
 
 @media (max-width: 1344px) {
@@ -3770,6 +3827,9 @@ button.swiper-pagination-bullet {
   .hero__butt-link {
     gap: 54px;
   }
+  .hero__link-text::after {
+    margin-left: 34px;
+  }
 }
 @media (max-width: 576px) {
   .hero {
@@ -3793,6 +3853,9 @@ button.swiper-pagination-bullet {
   }
   .hero__butt-link {
     gap: 0;
+  }
+  .hero__link-text::after {
+    display: none;
   }
 }
 .diagn {
@@ -4107,6 +4170,9 @@ button.swiper-pagination-bullet {
   }
 }
 @media (max-width: 1024px) {
+  .cons__background_info {
+    background: #ffff;
+  }
   .cons__wrapper {
     padding-top: 32px;
     padding-bottom: 56px;
@@ -4723,10 +4789,13 @@ button.swiper-pagination-bullet {
     margin-top: 20px;
   }
   .faq__box {
-    gap: 1px;
+    gap: 0;
     margin-top: 28px;
     margin-left: 0;
     margin-right: 0;
+  }
+  .faq__item {
+    border-top: 1px solid #EEE5DC;
   }
   .faq__item-header {
     padding: 32px 16px 32px 32px;
@@ -4971,9 +5040,15 @@ button.swiper-pagination-bullet {
     height: auto;
   }
 
+  .reviews .active {
+    height: 52px;
+    padding-top: 20px;
+  }
+
   .reviews__btn {
     max-width: 100%;
     border-radius: 8px;
+    height: 52px;
   }
 
   .reviews__card {
@@ -5155,6 +5230,10 @@ button.swiper-pagination-bullet {
   .department-slider__text-2 {
     font-size: 15px;
   }
+
+  .department-right {
+    max-width: 384px;
+  }
 }
 @media (max-width: 1024px) {
   .department-slider__wrapper {
@@ -5223,7 +5302,7 @@ button.swiper-pagination-bullet {
   }
 }
 .department-card__wrapper {
-  padding-top: 96px;
+  padding: 96px 0;
   display: flex;
   justify-content: space-between;
 }
@@ -5342,7 +5421,22 @@ button.swiper-pagination-bullet {
   display: block;
 }
 
+.department-map {
+  background: linear-gradient(to bottom, #ffffff 298px, #f6f2ee 160px);
+}
+.department-map__wrapper {
+  padding-bottom: 96px;
+}
+.department-map__map {
+  width: 1152px;
+  height: 512px;
+}
+
 @media (max-width: 1344px) {
+  .department-card__wrapper {
+    padding: 64px 0;
+  }
+
   .department-card__inner {
     margin-right: 35px;
   }
@@ -5366,7 +5460,7 @@ button.swiper-pagination-bullet {
 }
 @media (max-width: 576px) {
   .department-card__wrapper {
-    padding-top: 32px;
+    padding: 32px 0;
   }
 
   .department-card__title {
@@ -5413,6 +5507,36 @@ button.swiper-pagination-bullet {
   .department-card__description {
     font-size: 13px;
     line-height: 22px;
+  }
+}
+@media (max-width: 1344px) {
+  .department-map__wrapper {
+    padding-bottom: 64px;
+  }
+
+  .department-map__map {
+    width: 960px;
+    height: 416px;
+  }
+}
+@media (max-width: 1024px) {
+  .department-map {
+    background: #fff;
+  }
+
+  .department-map__map {
+    width: 100%;
+    max-width: 100%;
+    height: 400px;
+  }
+}
+@media (max-width: 576px) {
+  .department-map__wrapper {
+    padding-bottom: 34px;
+  }
+
+  .department-map__map {
+    height: 280px;
   }
 }
 .heading-card__inner {
@@ -5987,6 +6111,9 @@ button.swiper-pagination-bullet {
   height: 100%;
   object-fit: cover;
 }
+.children__hidden {
+  display: none;
+}
 .children__paragraph {
   font-weight: 400;
   font-size: 16px;
@@ -5998,6 +6125,7 @@ button.swiper-pagination-bullet {
 .children__call-wrapper {
   margin-bottom: 32px;
   background: linear-gradient(180deg, #7f8070 0%, #9e958d 0.01%, #595450 100%);
+  border-radius: 8px;
 }
 .children__problems {
   background: linear-gradient(180deg, #F6F2EE 0%, rgba(246, 242, 238, 0) 100%);
@@ -6098,7 +6226,7 @@ button.swiper-pagination-bullet {
     max-width: 544px;
   }
 
-  .children .art__call--bg--r {
+  .art__call--bg--r {
     background-position: 268px;
   }
 
@@ -6117,6 +6245,14 @@ button.swiper-pagination-bullet {
     height: 288px;
   }
 
+  .children__hidden {
+    display: block;
+  }
+
+  .children__call-wrapper {
+    max-width: 100%;
+  }
+
   .children__problems {
     padding: 32px 32px;
   }
@@ -6127,6 +6263,10 @@ button.swiper-pagination-bullet {
 
   .children__problems-btn {
     max-width: 100%;
+  }
+
+  .children__show {
+    display: none;
   }
 }
 @media (max-width: 576px) {
@@ -6192,6 +6332,7 @@ button.swiper-pagination-bullet {
   text-align: center;
   padding: 0 12px;
   margin-left: 43px;
+  border-radius: 4px;
 }
 .psychiatry__arrow {
   display: none;
@@ -6272,6 +6413,10 @@ button.swiper-pagination-bullet {
   .children__problems-list:not(:last-child) {
     margin-right: 47px;
   }
+
+  .psychiatry .diagn__alph {
+    width: 468px;
+  }
 }
 @media (max-width: 1024px) {
   .psychiatry__information-wrapper {
@@ -6303,6 +6448,7 @@ button.swiper-pagination-bullet {
     margin-left: 0;
     border-top: 1px solid #eee5dc;
     background: linear-gradient(180deg, #F7F2EE 0%, rgba(247, 242, 238, 0.56) 100%);
+    border-radius: 0px 0px 4px 4px;
   }
 
   .psychiatry__arrow {
@@ -6380,8 +6526,9 @@ button.swiper-pagination-bullet {
 .dependencies .active {
   background-color: #ffff;
   padding: 0 12px;
+  border-radius: 4px;
 }
-.dependencies .dependencies__arw-2 {
+.dependencies__arw-2 {
   margin-left: 10px;
   transform: rotate(180deg);
   transition: 0.3s linear;
@@ -6765,6 +6912,10 @@ button.swiper-pagination-bullet {
   .news__select {
     width: 256px;
     background-position: 228px center;
+  }
+
+  .news__column-img {
+    border-radius: 0px;
   }
 
   .news__column-9 {
@@ -7229,6 +7380,7 @@ button.swiper-pagination-bullet {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 8px;
 }
 .payment__image {
   max-width: 100%;
@@ -7599,6 +7751,11 @@ button.swiper-pagination-bullet {
 @media (max-width: 1024px) {
   .site-search__form {
     width: 70%;
+    margin-right: 10px;
+  }
+
+  .site-search__button {
+    margin-right: 0;
   }
 }
 @media (max-width: 576px) {
@@ -7672,6 +7829,9 @@ button.swiper-pagination-bullet {
   background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
   border-radius: 4px 4px 0px 0px;
   padding: 40px 40px;
+}
+.error__btn {
+  background-color: transparent;
 }
 .error .children__problems {
   padding: 0;
@@ -7839,6 +7999,7 @@ button.swiper-pagination-bullet {
 
   .clinic-tests__item {
     background: linear-gradient(180deg, rgba(246, 242, 238, 0) 0%, #F6F2EE 100%);
+    border-radius: 0;
   }
 }
 .test-rafft__wrapper {
@@ -8095,7 +8256,7 @@ button.swiper-pagination-bullet {
   height: 56px;
   width: 100%;
   cursor: pointer;
-  background-color: #FFFFFF;
+  background-color: transparent;
   text-align: center;
   transition: 0.3s linear;
 }
@@ -8124,10 +8285,14 @@ button.swiper-pagination-bullet {
   .gallery__section {
     max-width: 100%;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .gallery__image-wrapper {
-    width: 100%;
+    width: 448px;
+    height: 324px;
   }
 }
 @media (max-width: 576px) {
@@ -8139,8 +8304,14 @@ button.swiper-pagination-bullet {
     gap: 13px;
   }
 
+  .gallery__section {
+    align-items: flex-start;
+  }
+
   .gallery__image-wrapper {
+    width: 100%;
     margin-bottom: 15px;
+    height: 278px;
   }
 
   .gallery__text {
@@ -9371,6 +9542,7 @@ button.swiper-pagination-bullet {
 
   .rooms__categories-img {
     object-fit: cover;
+    border-radius: 0;
   }
 
   .rooms__text-center {
@@ -10220,6 +10392,7 @@ button.swiper-pagination-bullet {
     padding: 32px 32px;
     background-color: #F6F2EE;
     border-radius: 4px;
+    position: relative;
   }
 
   .experts__item {
@@ -10229,6 +10402,10 @@ button.swiper-pagination-bullet {
 
   .experts__h {
     display: none;
+  }
+
+  .experts__descr {
+    padding: 30px 16px 16px 0;
   }
 }
 @media (max-width: 576px) {

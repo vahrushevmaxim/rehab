@@ -25,6 +25,10 @@
     .children__problems-list:not(:last-child) {
         margin-right: 47px;
     }
+
+    .psychiatry .diagn__alph {
+        width: 468px;
+    }
 }
 
 @media (max-width: 1024px) {
@@ -57,6 +61,7 @@
         margin-left: 0;
         border-top: 1px solid #eee5dc;
         background: linear-gradient(180deg, #F7F2EE 0%, rgba(247, 242, 238, 0.56) 100%);
+        border-radius: 0px 0px 4px 4px;
     }
 
     .psychiatry__arrow {

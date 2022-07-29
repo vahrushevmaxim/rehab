@@ -185,6 +185,7 @@
         object-fit: cover;
         border-radius: 50%;
         margin-left: unset;
+        filter: grayscale(100%);
     }
 
     &__text-block {
@@ -385,6 +386,16 @@
         cursor: pointer;
     }
 
+    &__methods-btn {
+        width: 32px;
+        height: 32px;
+    }
+
+    &__methods-btn &__arrow {
+        width: 10px;
+        height: 10px;
+    }
+
     &__nav:hover {
         background: #fdb942;
     }
@@ -440,8 +451,8 @@
 
     &__count {
         position: absolute;
-        top: 244px;
-        right: 11px;
+        top: 158px;
+        right: 18px;
         width: 32px;
         height: 32px;
         border-radius: 50%;
@@ -659,6 +670,10 @@
         background: #f6f2ee;
         border-radius: 4px;
         padding: 0 32px 32px 32px;
+    }
+
+    &__curat--1024--active {
+        display: none;
     }
 
     &__curat-header {
@@ -1223,6 +1238,10 @@
         line-height: 16px;
         letter-spacing: 0.02em;
         color: #211e1c;
+    }
+
+    &__count--position {
+        top: 248px;
     }
 }
 
