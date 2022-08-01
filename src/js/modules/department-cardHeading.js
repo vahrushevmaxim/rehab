@@ -3,8 +3,8 @@ document.addEventListener('DOMContentLoaded', function () {
   let galleryTop = new Swiper('.gallery-top', {
     slidesPerView: '1',
     navigation: {
-      nextEl: '.next--md',
-      prevEl: '.prev--md',
+      prevEl: '.heading-btn--prev',
+      nextEl: '.heading-btn--next',
     },
   });
 
@@ -15,5 +15,5 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
   galleryTop.controller.control = galleryThumbs;
-  galleryThumbs.controller.control = galleryTop; 
+  galleryThumbs.controller.control = galleryTop;
 });
