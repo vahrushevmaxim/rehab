@@ -17,5 +17,6 @@ import "./modules/map.js";
 import "./modules/contacts-modal.js";
 import "./modules/licenses.js";
 import "./modules/heading-about-point.js";
+import "./modules/header-burger.js";
 
 
