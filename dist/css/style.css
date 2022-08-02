@@ -1379,7 +1379,6 @@ button.swiper-pagination-bullet {
   content: url(../img/arrow-li.svg);
   display: block;
   width: 8px;
-  height: 12px;
   transition: all 0.3s ease-in-out;
 }
 .burger-content__tab {
@@ -1471,6 +1470,10 @@ button.swiper-pagination-bullet {
 @media (max-width: 1024px) {
   .header {
     background-color: #FFFFFF;
+  }
+  .header .burger--tab--gr button::after {
+    content: url(../img/arrow-li.svg);
+    transform: rotate(90deg);
   }
   .header__wrapper {
     height: 96px;
