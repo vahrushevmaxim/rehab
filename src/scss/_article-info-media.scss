@@ -76,6 +76,7 @@
 
         &__ban2-wrap {
             padding: 32px;
+            background: linear-gradient(90deg, #f6f2ee 20%, #f6f2ee 54%, rgba(255, 255, 255, 0.144) 114%);
         }
 
         &__ban2-heading {
@@ -333,6 +334,18 @@
         padding: 0;
     }
 
+    .art__curat-count {
+        margin-top: 0;
+    }
+
+    .art__curat-descr {
+        font-size: 12px;
+    }
+
+    .art__left-heading {
+        font-size: 22px;
+    }
+
     .art {
         margin-bottom: 0;
 
@@ -352,6 +365,7 @@
         &__main {
             font-size: 15px;
             line-height: 28px;
+            margin-bottom: 64px;
         }
 
         &__main img {
@@ -449,10 +463,17 @@
             height: 254px;
         }
 
+        &__video--md {
+            background-color: #ffff;
+        }
+
         &__video-wrap {
             height: 140px;
         }
 
+        &__curat {
+            background-color: #FFFF;
+        }
 
         &__curat-photo {
             // height: 122px;
@@ -484,6 +505,7 @@
 
         &__other {
             border-radius: 0;
+            background-color: #ffff;
         }
 
 
@@ -504,6 +526,8 @@
 
         &__ban2 {
             height: 224px;
+            background-size: cover;
+            background-position: inherit;
         }
 
         &__ban2-heading {
@@ -574,5 +598,6 @@
         &__count--position {
             top: 196px;
         }
+
     }
 }

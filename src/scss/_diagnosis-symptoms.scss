@@ -10,12 +10,16 @@
         flex: 0 1 64%;
     }
 
+    &__1024 {
+        display: none;
+    }
+
     &__title-wrapper {
         padding-left: 32px;
         background: linear-gradient(180deg, #F6F2EE 0%, rgba(246, 242, 238, 0) 100%);
         border-radius: 4px 4px 0px 0px;
         background-position-y: 63px;
-        margin-bottom: 60px;  
+        margin-bottom: 60px;
     }
 
     &__title {
@@ -35,19 +39,19 @@
         font-weight: 400;
         font-size: 16px;
         line-height: 27px;
-        color: #211E1C;  
-        display: flex;
-        align-items: center;
+        color: #211E1C;
+        position: relative;
     }
 
     &__item::before {
         content: "";
-        display: inline-block;
+        position: absolute;
         width: 4px;
         height: 4px;
         background-color: #211E1C;
-        border-radius: 50%; 
-        margin-right: 10px;
+        border-radius: 50%;
+        left: -10px;
+        top: 12px;
     }
 
     &__link {
@@ -55,8 +59,16 @@
     }
 
     &__right {
-        padding-top: 62px;  
+        padding-top: 62px;
     }
+}
+
+.diagnosis-symptoms__heading {
+    padding: 32px 32px 32px 32px;;
+}
+
+.diagnosis-symptoms__tit {
+    margin-bottom: 26px;
 }
 
 .diagn__alph--md {

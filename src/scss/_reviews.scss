@@ -1,5 +1,5 @@
 .main-wrapper {
-    padding-top: 90px;
+    padding: 90px 0 96px 0;
 }
 
 .reviews {
@@ -131,6 +131,10 @@
 
     & .other-v {
         padding-top: 31px;
+    }
+
+    &__video {
+        display: none;
     }
 
 }

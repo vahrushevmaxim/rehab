@@ -8,7 +8,6 @@
         &__header {
             font-size: 36px;
             line-height: 40px;
-            padding-bottom: 32px;
         }
 
         &__description {
@@ -16,12 +15,13 @@
             line-height: 28px;
         }
     }
+
 }
 
 @media (max-width: 1024px) {
     .heading {
         &__wrapper {
-            padding: 32px 32px 24px 32px;
+            padding: 32px 32px 16px 32px;
             gap: 24px;
         }
 
@@ -51,10 +51,6 @@
             border-bottom: 0;
         }
 
-        &__bottom {
-            padding-top: 20px;
-        }
-
         &__date {
             display: none;
         }
@@ -73,6 +69,11 @@
             border-bottom: 2px solid #eee5dc;
             padding-bottom: 32px;
         }
+    }
+
+    .heading__border {
+        border-top: 1px solid #EEE5DC;
+        padding-top: 20px;
     }
 }
 

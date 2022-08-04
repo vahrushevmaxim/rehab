@@ -27,10 +27,10 @@
         font-family: "Palatino Linotype";
         font-style: normal;
         font-weight: 400;
-        font-size: 48px;
+        font-size: 42px;
         line-height: 48px;
         color: #211e1c;
-        margin-bottom: 32px;
+        margin-bottom: 56px;
     }
 
     &__bottom {
@@ -118,3 +118,12 @@
         color: #211e1c;
     }
 }
+
+.commercial-heading {
+    display: block;
+}
+
+.gallery-item {
+    display: block;
+}
+

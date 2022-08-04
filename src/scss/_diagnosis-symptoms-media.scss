@@ -8,9 +8,18 @@
     .diagnosis-symptoms__wrapper {
         flex-direction: column;
     }
+
+    .diagnosis-symptoms__1024 {
+        display: block;
+        margin-bottom: 0;
+    }
     
     .diagn__alph--md {
         max-width: 100%;
+    }
+
+    .diagnosis-symptoms__hidden {
+        display: none;
     }
 
     .art__curat--md {
@@ -23,7 +32,22 @@
 }
 
 @media (max-width: 576px) {
+    .diagnosis-symptoms__1024 {
+        background-color: #ffff;
+        padding: 10px 32px;
+    }
+
     .diagn__alph--md {
         background-color: #fff;
+    }
+
+    .diagnosis-symptoms__heading {
+        padding: 32px 32px 32px 32px;
+    }
+}
+
+@media (max-width: 406px) {
+    .diagnosis-symptoms__heading {
+        padding: 32px 32px 14px 32px;
     }
 }

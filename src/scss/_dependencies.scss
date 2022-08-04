@@ -15,6 +15,10 @@
         border-radius: 4px;
     }
 
+    .active .dependencies__arw-2 {
+        transform: rotate(360deg);
+    }
+
     &__arw-2 {
         margin-left: 10px;
         transform: rotate(180deg);

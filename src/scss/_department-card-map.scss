@@ -1,8 +1,9 @@
 .department-map {
     background: linear-gradient(to bottom, #ffffff 298px, #f6f2ee 160px);
 
-    &__wrapper {
-        padding-bottom: 96px;
+    &__block {
+        display: flex;
+        justify-content: center;
     }
 
     &__map {

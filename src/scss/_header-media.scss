@@ -130,4 +130,12 @@
             display: none;
         }
     }
+
+    .burger-content__button-link {
+        justify-content: center;
+    }
+
+    .burger-content__button-link::after {
+        display: none;
+    }
 }

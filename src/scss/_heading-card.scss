@@ -71,10 +71,6 @@
         height: 19px;
     }
 
-    .swiper-button-disabled {
-        background-color: #F8DFB6;
-    }
-
     .heading__breadcrumb--md {
         padding: 45px 0 19px 0;
     }
@@ -131,6 +127,10 @@
         font-size: 15px;
         color: #595450;
     }
+}
+
+.swiper-button-disabled {
+    background-color: #F8DFB6;
 }
 
 .heading-btn--next {

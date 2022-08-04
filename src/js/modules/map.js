@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
+
     if (document.querySelector('.contacts__section-1')) {
         let myMap,
             bigMap = false;
@@ -33,6 +34,7 @@ document.addEventListener('DOMContentLoaded', function () {
             myMap.container.fitToViewport();
         }
     }
+
     if (document.querySelector('.contacts__section-2')) {
         let myMap2;
         function init2() {
@@ -61,10 +63,11 @@ document.addEventListener('DOMContentLoaded', function () {
                 elMap2.classList.remove('contacts__left-2');
             } else {
                 elMap2.classList.add('contacts__left-2');
-            }  
+            }
+            myMap2.container.fitToViewport();
         }
-        myMap2.container.fitToViewport();
     }
+
     if (document.querySelector('.contacts__modal-window')) {
         let myMap3;
         function init3() {
@@ -81,10 +84,14 @@ document.addEventListener('DOMContentLoaded', function () {
         let elMap3 = document.querySelector('.contacts__modal-map');
         function toggle() {
             bigMap = !bigMap;
+
+            if (bigMap) {
+                elMap3.classList.remove('contacts__modal-map');
+            } else {
+                elMap3.classList.add('contacts__modal-map');
+            }
             myMap3.container.fitToViewport();
         }
-
-        ymaps.ready(toggle);
     }
 })
 
