@@ -35,11 +35,15 @@
 
     &__item {
         cursor: pointer;
-        max-width: 160px;
+        width: 160px;
+        height: 96px;
     }
 
     &__item img {
-        width: 100%;  
+        width: 100%;
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: cover;
     }
 
     &__arw {
@@ -58,11 +62,11 @@
     }
 
     &__arw:hover {
-        background-color: #F1AC34;  
+        background-color: #F1AC34;
     }
 
     &__arw:active {
-        background-color: #F1AC34;  
+        background-color: #F1AC34;
         box-shadow: inset 0px 5px 0px rgba(0, 0, 0, 0.08);
     }
 
@@ -139,5 +143,5 @@
 
 .heading-btn--prev {
     left: -30px;
-    transform: rotate(180deg);    
+    transform: rotate(180deg);
 }

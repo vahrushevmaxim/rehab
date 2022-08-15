@@ -1331,15 +1331,16 @@ button.swiper-pagination-bullet {
 }
 
 .burger-content {
-  display: none;
+  visibility: hidden;
   position: fixed;
   background-color: #F6F2EE;
   width: 100%;
   z-index: 20;
-  transform: translateX(100%);
-  transition: transform 0.6s ease-in-out;
+  right: -100%;
+  transition: right 0.6s ease-in-out, visibility 0.6s ease-in-out;
   height: 100vh;
   overflow-y: auto;
+  z-index: 500;
 }
 .burger-content__tabs {
   border-top: 1px solid #EEE5DC;
@@ -1537,7 +1538,7 @@ button.swiper-pagination-bullet {
   }
 
   .burger-content {
-    display: block;
+    visibility: hidden;
   }
 
   .stop-scroll {
@@ -1550,7 +1551,9 @@ button.swiper-pagination-bullet {
   }
 
   .burger-content--open {
-    transform: none;
+    transition: right 0.6s ease-in-out, visibility 0.6s ease-in-out;
+    visibility: visible;
+    right: 0;
   }
 
   .burger--tab--gr {
@@ -3613,6 +3616,33 @@ button.swiper-pagination-bullet {
 .reviews .shoy {
   display: block;
 }
+.reviews__image-wrapper {
+  width: 768px;
+  height: 416px;
+}
+.reviews__image-wrapper:not(:last-child) {
+  margin-bottom: 32px;
+}
+.reviews__image {
+  display: block;
+  max-width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+.reviews__items-flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.reviews__item-el {
+  height: 240px;
+  width: 180px;
+}
+.reviews__item-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
 .reviews__card-item {
   background: linear-gradient(180deg, #FFFFFF 10.26%, rgba(255, 255, 255, 0) 100%);
   border-radius: 8px;
@@ -5184,6 +5214,16 @@ button.swiper-pagination-bullet {
   .reviews__card {
     border-radius: 8px;
   }
+
+  .reviews__image-wrapper {
+    width: 408px;
+    height: 260px;
+  }
+
+  .reviews__item-el {
+    width: 232px;
+    height: 308px;
+  }
 }
 @media (max-width: 1024px) {
   .main-wrapper {
@@ -5197,6 +5237,23 @@ button.swiper-pagination-bullet {
   .reviews__wrapper {
     margin-bottom: 40px;
     max-width: 100%;
+  }
+
+  .reviews__image-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    max-height: 100%;
+  }
+
+  .reviews__items-flex {
+    justify-content: center;
+  }
+
+  .reviews__item-el {
+    width: 320px;
+    height: 424px;
   }
 
   .reviews__left {
@@ -5223,6 +5280,11 @@ button.swiper-pagination-bullet {
   .reviews__btn {
     font-size: 14px;
     max-width: 256px;
+  }
+
+  .reviews__item-el {
+    width: 256px;
+    height: 340px;
   }
 
   .reviews__card-item {
@@ -5256,6 +5318,15 @@ button.swiper-pagination-bullet {
 
   .reviews__other {
     background-color: #F6F2EE;
+  }
+}
+@media (max-width: 396px) {
+  .reviews__item-el {
+    height: 270px;
+  }
+
+  .reviews__item-img {
+    object-fit: contain;
   }
 }
 .department-slider__wrapper {
@@ -5762,10 +5833,14 @@ button.swiper-pagination-bullet {
 }
 .heading-card__item {
   cursor: pointer;
-  max-width: 160px;
+  width: 160px;
+  height: 96px;
 }
 .heading-card__item img {
   width: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
 }
 .heading-card__arw {
   position: absolute;
@@ -5862,7 +5937,7 @@ button.swiper-pagination-bullet {
   }
 
   .heading-card__img {
-    height: auto;
+    height: 320px;
   }
 
   .heading-card__arw {
@@ -5918,17 +5993,21 @@ button.swiper-pagination-bullet {
     margin-right: 0;
   }
 
+  .heading-card__img {
+    height: 460px;
+  }
+
   .heading-card__arw {
     bottom: -24px;
   }
 
   .heading-btn--prev {
-    right: 80px;
+    right: 100px;
     left: auto;
   }
 
   .heading-btn--next {
-    right: 24px;
+    right: 40px;
   }
 
   .heading-card__right {
@@ -5940,6 +6019,10 @@ button.swiper-pagination-bullet {
   }
 }
 @media (max-width: 576px) {
+  .heading-card__img {
+    height: 280px;
+  }
+
   .heading-card__arw {
     width: 40px;
     height: 40px;
@@ -5952,11 +6035,11 @@ button.swiper-pagination-bullet {
   }
 
   .heading-btn--prev {
-    right: 90px;
+    right: 72px;
   }
 
   .heading-btn--next {
-    right: 40px;
+    right: 24px;
   }
 
   .heading-card__right {
@@ -5985,6 +6068,11 @@ button.swiper-pagination-bullet {
 
   .heading-card .heading__bread-name {
     display: none;
+  }
+}
+@media (max-width: 400px) {
+  .heading-card__img {
+    height: 240px;
   }
 }
 .diagnosis-symptoms__wrapper {

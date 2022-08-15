@@ -9,10 +9,17 @@ document.addEventListener('DOMContentLoaded', function () {
         let body = document.body;
 
         burger.addEventListener('click', function (e) {
-            burger.classList.toggle('burger--open');
-            burgercontent.classList.toggle('burger-content--open');
-            bgHeader.classList.toggle('header--burger--bg');
-            body.classList.toggle('stop-scroll');
+            if (e.target.closest('.burger--open')) {
+                burger.classList.remove('burger--open');
+                burgercontent.classList.remove('burger-content--open');
+                bgHeader.classList.remove('header--burger--bg');
+                body.classList.remove('stop-scroll'); 
+            } else {
+                burger.classList.add('burger--open');
+                burgercontent.classList.add('burger-content--open');
+                bgHeader.classList.add('header--burger--bg');
+                body.classList.add('stop-scroll'); 
+            }
         });
 
         function activeTab(index) {
@@ -29,7 +36,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     i.classList.remove('burger--tab--gr');
                 });
                 item.classList.add('burger--tab--gr');
-            });  
+            });
         });
     };
 });
