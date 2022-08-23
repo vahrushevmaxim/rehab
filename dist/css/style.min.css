@@ -3842,7 +3842,7 @@ button.swiper-pagination-bullet {
 .hero__item ::after {
   content: url(../img/arrow-li.svg);
   position: absolute;
-  top: 12px;
+  top: 18px;
   right: -2px;
   width: 8px;
   height: 12px;
@@ -4399,6 +4399,9 @@ button.swiper-pagination-bullet {
   height: 524px;
   background: linear-gradient(to bottom, #f6f2ee 353px, #595450 160px);
 }
+.department__wrapper {
+  padding-top: 72px;
+}
 .department__header {
   padding-top: 36px;
   display: flex;
@@ -4550,6 +4553,9 @@ button.swiper-pagination-bullet {
   background-color: #a1c74f;
   margin-top: 36px;
 }
+.adv__content-inner {
+  position: relative;
+}
 .adv__content {
   margin-top: 64px;
   display: flex;
@@ -4557,7 +4563,7 @@ button.swiper-pagination-bullet {
 }
 .adv__item {
   width: 405px;
-  height: 256px;
+  height: 334px;
   border-radius: 4px;
 }
 .adv__image {
@@ -4581,139 +4587,72 @@ button.swiper-pagination-bullet {
   object-fit: contain;
 }
 .adv__item-text {
-  height: 128px;
+  height: 204px;
   background-color: #fff;
   border-radius: 0 0 4px 4px;
-}
-.adv__item-heading {
-  padding-top: 24px;
-  padding-left: 32px;
-  padding-right: 32px;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 28px;
-  line-height: 28px;
-  letter-spacing: 0.02em;
-  color: #211e1c;
-}
-.adv__item-desc {
-  font-style: normal;
-  font-weight: 300;
-  font-size: 18px;
-  line-height: 22px;
-  letter-spacing: 0.02em;
-  color: #211e1c;
-  padding-top: 8px;
-  padding-left: 32px;
-  padding-right: 32px;
-}
-.adv__pagin {
-  margin-top: 39px;
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-}
-.adv__pagin .swiper-pagination-bullet {
-  width: 18px;
-  height: 18px;
-  border-radius: 50%;
-  background-color: #a1c74f;
-  cursor: pointer;
-  opacity: unset;
-  margin: unset !important;
-}
-.adv__pagin .swiper-pagination-bullet.swiper-pagination-bullet-active {
-  width: 18px;
-  height: 18px;
-  background-color: #ffffff;
-  border: 5px solid #a1c74f;
-  border-radius: 50%;
-  cursor: pointer;
-}
-
-.adv {
-  height: 582px;
-  background: linear-gradient(to bottom, #ffffff 360px, #f6f2ee 160px);
-}
-.adv__header {
-  padding-top: 36px;
+  padding: 24px 32px 24px 32px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-}
-.adv__heading {
-  max-width: 640px;
-  font-family: "Palatino Linotype";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 42px;
-  line-height: 46px;
-  text-align: center;
-  letter-spacing: 0.02em;
-  color: #211e1c;
-}
-.adv__line {
-  width: 80px;
-  height: 4px;
-  background-color: #a1c74f;
-  margin-top: 36px;
-}
-.adv__content {
-  margin-top: 64px;
-  display: flex;
   justify-content: space-between;
+  align-items: flex-start;
 }
-.adv__item {
-  width: 405px;
-  height: 256px;
-  border-radius: 4px;
-}
-.adv__image {
-  width: 100%;
-  height: 128px;
-  position: relative;
-}
-.adv__img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: 50% 40%;
-  border-radius: 4px 4px 0 0;
-}
-.adv__brand {
-  position: absolute;
-  top: 31px;
-  right: 21px;
-  width: 98px;
-  height: 128px;
-  object-fit: contain;
-}
-.adv__item-text {
-  height: 128px;
-  background-color: #fff;
-  border-radius: 0 0 4px 4px;
+.adv__item-inner {
+  margin-bottom: 10px;
 }
 .adv__item-heading {
-  padding-top: 24px;
-  padding-left: 32px;
-  padding-right: 32px;
   font-style: normal;
   font-weight: 300;
   font-size: 28px;
   line-height: 28px;
   letter-spacing: 0.02em;
   color: #211e1c;
+  margin-bottom: 12px;
 }
 .adv__item-desc {
   font-style: normal;
   font-weight: 300;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 22px;
   letter-spacing: 0.02em;
   color: #211e1c;
-  padding-top: 8px;
-  padding-left: 32px;
-  padding-right: 32px;
+}
+.adv__item-link {
+  display: inline-block;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 8px;
+  letter-spacing: 0.04em;
+  color: #595450;
+}
+.adv__item-link::after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+  height: 1px;
+  background-color: rgba(89, 84, 80, 0.16);
+}
+.adv__arrow {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background-color: #FDB942;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  position: absolute;
+  top: 164px;
+  z-index: 10;
+}
+.adv__arrow--prev {
+  left: -23px;
+}
+.adv__arrow--next {
+  right: -23px;
+}
+.adv__arw {
+  width: 18px;
+  height: 18px;
 }
 .adv__pagin {
   margin-top: 39px;

@@ -5,25 +5,32 @@ document.addEventListener('DOMContentLoaded', function () {
   if (document.querySelector('.adv__content-wrapper')) {
     const swiper = new Swiper('.adv__content-wrapper', {
       // Optional parameters
-      loop: true,
+      watchOverflow: true, // Если слайдов меньше чем указано в slidesPerView, слайдер отключится
+      loop: false,
+      slidesPerView: 3,
+      slidesPerGroup: 3,
       // If we need pagination
       pagination: {
         el: '.adv__pagin',
+        clickable: true
       },
       breakpoints: {
         1344: {
           slidesPerView: 3,
+          slidesPerGroup: 3,
           watchOverflow: true, // Если слайдов меньше чем указано в slidesPerView, слайдер отключится
           spaceBetween: 32,
         },
         1024: {
           slidesPerView: 2,
+          slidesPerGroup: 2,
           watchOverflow: true,
           spaceBetween: 32,
         },
         320: {
           spaceBetween: 0,
           slidesPerView: 1,
+          slidesPerGroup: 1,
           watchOverflow: true,
         }
       },
@@ -32,6 +39,11 @@ document.addEventListener('DOMContentLoaded', function () {
       navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
+      },
+      
+      navigation: {
+        nextEl: '.adv__arrow--next',
+        prevEl: '.adv__arrow--prev',
       },
 
       // And if we need scrollbar

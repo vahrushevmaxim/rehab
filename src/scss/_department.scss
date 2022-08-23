@@ -1,6 +1,9 @@
 .department {
     height: 524px;
     background: linear-gradient(to bottom, #f6f2ee 353px, #595450 160px);
+    &__wrapper {
+        padding-top: 72px;
+    }
     &__header {
         padding-top: 36px;
         display: flex;
