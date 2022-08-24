@@ -3638,6 +3638,9 @@ button.swiper-pagination-bullet {
   height: 240px;
   width: 180px;
 }
+.reviews__card-zoom {
+  display: block;
+}
 .reviews__item-img {
   height: 100%;
   width: 100%;
@@ -9333,6 +9336,9 @@ button.swiper-pagination-bullet {
 .licenses__slaider-items {
   display: flex;
   justify-content: space-between;
+}
+.licenses__link-zoom {
+  display: block;
 }
 .licenses__img {
   border-radius: 4px;
