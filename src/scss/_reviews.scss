@@ -76,16 +76,18 @@
     &__item-el {
         height: 240px;
         width: 180px;
+        overflow: hidden;;
     }
 
     &__card-zoom {
         display: block;
+        height: 240px;
+        width: 180px;
     }
 
     &__item-img {
         height: 100%;
         width: 100%;
-        object-fit: cover;
     }
 
     &__card-item {

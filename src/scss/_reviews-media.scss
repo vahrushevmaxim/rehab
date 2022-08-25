@@ -34,6 +34,11 @@
         height: 308px;
     }
 
+    .reviews__card-zoom {
+        width: 232px;
+        height: 308px;
+    }
+
 }
 
 @media (max-width: 1024px) {
@@ -67,6 +72,11 @@
         height: 424px;
     }
 
+    .reviews__card-zoom {
+        width: 320px;
+        height: 424px;
+    }
+
     .reviews__left {
         padding: 0;
     }
@@ -95,6 +105,11 @@
     }
 
     .reviews__item-el {
+        width: 256px;
+        height: 340px;
+    }
+
+    .reviews__card-zoom {
         width: 256px;
         height: 340px;
     }
@@ -139,7 +154,8 @@
         height: 270px;
     }
 
-    .reviews__item-img {
-        object-fit: contain;
+    .reviews__card-zoom {
+        width: 100%;
+        height: 100%;
     }
 }
