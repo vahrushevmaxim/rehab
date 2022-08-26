@@ -1,6 +1,7 @@
 @media (max-width: 1344px) {
-    .about__video {
-        max-width: 100%;
+    .about__wrapper-video {
+        width: 960px;
+        height: 544px;
     }
 
     .about__description {
@@ -19,6 +20,11 @@
 
     .about__introduction-video {
         margin-bottom: 48px;
+    }
+
+    .about__wrapper-video {
+        width: 508px;
+        height: 288px;
     }
 
     .about__text {
@@ -42,6 +48,11 @@
 @media (max-width: 576px) {
     .about__introduction-video {
         margin-bottom: 20px;
+    }
+
+    .about__wrapper-video {
+        width: 320px;
+        height: 180px;
     }
 
     .about__title {
@@ -85,3 +96,10 @@
         margin: 20px auto 0 auto;
     }
 }
+
+@media (max-width: 396px) {
+    .about__video {
+        object-fit: cover;
+    }
+}
+
