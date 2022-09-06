@@ -6804,6 +6804,9 @@ button.swiper-pagination-bullet {
     gap: 32px;
   }
 }
+.dependencies__btn-inner {
+  display: inline-block;
+}
 .dependencies .psychiatry__tab {
   display: inline-flex;
   align-items: center;
@@ -6818,6 +6821,16 @@ button.swiper-pagination-bullet {
 }
 .dependencies .active .dependencies__arw-2 {
   transform: rotate(360deg);
+}
+.dependencies .active .psychiatry__arw {
+  transform: rotate(180deg);
+}
+.dependencies .dependencies__list-576 {
+  display: none;
+  padding-left: 14px;
+  background: linear-gradient(180deg, #F7F2EE 0%, rgba(247, 242, 238, 0.56) 100%);
+  border-radius: 0px 0px 4px 4px;
+  padding-bottom: 16px;
 }
 .dependencies__arw-2 {
   margin-left: 10px;
@@ -6834,6 +6847,9 @@ button.swiper-pagination-bullet {
 .dependencies__links {
   margin-bottom: 76px;
   padding-top: 11px;
+  display: none;
+}
+.dependencies .show {
   display: flex;
 }
 .dependencies .open {
@@ -6933,6 +6949,10 @@ button.swiper-pagination-bullet {
     margin: 0;
   }
 
+  .dependencies__btn-inner:not(:last-child) {
+    border-bottom: 1px solid #EEE5DC;
+  }
+
   .dependencies .active {
     background-color: #F6F2EE;
     padding: 12px 20px;
@@ -6942,12 +6962,51 @@ button.swiper-pagination-bullet {
     display: none;
   }
 
+  .dependencies__item-576 {
+    position: relative;
+    padding-left: 24px;
+    max-width: 120px;
+  }
+
+  .dependencies__item-576:hover {
+    background: #EEE5DC;
+    border-radius: 4px;
+  }
+
+  .dependencies__item-576::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    background-color: #211E1C;
+    width: 4px;
+    height: 4px;
+    left: 12px;
+    top: 12px;
+  }
+
+  .dependencies__link-576 {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 28px;
+    color: #211E1C;
+  }
+
+  .dependencies .show-2 {
+    display: flex;
+    flex-direction: column;
+  }
+
   .dependencies__wrapper {
     flex-direction: column;
   }
 
   .dependencies__main {
     max-width: 100%;
+  }
+
+  .dependencies .show {
+    display: none;
   }
 
   .dependencies__links {
@@ -6972,6 +7031,14 @@ button.swiper-pagination-bullet {
   }
 }
 @media (max-width: 576px) {
+  .psychiatry__information-tabs {
+    align-items: stretch;
+  }
+
+  .dependencies .psychiatry__tab {
+    max-width: 100%;
+  }
+
   .art__call {
     background-position: 108px;
   }

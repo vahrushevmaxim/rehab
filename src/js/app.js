@@ -19,6 +19,7 @@ import "./modules/licenses.js";
 import "./modules/heading-about-point.js";
 import "./modules/header-burger.js";
 import "./modules/about-video-play.js";
+import "./modules/dependencies-tab.js";
 
 
 

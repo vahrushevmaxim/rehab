@@ -25,13 +25,52 @@
         margin: 0;
     }
 
+    .dependencies__btn-inner:not(:last-child) {
+        border-bottom: 1px solid #EEE5DC;
+    }
+
     .dependencies .active {
         background-color: #F6F2EE;
-        padding: 12px 20px;  
+        padding: 12px 20px;
     }
 
     .dependencies__arw-2 {
         display: none;
+    }
+
+    .dependencies__item-576 {
+        position: relative;
+        padding-left: 24px;
+        max-width: 120px;
+    }
+
+    .dependencies__item-576:hover {
+        background: #EEE5DC;
+        border-radius: 4px;
+    }
+
+    .dependencies__item-576::before {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        border-radius: 50%;
+        background-color: #211E1C;
+        width: 4px;
+        height: 4px;
+        left: 12px;
+        top: 12px;
+    }
+
+    .dependencies__link-576 {
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 28px;
+        color: #211E1C;
+    }
+
+    .dependencies .show-2 {
+        display: flex;
+        flex-direction: column;
     }
 
     .dependencies__wrapper {
@@ -40,6 +79,10 @@
 
     .dependencies__main {
         max-width: 100%;
+    }
+
+    .dependencies .show {
+        display: none;
     }
 
     .dependencies__links {
@@ -65,10 +108,18 @@
 }
 
 @media (max-width: 576px) {
+    .psychiatry__information-tabs {
+        align-items: stretch;
+    }
+
+    .dependencies .psychiatry__tab {
+        max-width: 100%;
+    }
+
     .art__call {
         background-position: 108px;
     }
-    
+
     .dependencies .art__left {
         gap: 20px;
     }
