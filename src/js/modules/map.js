@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 zoom: 16
             }, {
                 searchControlProvider: 'yandex#search'
-            })
+            });
 
             let placemark = new ymaps.Placemark([56.13661638949428, 37.571456303448], {}, {
 

@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    
+        <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.min.css">
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;" type="text/javascript"></script>
+    <script src="/js/app.min.js"></script>
+    <title>Отделение для подростков</title>
+
+</head>
+<body>
+    <header class="header">
+    <div class="container">
+        <div class="header__wrapper">
+            <div class="header__brend">
+                <div class="header__logo">
+                    <a href="/"><img src="img/logo.svg" alt="logo"></a>
+                </div>
+                <div class="header__desc">
+                    <div class="header__desc-text">
+                        Семейная клиника психического здоровья и лечения зависимостей в Москве
+                    </div>
+                </div>
+            </div>
+            <div class="header__input">
+                <div class="header__search-wrap">
+                    <input class="header__search" type="text" placeholder="Поиск по сайту">
+                    <input class="header__search-butt" type="submit" value="">
+                </div>
+                <select class="header__lang" id="language">
+                    <option value="Русский">Русский</option>
+                    <option value="English">English</option>
+                </select>
+            </div>
+            <div class="header__info">
+                <div class="header__pay">
+                    <div class="header__pay-img">
+                        <img src="/img/icon-ok.svg" alt="ok">
+                    </div>
+                    <div class="header__pay-text">
+                        Онлайн оплата
+                    </div>
+                </div>
+                <div class="header__phone">
+                    <div class="header__phone-number">
+                        <a href="tel:+74954455658" class="header__phone-link">
+                            +7 (495) <span>445-56-58</span>
+                        </a>
+                    </div>
+                    <div class="header__phone-text">
+                        круглосуточно, без выходных
+                    </div>
+                </div>
+            </div>
+            <button class="header__mob">
+                <span class="header__burger-line header__burger-1"></span>
+                <span class="header__burger-line header__burger-2"></span>
+                <span class="header__burger-line header__burger-3"></span>
+            </button>
+        </div>
+    </div>
+    <div class="burger-content">
+        <div class="container">
+            <div class="burger-content__tabs">
+                <ul class="burger-content__list">
+                    <li class="burger-content__text" data-btn>
+                        <button class="burger-content__tab">О клинике</button>
+                        <ul class="burger-content__sublist">
+                            <li class="burger-content__sublist-text">
+                                <a href="" class="burger-content__sublist-link">Клиника лечения зависимостей
+                                </a>
+                            </li>
+                            <li class="burger-content__sublist-text">
+                                <a href="" class="burger-content__sublist-link">Клиника психического здоровья
+                                </a>
+                            </li>
+                            <li class="burger-content__sublist-text">
+                                <a href="" class="burger-content__sublist-link">Rehab Family Premium
+                                </a>
+                            </li>
+                            <li class="burger-content__sublist-text">
+                                <a href="" class="burger-content__sublist-link">Лечебно-оздоровительный комплекс
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="burger-content__text" data-btn>
+                        <button class="burger-content__tab">Диагностика и лечение</button>
+                        <ul class="burger-content__sublist">
+                            <li class="burger-content__sublist-text">
+                                <a href="" class="burger-content__sublist-link">Симптомы и диагнозы А-Я
+                                </a>
+                            </li>
+                            <li class="burger-content__sublist-text">
+                                <a href="" class="burger-content__sublist-link">Список психоактивных веществ А-Я
+                                </a>
+                            </li>
+                            <li class="burger-content__sublist-text">
+                                <a href="" class="burger-content__sublist-link">Методы лечения
+                                </a>
+                            </li>
+                            <li class="burger-content__sublist-text">
+                                <a href="" class="burger-content__sublist-link">Статьи
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="burger-content__text" data-btn>
+                        <button class="burger-content__tab">Специалисты</button>
+                        <ul class="burger-content__sublist">
+                            <li class="burger-content__sublist-text">
+                                <a href="" class="burger-content__sublist-link">СМИ о нас
+                                </a>
+                            </li>
+                            <li class="burger-content__sublist-text">
+                                <a href="" class="burger-content__sublist-link">Амбулаторный центр
+                                </a>
+                            </li>
+                            <li class="burger-content__sublist-text">
+                                <a href="" class="burger-content__sublist-link">Новости
+                                </a>
+                            </li>
+                            <li class="burger-content__sublist-text">
+                                <a href="" class="burger-content__sublist-link">Видеогалерея
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="burger-content__text">
+                        <a href="#" class="burger-content__tab">Фотогалерея</a>
+                    </li>
+                    <li class="burger-content__text" data-btn>
+                        <button class="burger-content__tab">К. С. О.</button>
+                        <ul class="burger-content__sublist">
+                            <li class="burger-content__sublist-text">
+                                <a href="" class="burger-content__sublist-link">Виртуальная экскурсия
+                                </a>
+                            </li>
+                            <li class="burger-content__sublist-text">
+                                <a href="" class="burger-content__sublist-link">Оплата онлайн
+                                </a>
+                            </li>
+                            <li class="burger-content__sublist-text">
+                                <a href="" class="burger-content__sublist-link">Отзывы и истории пациентов
+                                </a>
+                            </li>
+                            <li class="burger-content__sublist-text">
+                                <a href="" class="burger-content__sublist-link">О Rehab Famlily
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="burger-content__text">
+                        <a href="#" class="burger-content__tab">Контакты</a>
+                    </li>
+                    <li class="burger-content__text">
+                        <a href="#" class="burger-content__tab">Лечение зависимостей</a>
+                    </li>
+                    <li class="burger-content__text">
+                        <a href="#" class="burger-content__tab">Психиатрия</a>
+                    </li>
+                    <li class="burger-content__text burger-content__text--svg">
+                        <a href="#" class="burger-content__tab">Психосоматика</a>
+                    </li>
+                    <li class="burger-content__text">
+                        <a href="#" class="burger-content__tab">Расстройства пищевого поведения</a>
+                    </li>
+                    <li class="burger-content__text">
+                        <a href="#" class="burger-content__tab">Отделение для подростков</a>
+                    </li>
+                    <li class="burger-content__text">
+                        <a href="#" class="burger-content__tab">Оплата онлайн</a>
+                    </li>
+                </ul>
+                <div class="burger-content__button"><a href="#" class="burger-content__button-link">
+                        <div class="burger-content__button-img">
+                            <img src="/img/hero-phone.svg" alt="phone" class="burger-content__button-icon">
+                        </div>
+                        <div class="burger-content__button-text">Приёмное отделение</div>
+                    </a></div>
+            </div>
+        </div>
+    </div>
+</header>
+    <nav class="nav">
+    <div class="container">
+        <div class="nav__wrapper">
+            <ul class="nav__main">
+                <li class="nav__item" data-nav="nav1">
+                    <a href="#" class="nav__main-link">О клинике <img src="/img/arrow-menu.svg" alt="arrow" class="nav__icon-arrow"></a>
+                </li>
+                <li class="nav__item" data-nav="nav2">
+                    <a href="#" class="nav__main-link">Диагностика и лечение <img src="/img/arrow-menu.svg" alt="arrow" class="nav__icon-arrow"></a>
+                </li>
+                <li class="nav__item" data-nav="nav3">
+                    <a href="#" class="nav__main-link">Специалисты <img src="/img/arrow-menu.svg" alt="arrow" class="nav__icon-arrow"></a>
+                </li>
+                <li class="nav__item"><a href="#" class="nav__main-link">Фотогалерея</a></li>
+                <li class="nav__item" data-nav="nav4">
+                    <a href="#" class="nav__main-link">К. С. О. <img src="/img/arrow-menu.svg" alt="arrow" class="nav__icon-arrow"></a>
+                </li>
+                <li class="nav__item"><a href="#" class="nav__main-link">Контакты</a></li>
+            </ul>
+            <div class="nav__second-wrap">
+                <ul class="nav__second" id="nav1">
+                    <li class="nav__second-item"><a href="#" class="nav__second-link">Клиника лечения зависимостей
+                    </a></li>
+                    <li class="nav__second-item"><a href="children.html" class="nav__second-link">Клиника психического здоровья</a></li>
+                    <li class="nav__second-item"><a href="clinic-tests.html" class="nav__second-link">Rehab Family Premium</a></li>
+                    <li class="nav__second-item"><a href="commercial-copy.html" class="nav__second-link">Лечебно-оздоровительный комплекс</a></li>
+                    <li class="nav__second-item"><a href="department-card.html" class="nav__second-link">Центр реабилитации в Доминикане</a></li>
+                    <li class="nav__second-item"><a href="department.html" class="nav__second-link">Программа «Независимость и Восстановление»</a></li>
+                    <li class="nav__second-item"><a href="dependencies.html" class="nav__second-link">Амбулаторный центр</a></li>
+                    <li class="nav__second-item"><a href="diagnosis-symptoms.html" class="nav__second-link">Новости</a></li>
+                    <li class="nav__second-item"><a href="error.html" class="nav__second-link">Видеогалерея</a></li>
+                    <li class="nav__second-item"><a href="gallery-album.html" class="nav__second-link">Виртуальная экскурсия</a></li>
+                    <li class="nav__second-item"><a href="about.html" class="nav__second-link">Мы — Rehab Family</a></li>
+                    <li class="nav__second-item"><a href="contacts.html" class="nav__second-link">contacts</a></li>
+                    <li class="nav__second-item"><a href="test-rafft.html" class="nav__second-link">test-rafft</a></li>
+                    <li class="nav__second-item"><a href="site-search.html" class="nav__second-link">поиск по сайту</a></li>
+                    <li class="nav__second-item"><a href="psychiatry.html" class="nav__second-link">Психиатрия</a></li>
+                    <li class="nav__second-item"><a href="therapy.html" class="nav__second-link">therapy</a></li>
+                    <li class="nav__second-item"><a href="gallery.html" class="nav__second-link">gallery</a></li>
+                    <li class="nav__second-item"><a href="articles.html" class="nav__second-link">articles</a></li>
+                </ul>
+                <ul class="nav__second" id="nav2">
+                    <li class="nav__second-item"><a href="index.html" class="nav__second-link">Клиника лечения зависимостей
+                    </a></li>
+                    <li class="nav__second-item"><a href="info.html" class="nav__second-link">Клиника психического здоровья</a></li>
+                    <li class="nav__second-item"><a href="methods1.html" class="nav__second-link">Лечебно-оздоровительный комплекс</a></li>
+                    <li class="nav__second-item"><a href="news-card.html" class="nav__second-link">Новости</a></li>
+                    <li class="nav__second-item"><a href="news.html" class="nav__second-link">Видеогалерея</a></li>
+                    <li class="nav__second-item"><a href="payment.html" class="nav__second-link">Виртуальная экскурсия</a></li>
+                    <li class="nav__second-item"><a href="personal-data.html" class="nav__second-link">Программа «Независимость и Восстановление»</a></li>
+                    <li class="nav__second-item"><a href="psychiatry.html" class="nav__second-link">Оплата онлайн</a></li>
+                    <li class="nav__second-item"><a href="psychosomatic-diseases.html" class="nav__second-link">Отзывы и истории пациентов</a></li>
+                    <li class="nav__second-item"><a href="rev.html" class="nav__second-link">О Rehab Famlily</a></li>
+                    <li class="nav__second-item"><a href="rooms.html" class="nav__second-link">Контакты</a></li>
+                </ul>
+                <ul class="nav__second" id="nav3">
+                    <li class="nav__second-item"><a href="specialist.html" class="nav__second-link">СМИ о нас</a></li>
+                    <li class="nav__second-item"><a href="specialists.html" class="nav__second-link">Амбулаторный центр</a></li>
+                    <li class="nav__second-item"><a href="#" class="nav__second-link">Новости</a></li>
+                    <li class="nav__second-item"><a href="#" class="nav__second-link">Видеогалерея</a></li>
+                    <li class="nav__second-item"><a href="#" class="nav__second-link">Виртуальная экскурсия</a></li>
+                    <li class="nav__second-item"><a href="#" class="nav__second-link">Оплата онлайн</a></li>
+                    <li class="nav__second-item"><a href="#" class="nav__second-link">Отзывы и истории пациентов</a></li>
+                    <li class="nav__second-item"><a href="#" class="nav__second-link">О Rehab Famlily</a></li>
+                    <li class="nav__second-item"><a href="#" class="nav__second-link">Контакты</a></li>
+                </ul>
+                <ul class="nav__second" id="nav4">
+                    <li class="nav__second-item"><a href="#" class="nav__second-link">Виртуальная экскурсия</a></li>
+                    <li class="nav__second-item"><a href="#" class="nav__second-link">Оплата онлайн</a></li>
+                    <li class="nav__second-item"><a href="#" class="nav__second-link">Отзывы и истории пациентов</a></li>
+                    <li class="nav__second-item"><a href="#" class="nav__second-link">О Rehab Famlily</a></li>
+                    <li class="nav__second-item"><a href="#" class="nav__second-link">Контакты</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+    <div class="heading">
+    <div class="container">
+        <div class="heading__wrapper heading__wrapper--md">
+            <div class="heading__content">
+                <h1 class="heading__header heading__header--md">Отделение для подростков</h1>
+                <div class="heading__bottom">
+                    <div class="heading__breadcrumb">
+                        <a href="#" class="heading__bread-main">О клинике</a>
+                        <div class="heading__arrow"><img src="/img/arrow-bread.svg" alt="arrow"></div>
+                        <a href="#" class="heading__bread-main">Важно знать</a>
+                    </div>
+                    <div class="heading__info">
+                        <div class="heading__date">Опубликовано 20 ноября, 2017</div>
+                        <div class="heading__point"></div>
+                        <div class="heading__date">Обновлено 9 ноября, 2021</div>
+                        <div class="heading__views heading__views--md">297 189<span class="heading__span"> просмотров</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <section class="children">
+    <div class="container">
+        <div class="children__wrapper">
+            <div class="children__main">
+                <div class="children__contents">
+                    <div class="children__table-contents">
+                        <h2 class="children__title">Оглавление</h2>
+                        <ul class="children__list">
+                            <li class="children__list-item">
+                                <a href="#" class="children__link">Причины невроза</a>
+                            </li>
+                            <li class="children__list-item">
+                                <a href="#" class="children__link">Виды расстройства</a>
+                            </li>
+                            <li class="children__list-item">
+                                <a href="#" class="children__link">Невроз: симптомы заболевания</a>
+                            </li>
+                            <li class="children__list-item">
+                                <a href="#" class="children__link">Проявления неврастении</a>
+                            </li>
+                            <li class="children__list-item">
+                                <a href="#" class="children__link">Признаки невроза у женщин</a>
+                            </li>
+                            <li class="children__list-item">
+                                <a href="#" class="children__link">Диагностика и лечение</a>
+                            </li>
+                            <li class="children__list-item">
+                                <a href="#" class="children__link">Профилактика расстройства</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="children__image">
+                        <img src="/img/children-img.png" alt="фото">
+                    </div>
+                </div>
+                <div class="art__widget children__hidden">
+                    <div class="art__widget-wrapper">
+                        <div class="art__widget-letter">
+                            <img src="/img/widget-letter.svg" alt="" class="art__widget-img">
+                        </div>
+                        <div class="art__widget-content">
+                            <div class="art__widget-text">Причины считать нас</div>
+                            <div class="art__widget-num">
+                                <img src="/img/n1.svg" alt="" class="art__widget-n1">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p class="children__paragraph">Если у Вас появились проблемы в общении со своими детьми, если ребенок не
+                    слышит или не хочет Вас слушать,
+                    если у сына или дочери сложный период, или Ваш ребенок трудный подросток — звоните нам. Детские
+                    психологи клиники Rehab Family помогут
+                    найти общий язык с вашим ребенком, наладить отношения, выстроить грамотную модель
+                    детско-родительских отношений и вернуть в семью мир,
+                    спокойствие и взаимопонимание.
+                </p>
+                <div class="children__call-wrapper">
+                    <div class="art__call art__call--bg--r">
+                        <div class="art__call-left">
+                            <div class="art__call-icon">
+                                <img src="/img/phone-icon.svg" alt="phone" class="art__call-img">
+                            </div>
+                        </div>
+                        <div class="art__call-right">
+                            <div class="art__call-header">
+                                <div class="art__call-heading">Звоните на горячую линию</div>
+                                <div class="art__call-desc"> круглосуточно и без выходных</div>
+                            </div>
+                            <div class="art__call-phone">
+                                <a href="tel:+74954455658" class="art__call-numlink">+7 (495) <span>
+                                        445-56-58</span></a>
+                                <a href="#" class="art__call-link">заказать обратный звонок</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p class="children__paragraph">Отличительно особенность клиники Rehab Family является то, что с юными
+                    пациентами взаимодействуют специально
+                    подготовленные детские психологи с большим практическим опытом. Сеансы больше напоминают
+                    обыкновенную дружескую беседу или увлекательную игру,
+                    ежели приём специалиста. Наши психологи знают, как найти общий язык с детьми (будь то трёхлетний
+                    малыш, который не может объяснить, что творится
+                    у него в душе, или подросток в период переходного возраста, который не намерен общаться), умеют
+                    понять их проблемы и помочь исправить ситуацию. Клиника
+                    Rehab Family располагает особым терапевтическим комплексом, программа которого разрабатывается
+                    индивидуально для каждого ребёнка, а при необходимости — и
+                     членов его семьи. В своей практике специалисты клиники применяют наиболее прогрессивные, но при
+                    этом мягкие методы работы с детьми, среди которых системный
+                    семейный, постмодернистский, психодинамический, экзистенциально-гуманистический подходы, а также
+                    когнитивно-поведенческая, арт и песочная терапия (sandplay).
+                </p>
+                <div class="children__problems">
+                    <h3 class="children__problems-title">Индивидуальная комплексная психотерапия является чрезвычайно
+                        эффективной и приносит быстрый положительный результат при
+                        работе со следующими проблемами:
+                    </h3>
+                    <div class="children__problems-wrapper">
+                        <ul class="children__problems-list children__problems-list--md-1">
+                            <li class="children__problems-item">
+                                <a href="#" class="children__problems-link">Bone marrow transplant</a>
+                            </li>
+                            <li class="children__problems-item">
+                                <a href="#" class="children__problems-link">Brain aneurysm</a>
+                            </li>
+                            <li class="children__problems-item">
+                                <a href="#" class="children__problems-link">Brain tumor</a>
+                            </li>
+                            <li class="children__problems-item">
+                                <a href="#" class="children__problems-link">Breast cancer</a>
+                            </li>
+                            <li class="children__problems-item">
+                                <a href="#" class="children__problems-link">Colon cancer</a>
+                            </li>
+                            <li class="children__problems-item">
+                                <a href="#" class="children__problems-link">Congenital heart disease</a>
+                            </li>
+                        </ul>
+                        <ul class="children__problems-list children__problems-list--md-2">
+                            <li class="children__problems-item">
+                                <a href="#" class="children__problems-link">Glioma</a>
+                            </li>
+                            <li class="children__problems-item">
+                                <a href="#" class="children__problems-link">Heart arrhythmia</a>
+                            </li>
+                            <li class="children__problems-item">
+                                <a href="#" class="children__problems-link">Heart valve disease</a>
+                            </li>
+                            <li class="children__problems-item">
+                                <a href="#" class="children__problems-link">Living donor transplant</a>
+                            </li>
+                            <li class="children__problems-item">
+                                <a href="#" class="children__problems-link">Lung transplant</a>
+                            </li>
+                            <li class="children__problems-item">
+                                <a href="#" class="children__problems-link">Rectal cancer</a>
+                            </li>
+                        </ul>
+                        <ul class="children__problems-list children__problems-list--md-3">
+                            <li class="children__problems-item">
+                                <a href="#" class="children__problems-link">Colon cancer</a>
+                            </li>
+                            <li class="children__problems-item">
+                                <a href="#" class="children__problems-link">Congenital heart disease</a>
+                            </li>
+                            <li class="children__problems-item">
+                                <a href="#" class="children__problems-link">Glioma</a>
+                            </li>
+                            <li class="children__problems-item">
+                                <a href="#" class="children__problems-link">Heart arrhythmia</a>
+                            </li>
+                            <li class="children__problems-item">
+                                <a href="#" class="children__problems-link">Heart valve disease</a>
+                            </li>
+                            <li class="children__problems-item">
+                                <a href="#" class="children__problems-link">Living donor transplant</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <button class="children__problems-btn">Смотреть все диагнозы</button>
+                </div>
+            </div>
+            <div class="art__left">
+                <div class="art__widget children__show">
+                    <div class="art__widget-wrapper">
+                        <div class="art__widget-letter">
+                            <img src="/img/widget-letter.svg" alt="" class="art__widget-img">
+                        </div>
+                        <div class="art__widget-content">
+                            <div class="art__widget-text">Причины считать нас</div>
+                            <div class="art__widget-num">
+                                <img src="/img/n1.svg" alt="" class="art__widget-n1">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="art__curat">
+                    <div class="art__curat-inner swiper">
+                        <div class="art__curat-header">
+                            <div class="art__curat-left">
+                                <div class="art__left-heading">Кураторы</div>
+                                <div class="art__curat-descr">лечения наркомании</div>
+                            </div>
+                            <div class="art__galery-nav">
+                                <div class="art__nav art__button-prev">
+                                    <img src="img/arrow-art-left.svg" alt="arrow" class="art__arrow">
+                                </div>
+                                <div class="art__nav art__button-next">
+                                    <img src="img/arrow-art-right.svg" alt="arrow" class="art__arrow">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="art__curat-box swiper-wrapper">
+                            <div class="art__curat-item swiper-slide">
+                                <div class="art__curat-photo">
+                                    <img src="/img/art-avatar1.jpg" alt="photo" class="art__curat-img">
+                                </div>
+                                <div class="art__curat-name">Гришин Максим Эдуардович</div>
+                            </div>
+                            <div class="art__curat-item swiper-slide">
+                                <div class="art__curat-photo">
+                                    <img src="/img/art-avatar2.jpg" alt="photo" class="art__curat-img">
+                                </div>
+                                <div class="art__curat-name">Таркил Нина Зиноновна</div>
+                            </div>
+                        </div>
+                        <div class="art__curat-count">
+                            <div class="art__curat-num">1/6</div>
+                            <div class="art__curat-line"></div>
+                            <a href="#" class="art__curat-link">все кураторы →</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="art__video">
+                    <div class="art__left-heading">Видео по теме</div>
+                    <div class="art__video-wrap">
+                        <img src="/img/video.jpg" alt="video" class="art__video-img">
+                    </div>
+                </div>
+                <div class="art__galery">
+                    <div class="art__galery-header">
+                        <div class="art__left-heading">Что внутри</div>
+                        <div class="art__galery-nav">
+                            <div class="art__nav">
+                                <img src="img/arrow-art-left.svg" alt="arrow" class="art__arrow">
+                            </div>
+                            <div class="art__nav">
+                                <img src="img/arrow-art-right.svg" alt="arrow" class="art__arrow">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="art__galery-box">
+                        <div class="art__galery-wrap">
+                            <div class="art__galery-photo">
+                                <img src="img/art-galery.jpg" alt="photo" class="art__galery-img">
+                            </div>
+                            <div class="art__count">1/8</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <section class="cons cons__background_info">
+    <div class="container">
+        <div class="cons__wrapper">
+            <div class="cons__content">
+                <h2 class="cons__headihg">У вас есть вопросы? Мы поможем вам найти ответы.</h2>
+                <div class="cons__description">
+                    Мы выделили лучших клинических психологов для оперативного консультирования по вопросам лечения в нашей клинике. Ваше обращение будет конфиденциальным и бесплатным.
+                </div>
+                <div class="cons__butt">
+                    <a href="#" class="cons__link">Заказать обратный звонок</a>
+                </div>
+                <div class="cons__text">круглосуточно, без выходных</div>
+            </div>
+            <div class="cons__image">
+                <img src="/img/cons.jpg" alt="image" class="cons__img">
+            </div>
+        </div>
+    </div>
+</section>
+    <section class="adv">
+    <div class="container">
+        <div class="adv__wrapper">
+            <div class="adv__header">
+                <h2 class="adv__heading">Что делает нас достойными вашего доверия?</h2>
+                <div class="adv__line"></div>
+            </div>
+            <div class="adv__content-inner">
+                <div class="adv__content-wrapper swiper">
+                    <div class="adv__content swiper-wrapper">
+                        <div class="adv__item swiper-slide">
+                            <div class="adv__image">
+                                <img src="/img/adv01.jpg" alt="photo" class="adv__img" />
+                                <img src="/img/brand.svg" alt="R" class="adv__brand" />
+                            </div>
+                            <div class="adv__item-text">
+                                <div class="adv__item-inner">
+                                    <div class="adv__item-heading">Доказательная медицина</div>
+                                    <div class="adv__item-desc">Первые в своей сфере начали использовать доказательный
+                                        подход…</div>
+                                </div>
+                                <a href="#" class="adv__item-link">подробнее</a>
+                            </div>
+                        </div>
+                        <div class="adv__item swiper-slide">
+                            <div class="adv__image">
+                                <img src="/img/adv02.jpg" alt="photo" class="adv__img" />
+                                <img src="/img/brand.svg" alt="R" class="adv__brand" />
+                            </div>
+                            <div class="adv__item-text">
+                                <div class="adv__item-inner">
+                                    <div class="adv__item-heading">Экспертность</div>
+                                    <div class="adv__item-desc">Штат профессоров и кандидатов медицинских наук</div>
+                                </div>
+                                <a href="#" class="adv__item-link">подробнее</a>
+                            </div>
+                        </div>
+                        <div class="adv__item swiper-slide">
+                            <div class="adv__image">
+                                <img src="/img/adv-img-4.png" alt="photo" class="adv__img" />
+                                <img src="/img/brand.svg" alt="R" class="adv__brand" />
+                            </div>
+                            <div class="adv__item-text">
+                                <div class="adv__item-inner">
+                                    <div class="adv__item-heading">Особенное место</div>
+                                    <div class="adv__item-desc">Первые спроектировали и построили клинику, учитывая все
+                                        факторы лечебного процесса…
+                                    </div>
+                                </div>
+                                <a href="#" class="adv__item-link">подробнее</a>
+                            </div>
+                        </div>
+                        <div class="adv__item swiper-slide">
+                            <div class="adv__image">
+                                <img src="/img/adv-img-5.png" alt="photo" class="adv__img" />
+                                <img src="/img/brand.svg" alt="R" class="adv__brand" />
+                            </div>
+                            <div class="adv__item-text">
+                                <div class="adv__item-inner">
+                                    <div class="adv__item-heading">Статус пациента</div>
+                                    <div class="adv__item-desc">Первые в нише обозначили качественно новый статус
+                                        пациента
+                                        в процессе лечения…
+                                    </div>
+                                </div>
+                                <a href="#" class="adv__item-link">подробнее</a>
+                            </div>
+                        </div>
+                        <div class="adv__item swiper-slide">
+                            <div class="adv__image">
+                                <img src="/img/adv-img-6.png" alt="photo" class="adv__img" />
+                                <img src="/img/brand.svg" alt="R" class="adv__brand" />
+                            </div>
+                            <div class="adv__item-text">
+                                <div class="adv__item-inner">
+                                    <div class="adv__item-heading">Участие семьи</div>
+                                    <div class="adv__item-desc">Первые внедрили систему высокой вовлеченности
+                                        специалистов
+                                        по работе с семьёй…
+                                    </div>
+                                </div>
+                                <a href="#" class="adv__item-link">подробнее</a>
+                            </div>
+                        </div>
+                        <div class="adv__item swiper-slide">
+                            <div class="adv__image">
+                                <img src="/img/adv-img-7.png" alt="photo" class="adv__img" />
+                                <img src="/img/brand.svg" alt="R" class="adv__brand" />
+                            </div>
+                            <div class="adv__item-text">
+                                <div class="adv__item-inner">
+                                    <div class="adv__item-heading">Безопасная среда</div>
+                                    <div class="adv__item-desc">Первые разделили лечебные направления чётко
+                                        по отделениям
+                                        и корпусам…
+                                    </div>
+                                </div>
+                                <a href="#" class="adv__item-link">подробнее</a>
+                            </div>
+                        </div>
+                        <div class="adv__item swiper-slide">
+                            <div class="adv__image">
+                                <img src="/img/adv-img-8.png" alt="photo" class="adv__img" />
+                                <img src="/img/brand.svg" alt="R" class="adv__brand" />
+                            </div>
+                            <div class="adv__item-text">
+                                <div class="adv__item-inner">
+                                    <div class="adv__item-heading">Свобода и открытость</div>
+                                    <div class="adv__item-desc">Первые стали работать по принципу «открытых дверей»,
+                                        уверенные в комплаенсе пациентов…
+                                    </div>
+                                </div>
+                                <a href="#" class="adv__item-link">подробнее</a>
+                            </div>
+                        </div>
+                        <div class="adv__item swiper-slide">
+                            <div class="adv__image">
+                                <img src="/img/adv-img-9.png" alt="photo" class="adv__img" />
+                                <img src="/img/brand.svg" alt="R" class="adv__brand" />
+                            </div>
+                            <div class="adv__item-text">
+                                <div class="adv__item-inner">
+                                    <div class="adv__item-heading">Эстетика пребывания</div>
+                                    <div class="adv__item-desc">Лучшее место для проведения досуга между процедурами,
+                                        сессиями и занятиями…
+                                    </div>
+                                </div>
+                                <a href="#" class="adv__item-link">подробнее</a>
+                            </div>
+                        </div>
+                        <div class="adv__item swiper-slide">
+                            <div class="adv__image">
+                                <img src="/img/adv-img-10.png" alt="photo" class="adv__img" />
+                                <img src="/img/brand.svg" alt="R" class="adv__brand" />
+                            </div>
+                            <div class="adv__item-text">
+                                <div class="adv__item-inner">
+                                    <div class="adv__item-heading">Полезное многообразие</div>
+                                    <div class="adv__item-desc">Первые соединили в концепции питания пациентов
+                                        диетологов,
+                                        нутрициологов…
+                                    </div>
+                                </div>
+                                <a href="#" class="adv__item-link">подробнее</a>
+                            </div>
+                        </div>
+                        <div class="adv__item swiper-slide">
+                            <div class="adv__image">
+                                <img src="/img/adv-img-11.png" alt="photo" class="adv__img" />
+                                <img src="/img/brand.svg" alt="R" class="adv__brand" />
+                            </div>
+                            <div class="adv__item-text">
+                                <div class="adv__item-inner">
+                                    <div class="adv__item-heading">Развитие команды</div>
+                                    <div class="adv__item-desc">Первые в своей сфере сделали упор на высококлассный
+                                        менеджмент,постоянное развитие…
+                                    </div>
+                                </div>
+                                <a href="#" class="adv__item-link">подробнее</a>
+                            </div>
+                        </div>
+                        <div class="adv__item swiper-slide">
+                            <div class="adv__image">
+                                <img src="/img/adv-img-12.png" alt="photo" class="adv__img" />
+                                <img src="/img/brand.svg" alt="R" class="adv__brand" />
+                            </div>
+                            <div class="adv__item-text">
+                                <div class="adv__item-inner">
+                                    <div class="adv__item-heading">Вовлеченность</div>
+                                    <div class="adv__item-desc">Лучшие по показателям вовлеченности специалистов.
+                                        В клинике
+                                        присутствуют одновременно более 50…
+                                    </div>
+                                </div>
+                                <a href="#" class="adv__item-link">подробнее</a>
+                            </div>
+                        </div>
+                        <div class="adv__item swiper-slide">
+                            <div class="adv__image">
+                                <img src="/img/adv-img-13.png" alt="photo" class="adv__img" />
+                                <img src="/img/brand.svg" alt="R" class="adv__brand" />
+                            </div>
+                            <div class="adv__item-text">
+                                <div class="adv__item-inner">
+                                    <div class="adv__item-heading">Непрерывность</div>
+                                    <div class="adv__item-desc">Лучшие по созданию условий для продолжения работы
+                                        и учёбы
+                                        во время лечения…
+                                    </div>
+                                </div>
+                                <a href="#" class="adv__item-link">подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="adv__arrow adv__arrow--prev">
+                    <img src="img/arrow-art-left.svg" alt="arrow" class="adv__arw">
+                </div>
+                <div class="adv__arrow adv__arrow--next">
+                    <img src="img/arrow-art-right.svg" alt="arrow" class="adv__arw">
+                </div>
+            </div>
+
+            <div class="adv__pagin">
+                <!-- <div class="adv__point"></div>
+                <div class="adv__point_active"></div>
+                <div class="adv__point"></div> -->
+            </div>
+        </div>
+    </div>
+</section>
+    <section class="department">
+    <div class="container">
+        <div class="department__wrapper">
+            <div class="department__header">
+                <h2 class="department__heading">Наши отделения</h2>
+                <div class="department__line"></div>
+            </div>
+            <div class="department__content">
+                <div class="department__item">
+                    <div class="department__image">
+                        <img src="/img/department01.jpg" alt="photo"/>
+                    </div>
+                    <div class="department__item-text">
+                        <div class="department__item-heading">Клиника</div>
+                        <div class="department__item-desc"></div>
+                    </div>
+                </div>
+                <div class="department__item">
+                    <div class="department__image">
+                        <img src="/img/department02.jpg" alt="photo"/>
+                    </div>
+                    <div class="department__item-text">
+                        <div class="department__item-heading">Амбулаторный  центр</div>
+                        <div class="department__item-desc">м. Китай-Город</div>
+                    </div>
+                </div>
+                <div class="department__item">
+                    <div class="department__image">
+                        <img src="/img/department03.jpg" alt="photo"/>
+                    </div>
+                    <div class="department__item-text">
+                        <div class="department__item-heading">Реабилитация в Доминикане</div>
+                        <div class="department__item-desc"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <footer class="footer">
+    <div class="footer__top">
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="footer__logo">
+                    <div class="footer__img">
+                        <a href="/"><img class="footer__logo-img" src="/img/logo-light.svg" alt="logo"></a>
+                    </div>
+                    <div class="footer__copyright">
+                        <div class="footer__copyright-text">
+                            © 2021 | ООО «Реабилитация. Семья», все права защищены
+                            ОГРН 1 177746596213 | Лицензия № ЛО-77-01-017320
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__contacts">
+                    <div class="footer__contacts-top">
+                        <div class="footer__contacts-data">
+                            <a href="mailto:help@rehabfamily.com" class="footer__mail">help@rehabfamily.com</a>
+                            <div class="footer__point"></div>
+                            <a href="tel:+74954455658" class="footer__phone">+7 (495) 445-56-58</a>
+                        </div>
+                        <div class="footer__contacts-link">
+                            <a href="#" class="footer__link">заказать обратный звонок →</a>
+                        </div>
+                    </div>
+                    <div class="footer__contacts-bottom">
+                        <div class="footer__address">
+                            г. Москва, пер. Малый Ивановский, д. 6, стр. 2
+                        </div>
+                        <div class="footer__contacts-link">
+                            <a href="#" class="footer__link">открыть на карте →</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="footer__bottom">
+        <div class="container">
+            <div class="footer__wrap">
+                <div class="footer__bottom-left">
+                    <div class="footer__botom-icon">
+                        <img src="/img/visa.png" alt="visa">
+                    </div>
+                    <div class="footer__botom-icon">
+                        <img src="/img/master.png" alt="master">
+                    </div>
+                    <div class="footer__botom-icon">
+                        <img src="/img/visa-el.png" alt="visa-el">
+                    </div>
+                </div>
+                <div class="footer__bottom-right">
+                    <div class="footer__bottom-text">
+                        <a href="#" class="footer__bottom-link">Политика обработки персональных данных</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</footer>

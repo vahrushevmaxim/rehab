@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    
+        <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.min.css">
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;" type="text/javascript"></script>
+    <script src="/js/app.min.js"></script>
+    <title>Ошибка</title>
+
+</head>
+<body>
+    <header class="header">
+    <div class="container">
+        <div class="header__wrapper">
+            <div class="header__brend">
+                <div class="header__logo">
+                    <a href="/"><img src="img/logo.svg" alt="logo"></a>
+                </div>
+                <div class="header__desc">
+                    <div class="header__desc-text">
+                        Семейная клиника психического здоровья и лечения зависимостей в Москве
+                    </div>
+                </div>
+            </div>
+            <div class="header__input">
+                <div class="header__search-wrap">
+                    <input class="header__search" type="text" placeholder="Поиск по сайту">
+                    <input class="header__search-butt" type="submit" value="">
+                </div>
+                <select class="header__lang" id="language">
+                    <option value="Русский">Русский</option>
+                    <option value="English">English</option>
+                </select>
+            </div>
+            <div class="header__info">
+                <div class="header__pay">
+                    <div class="header__pay-img">
+                        <img src="/img/icon-ok.svg" alt="ok">
+                    </div>
+                    <div class="header__pay-text">
+                        Онлайн оплата
+                    </div>
+                </div>
+                <div class="header__phone">
+                    <div class="header__phone-number">
+                        <a href="tel:+74954455658" class="header__phone-link">
+                            +7 (495) <span>445-56-58</span>
+                        </a>
+                    </div>
+                    <div class="header__phone-text">
+                        круглосуточно, без выходных
+                    </div>
+                </div>
+            </div>
+            <button class="header__mob">
+                <span class="header__burger-line header__burger-1"></span>
+                <span class="header__burger-line header__burger-2"></span>
+                <span class="header__burger-line header__burger-3"></span>
+            </button>
+        </div>
+    </div>
+    <div class="burger-content">
+        <div class="container">
+            <div class="burger-content__tabs">
+                <ul class="burger-content__list">
+                    <li class="burger-content__text" data-btn>
+                        <button class="burger-content__tab">О клинике</button>
+                        <ul class="burger-content__sublist">
+                            <li class="burger-content__sublist-text">
+                                <a href="" class="burger-content__sublist-link">Клиника лечения зависимостей
+                                </a>
+                            </li>
+                            <li class="burger-content__sublist-text">
+                                <a href="" class="burger-content__sublist-link">Клиника психического здоровья
+                                </a>
+                            </li>
+                            <li class="burger-content__sublist-text">
+                                <a href="" class="burger-content__sublist-link">Rehab Family Premium
+                                </a>
+                            </li>
+                            <li class="burger-content__sublist-text">
+                                <a href="" class="burger-content__sublist-link">Лечебно-оздоровительный комплекс
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="burger-content__text" data-btn>
+                        <button class="burger-content__tab">Диагностика и лечение</button>
+                        <ul class="burger-content__sublist">
+                            <li class="burger-content__sublist-text">
+                                <a href="" class="burger-content__sublist-link">Симптомы и диагнозы А-Я
+                                </a>
+                            </li>
+                            <li class="burger-content__sublist-text">
+                                <a href="" class="burger-content__sublist-link">Список психоактивных веществ А-Я
+                                </a>
+                            </li>
+                            <li class="burger-content__sublist-text">
+                                <a href="" class="burger-content__sublist-link">Методы лечения
+                                </a>
+                            </li>
+                            <li class="burger-content__sublist-text">
+                                <a href="" class="burger-content__sublist-link">Статьи
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="burger-content__text" data-btn>
+                        <button class="burger-content__tab">Специалисты</button>
+                        <ul class="burger-content__sublist">
+                            <li class="burger-content__sublist-text">
+                                <a href="" class="burger-content__sublist-link">СМИ о нас
+                                </a>
+                            </li>
+                            <li class="burger-content__sublist-text">
+                                <a href="" class="burger-content__sublist-link">Амбулаторный центр
+                                </a>
+                            </li>
+                            <li class="burger-content__sublist-text">
+                                <a href="" class="burger-content__sublist-link">Новости
+                                </a>
+                            </li>
+                            <li class="burger-content__sublist-text">
+                                <a href="" class="burger-content__sublist-link">Видеогалерея
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="burger-content__text">
+                        <a href="#" class="burger-content__tab">Фотогалерея</a>
+                    </li>
+                    <li class="burger-content__text" data-btn>
+                        <button class="burger-content__tab">К. С. О.</button>
+                        <ul class="burger-content__sublist">
+                            <li class="burger-content__sublist-text">
+                                <a href="" class="burger-content__sublist-link">Виртуальная экскурсия
+                                </a>
+                            </li>
+                            <li class="burger-content__sublist-text">
+                                <a href="" class="burger-content__sublist-link">Оплата онлайн
+                                </a>
+                            </li>
+                            <li class="burger-content__sublist-text">
+                                <a href="" class="burger-content__sublist-link">Отзывы и истории пациентов
+                                </a>
+                            </li>
+                            <li class="burger-content__sublist-text">
+                                <a href="" class="burger-content__sublist-link">О Rehab Famlily
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="burger-content__text">
+                        <a href="#" class="burger-content__tab">Контакты</a>
+                    </li>
+                    <li class="burger-content__text">
+                        <a href="#" class="burger-content__tab">Лечение зависимостей</a>
+                    </li>
+                    <li class="burger-content__text">
+                        <a href="#" class="burger-content__tab">Психиатрия</a>
+                    </li>
+                    <li class="burger-content__text burger-content__text--svg">
+                        <a href="#" class="burger-content__tab">Психосоматика</a>
+                    </li>
+                    <li class="burger-content__text">
+                        <a href="#" class="burger-content__tab">Расстройства пищевого поведения</a>
+                    </li>
+                    <li class="burger-content__text">
+                        <a href="#" class="burger-content__tab">Отделение для подростков</a>
+                    </li>
+                    <li class="burger-content__text">
+                        <a href="#" class="burger-content__tab">Оплата онлайн</a>
+                    </li>
+                </ul>
+                <div class="burger-content__button"><a href="#" class="burger-content__button-link">
+                        <div class="burger-content__button-img">
+                            <img src="/img/hero-phone.svg" alt="phone" class="burger-content__button-icon">
+                        </div>
+                        <div class="burger-content__button-text">Приёмное отделение</div>
+                    </a></div>
+            </div>
+        </div>
+    </div>
+</header>
+    <nav class="nav">
+    <div class="container">
+        <div class="nav__wrapper">
+            <ul class="nav__main">
+                <li class="nav__item" data-nav="nav1">
+                    <a href="#" class="nav__main-link">О клинике <img src="/img/arrow-menu.svg" alt="arrow" class="nav__icon-arrow"></a>
+                </li>
+                <li class="nav__item" data-nav="nav2">
+                    <a href="#" class="nav__main-link">Диагностика и лечение <img src="/img/arrow-menu.svg" alt="arrow" class="nav__icon-arrow"></a>
+                </li>
+                <li class="nav__item" data-nav="nav3">
+                    <a href="#" class="nav__main-link">Специалисты <img src="/img/arrow-menu.svg" alt="arrow" class="nav__icon-arrow"></a>
+                </li>
+                <li class="nav__item"><a href="#" class="nav__main-link">Фотогалерея</a></li>
+                <li class="nav__item" data-nav="nav4">
+                    <a href="#" class="nav__main-link">К. С. О. <img src="/img/arrow-menu.svg" alt="arrow" class="nav__icon-arrow"></a>
+                </li>
+                <li class="nav__item"><a href="#" class="nav__main-link">Контакты</a></li>
+            </ul>
+            <div class="nav__second-wrap">
+                <ul class="nav__second" id="nav1">
+                    <li class="nav__second-item"><a href="#" class="nav__second-link">Клиника лечения зависимостей
+                    </a></li>
+                    <li class="nav__second-item"><a href="children.html" class="nav__second-link">Клиника психического здоровья</a></li>
+                    <li class="nav__second-item"><a href="clinic-tests.html" class="nav__second-link">Rehab Family Premium</a></li>
+                    <li class="nav__second-item"><a href="commercial-copy.html" class="nav__second-link">Лечебно-оздоровительный комплекс</a></li>
+                    <li class="nav__second-item"><a href="department-card.html" class="nav__second-link">Центр реабилитации в Доминикане</a></li>
+                    <li class="nav__second-item"><a href="department.html" class="nav__second-link">Программа «Независимость и Восстановление»</a></li>
+                    <li class="nav__second-item"><a href="dependencies.html" class="nav__second-link">Амбулаторный центр</a></li>
+                    <li class="nav__second-item"><a href="diagnosis-symptoms.html" class="nav__second-link">Новости</a></li>
+                    <li class="nav__second-item"><a href="error.html" class="nav__second-link">Видеогалерея</a></li>
+                    <li class="nav__second-item"><a href="gallery-album.html" class="nav__second-link">Виртуальная экскурсия</a></li>
+                    <li class="nav__second-item"><a href="about.html" class="nav__second-link">Мы — Rehab Family</a></li>
+                    <li class="nav__second-item"><a href="contacts.html" class="nav__second-link">contacts</a></li>
+                    <li class="nav__second-item"><a href="test-rafft.html" class="nav__second-link">test-rafft</a></li>
+                    <li class="nav__second-item"><a href="site-search.html" class="nav__second-link">поиск по сайту</a></li>
+                    <li class="nav__second-item"><a href="psychiatry.html" class="nav__second-link">Психиатрия</a></li>
+                    <li class="nav__second-item"><a href="therapy.html" class="nav__second-link">therapy</a></li>
+                    <li class="nav__second-item"><a href="gallery.html" class="nav__second-link">gallery</a></li>
+                    <li class="nav__second-item"><a href="articles.html" class="nav__second-link">articles</a></li>
+                </ul>
+                <ul class="nav__second" id="nav2">
+                    <li class="nav__second-item"><a href="index.html" class="nav__second-link">Клиника лечения зависимостей
+                    </a></li>
+                    <li class="nav__second-item"><a href="info.html" class="nav__second-link">Клиника психического здоровья</a></li>
+                    <li class="nav__second-item"><a href="methods1.html" class="nav__second-link">Лечебно-оздоровительный комплекс</a></li>
+                    <li class="nav__second-item"><a href="news-card.html" class="nav__second-link">Новости</a></li>
+                    <li class="nav__second-item"><a href="news.html" class="nav__second-link">Видеогалерея</a></li>
+                    <li class="nav__second-item"><a href="payment.html" class="nav__second-link">Виртуальная экскурсия</a></li>
+                    <li class="nav__second-item"><a href="personal-data.html" class="nav__second-link">Программа «Независимость и Восстановление»</a></li>
+                    <li class="nav__second-item"><a href="psychiatry.html" class="nav__second-link">Оплата онлайн</a></li>
+                    <li class="nav__second-item"><a href="psychosomatic-diseases.html" class="nav__second-link">Отзывы и истории пациентов</a></li>
+                    <li class="nav__second-item"><a href="rev.html" class="nav__second-link">О Rehab Famlily</a></li>
+                    <li class="nav__second-item"><a href="rooms.html" class="nav__second-link">Контакты</a></li>
+                </ul>
+                <ul class="nav__second" id="nav3">
+                    <li class="nav__second-item"><a href="specialist.html" class="nav__second-link">СМИ о нас</a></li>
+                    <li class="nav__second-item"><a href="specialists.html" class="nav__second-link">Амбулаторный центр</a></li>
+                    <li class="nav__second-item"><a href="#" class="nav__second-link">Новости</a></li>
+                    <li class="nav__second-item"><a href="#" class="nav__second-link">Видеогалерея</a></li>
+                    <li class="nav__second-item"><a href="#" class="nav__second-link">Виртуальная экскурсия</a></li>
+                    <li class="nav__second-item"><a href="#" class="nav__second-link">Оплата онлайн</a></li>
+                    <li class="nav__second-item"><a href="#" class="nav__second-link">Отзывы и истории пациентов</a></li>
+                    <li class="nav__second-item"><a href="#" class="nav__second-link">О Rehab Famlily</a></li>
+                    <li class="nav__second-item"><a href="#" class="nav__second-link">Контакты</a></li>
+                </ul>
+                <ul class="nav__second" id="nav4">
+                    <li class="nav__second-item"><a href="#" class="nav__second-link">Виртуальная экскурсия</a></li>
+                    <li class="nav__second-item"><a href="#" class="nav__second-link">Оплата онлайн</a></li>
+                    <li class="nav__second-item"><a href="#" class="nav__second-link">Отзывы и истории пациентов</a></li>
+                    <li class="nav__second-item"><a href="#" class="nav__second-link">О Rehab Famlily</a></li>
+                    <li class="nav__second-item"><a href="#" class="nav__second-link">Контакты</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+    <section class="error">
+    <div class="container">
+        <div class="error__wrapper">
+            <div class="error__number-text">
+                <h2 class="error__number">404</h2>
+                <p class="error__text">Увы… Похоже, с такой проблемой к нам ещё не обращались.</p>
+                <p class="error__text-2">Но ничего страшного — у нас классные врачи и психологи, которые могут помочь
+                    во многих затруднительных и деликатных ситуациях.</p>
+            </div>
+            <div class="error__right">
+                <div class="children__problems">
+                    <h3 class="children__problems-title">Популярные запросы</h3>
+                    <div class="children__problems-wrapper">
+                        <ul class="children__problems-list children__problems-list--md-1">
+                            <li class="children__problems-item">
+                                <a href="#" class="children__problems-link">Bone marrow transplant</a>
+                            </li>
+                            <li class="children__problems-item">
+                                <a href="#" class="children__problems-link">Brain aneurysm</a>
+                            </li>
+                            <li class="children__problems-item">
+                                <a href="#" class="children__problems-link">Brain tumor</a>
+                            </li>
+                            <li class="children__problems-item">
+                                <a href="#" class="children__problems-link">Breast cancer</a>
+                            </li>
+                            <li class="children__problems-item">
+                                <a href="#" class="children__problems-link">Colon cancer</a>
+                            </li>
+                            <li class="children__problems-item">
+                                <a href="#" class="children__problems-link">Congenital heart disease</a>
+                            </li>
+                        </ul>
+                        <ul class="children__problems-list children__problems-list--md-2">
+                            <li class="children__problems-item">
+                                <a href="#" class="children__problems-link">Glioma</a>
+                            </li>
+                            <li class="children__problems-item">
+                                <a href="#" class="children__problems-link">Heart arrhythmia</a>
+                            </li>
+                            <li class="children__problems-item">
+                                <a href="#" class="children__problems-link">Heart valve disease</a>
+                            </li>
+                            <li class="children__problems-item">
+                                <a href="#" class="children__problems-link">Living donor transplant</a>
+                            </li>
+                            <li class="children__problems-item">
+                                <a href="#" class="children__problems-link">Lung transplant</a>
+                            </li>
+                            <li class="children__problems-item">
+                                <a href="#" class="children__problems-link">Rectal cancer</a>
+                            </li>
+                        </ul>
+                        <ul class="children__problems-list children__problems-list--md-3">
+                            <li class="children__problems-item">
+                                <a href="#" class="children__problems-link">Colon cancer</a>
+                            </li>
+                            <li class="children__problems-item">
+                                <a href="#" class="children__problems-link">Congenital heart disease</a>
+                            </li>
+                            <li class="children__problems-item">
+                                <a href="#" class="children__problems-link">Glioma</a>
+                            </li>
+                            <li class="children__problems-item">
+                                <a href="#" class="children__problems-link">Heart arrhythmia</a>
+                            </li>
+                            <li class="children__problems-item">
+                                <a href="#" class="children__problems-link">Heart valve disease</a>
+                            </li>
+                            <li class="children__problems-item">
+                                <a href="#" class="children__problems-link">Living donor transplant</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <button class="children__problems-btn error__btn">Смотреть все диагнозы</button>
+                </div>
+                <div class="diagn__alph">
+                    <div class="diagn__alph-heading">Поиск заболевания по первой букве</div>
+                    <div class="diagn__alph-box">
+                        <div class="diagn__letter"><a href="#" class="diagn__letter-link">А</a></div>
+                        <div class="diagn__letter"><a href="#" class="diagn__letter-link">Б</a></div>
+                        <div class="diagn__letter"><a href="#" class="diagn__letter-link">В</a></div>
+                        <div class="diagn__letter"><a href="#" class="diagn__letter-link">Г</a></div>
+                        <div class="diagn__letter"><a href="#" class="diagn__letter-link">Д</a></div>
+                        <div class="diagn__letter"><a href="#" class="diagn__letter-link">Е</a></div>
+                        <div class="diagn__letter"><a href="#" class="diagn__letter-link">Ж</a></div>
+                        <div class="diagn__letter"><a href="#" class="diagn__letter-link">З</a></div>
+                        <div class="diagn__letter"><a href="#" class="diagn__letter-link">И</a></div>
+                        <div class="diagn__letter"><a href="#" class="diagn__letter-link diagn__letter-link--md">К</a>
+                        </div>
+                        <div class="diagn__letter"><a href="#" class="diagn__letter-link">Л</a></div>
+                        <div class="diagn__letter"><a href="#" class="diagn__letter-link">М</a></div>
+                        <div class="diagn__letter"><a href="#" class="diagn__letter-link">Н</a></div>
+                        <div class="diagn__letter"><a href="#" class="diagn__letter-link">О</a></div>
+                        <div class="diagn__letter"><a href="#" class="diagn__letter-link">П</a></div>
+                        <div class="diagn__letter"><a href="#" class="diagn__letter-link">Р</a></div>
+                        <div class="diagn__letter"><a href="#" class="diagn__letter-link">С</a></div>
+                        <div class="diagn__letter"><a href="#" class="diagn__letter-link">Т</a></div>
+                        <div class="diagn__letter"><a href="#" class="diagn__letter-link">У</a></div>
+                        <div class="diagn__letter"><a href="#" class="diagn__letter-link">Ф</a></div>
+                        <div class="diagn__letter"><a href="#" class="diagn__letter-link">Х</a></div>
+                        <div class="diagn__letter"><a href="#" class="diagn__letter-link">Ц</a></div>
+                        <div class="diagn__letter"><a href="#" class="diagn__letter-link">Ч</a></div>
+                        <div class="diagn__letter"><a href="#" class="diagn__letter-link">Ш</a></div>
+                        <div class="diagn__letter"><a href="#" class="diagn__letter-link">Щ</a></div>
+                        <div class="diagn__letter"><a href="#" class="diagn__letter-link">Э</a></div>
+                        <div class="diagn__letter"><a href="#" class="diagn__letter-link">Ю</a></div>
+                        <div class="diagn__letter"><a href="#" class="diagn__letter-link">Я</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    
